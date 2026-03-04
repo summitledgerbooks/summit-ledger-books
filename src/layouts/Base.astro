@@ -42,7 +42,46 @@ const pathname = Astro.url.pathname;
 
     <footer class="site-footer">
       <div class="container">
-        <p>&copy; {new Date().getFullYear()} Summit Ledger Books. All rights reserved.</p>
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <a href="/" class="logo">
+              <img src="/images/logo.png" alt="Summit Ledger Books" />
+            </a>
+            <p class="footer-tagline">Bookkeeping for real estate investors, property managers, and developers.</p>
+            <div class="badge-row badge-row--footer">
+              <img src="/images/badge-qbo-level-2.png" alt="QuickBooks Online Certified" class="badge-img" />
+              <img src="/images/badge-qbo-payroll.png" alt="QuickBooks Payroll Certified" class="badge-img" />
+              <img src="/images/book-cert.png" alt="Bookkeeping Certified" class="badge-img" />
+              <img src="/images/client-cert.png" alt="QuickBooks Client Certified" class="badge-img" />
+            </div>
+          </div>
+
+          <div class="footer-links">
+            <p class="footer-heading">Navigation</p>
+            <ul class="footer-nav">
+              <li><a href="/about">About</a></li>
+              <li><a href="/services">Services</a></li>
+              <li><a href="/pricing">Pricing</a></li>
+              <li><a href="/faq">FAQ</a></li>
+              <li><a href="/blog">Blog</a></li>
+              <li><a href="/contact">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-contact">
+            <p class="footer-heading">Get in touch</p>
+            <p class="footer-contact-item"><a href="mailto:austin@summitledgerbooks.com">austin@summitledgerbooks.com</a></p>
+            <p class="footer-contact-item"><a href="tel:+13854502276">385-450-2276</a></p>
+            <div class="footer-cta">
+              <p style="font-size: 0.875rem; margin-bottom: var(--space-sm);">Ready to get organized?</p>
+              <a href="https://calendly.com/summit-ledger-books/consultation" class="btn btn-primary">Book a Free Call</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>&copy; {new Date().getFullYear()} Summit Ledger Books. All rights reserved.</p>
+        </div>
       </div>
     </footer>
 

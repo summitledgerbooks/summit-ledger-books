@@ -6,6 +6,8 @@ const posts = (await getCollection("blog"))
   .filter((post) => !post.data.draft)
   .sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
 
+const allTags = [...new Set(posts.flatMap((p) => p.data.tags))].sort();
+
 const [featured, ...rest] = posts;
 ---
 
@@ -14,47 +16,102 @@ const [featured, ...rest] = posts;
     <h1 class="section-heading">Blog</h1>
     <p style="color: var(--color-text-muted); margin-bottom: var(--space-xl); max-width: 42rem;">Practical guidance on real estate bookkeeping, taxes, and keeping your portfolio finances in order.</p>
 
-    {featured && (
-      <a href={`/blog/${featured.id}`} class="featured-post">
-        <div class="featured-label">Latest</div>
-        <h2 class="featured-post-title">{featured.data.title}</h2>
-        <p class="featured-post-desc">{featured.data.description}</p>
-        <div class="featured-post-meta">
-          <time datetime={featured.data.date.toISOString()}>
-            {featured.data.date.toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" })}
-          </time>
-          {featured.data.tags.length > 0 && (
-            <div class="tag-list">
-              {featured.data.tags.map((tag) => (
-                <span class="tag">{tag}</span>
-              ))}
-            </div>
-          )}
-        </div>
-      </a>
-    )}
-
-    {rest.length > 0 && (
-      <div class="blog-grid">
-        {rest.map((post) => (
-          <a href={`/blog/${post.id}`} class="blog-card">
-            <h2 class="blog-card-title">{post.data.title}</h2>
-            <p class="blog-card-desc">{post.data.description}</p>
-            <div class="blog-card-meta">
-              <time datetime={post.data.date.toISOString()}>
-                {post.data.date.toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" })}
+    <div class="blog-layout">
+      <div class="blog-main">
+        {featured && (
+          <a href={`/blog/${featured.id}`} class="featured-post" data-tags={featured.data.tags.join(",")}>
+            <div class="featured-label">Latest</div>
+            <h2 class="featured-post-title">{featured.data.title}</h2>
+            <p class="featured-post-desc">{featured.data.description}</p>
+            <div class="featured-post-meta">
+              <time datetime={featured.data.date.toISOString()}>
+                {featured.data.date.toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" })}
               </time>
-              {post.data.tags.length > 0 && (
+              {featured.data.tags.length > 0 && (
                 <div class="tag-list">
-                  {post.data.tags.map((tag) => (
+                  {featured.data.tags.map((tag) => (
                     <span class="tag">{tag}</span>
                   ))}
                 </div>
               )}
             </div>
           </a>
-        ))}
+        )}
+
+        {rest.length > 0 && (
+          <div class="blog-grid">
+            {rest.map((post) => (
+              <a href={`/blog/${post.id}`} class="blog-card" data-tags={post.data.tags.join(",")}>
+                <h2 class="blog-card-title">{post.data.title}</h2>
+                <p class="blog-card-desc">{post.data.description}</p>
+                <div class="blog-card-meta">
+                  <time datetime={post.data.date.toISOString()}>
+                    {post.data.date.toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" })}
+                  </time>
+                  {post.data.tags.length > 0 && (
+                    <div class="tag-list">
+                      {post.data.tags.map((tag) => (
+                        <span class="tag">{tag}</span>
+                      ))}
+                    </div>
+                  )}
+                </div>
+              </a>
+            ))}
+          </div>
+        )}
+
+        <p class="blog-no-results" style="display:none;">No posts found for this tag.</p>
       </div>
-    )}
+
+      {allTags.length > 0 && (
+        <aside class="blog-sidebar">
+          <h2 class="blog-sidebar-heading">Filter by topic</h2>
+          <div class="tag-filter-list">
+            <button class="tag-filter-btn active" data-filter="all">All</button>
+            {allTags.map((tag) => (
+              <button class="tag-filter-btn" data-filter={tag}>{tag}</button>
+            ))}
+          </div>
+        </aside>
+      )}
+    </div>
   </div>
 </Base>
+
+<script>
+  const filterBtns = document.querySelectorAll<HTMLButtonElement>(".tag-filter-btn");
+  const featuredPost = document.querySelector<HTMLElement>(".featured-post");
+  const blogCards = document.querySelectorAll<HTMLElement>(".blog-card");
+  const blogGrid = document.querySelector<HTMLElement>(".blog-grid");
+  const noResults = document.querySelector<HTMLElement>(".blog-no-results");
+
+  filterBtns.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      filterBtns.forEach((b) => b.classList.remove("active"));
+      btn.classList.add("active");
+
+      const filter = btn.dataset.filter ?? "all";
+
+      let visibleCards = 0;
+
+      if (featuredPost) {
+        const tags = featuredPost.dataset.tags?.split(",") ?? [];
+        const show = filter === "all" || tags.includes(filter);
+        featuredPost.style.display = show ? "" : "none";
+        if (show) visibleCards++;
+      }
+
+      blogCards.forEach((card) => {
+        const tags = card.dataset.tags?.split(",") ?? [];
+        const show = filter === "all" || tags.includes(filter);
+        card.style.display = show ? "" : "none";
+        if (show) visibleCards++;
+      });
+
+      if (noResults) {
+        noResults.style.display = visibleCards === 0 ? "" : "none";
+      }
+    });
+  });
+</script>

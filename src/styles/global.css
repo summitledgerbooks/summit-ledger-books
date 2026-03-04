@@ -186,11 +186,136 @@ img {
 .site-footer {
   margin-top: auto;
   border-top: 1px solid var(--color-border);
-  padding: var(--space-lg) 0;
-  text-align: center;
+  padding: var(--space-xl) 0 var(--space-lg);
   color: var(--color-text-muted);
   font-size: 0.875rem;
   background: var(--color-surface);
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr;
+  gap: var(--space-xl);
+  margin-bottom: var(--space-lg);
+}
+
+@media (max-width: 48rem) {
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-lg);
+  }
+}
+
+.footer-brand .logo img {
+  height: 2.5rem;
+  margin-bottom: var(--space-sm);
+}
+
+.footer-tagline {
+  color: var(--color-text-muted);
+  font-size: 0.875rem;
+  line-height: 1.5;
+  max-width: 18rem;
+}
+
+.footer-heading {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--color-navy);
+  margin-bottom: var(--space-sm);
+}
+
+.footer-nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.375rem;
+}
+
+.footer-nav a {
+  color: var(--color-text-muted);
+  text-decoration: none;
+  font-size: 0.875rem;
+  transition: color 0.15s;
+}
+
+.footer-nav a:hover {
+  color: var(--color-primary);
+}
+
+.footer-contact-item {
+  font-size: 0.875rem;
+  margin-bottom: 0.375rem;
+  color: var(--color-text-muted);
+}
+
+.footer-contact-item a {
+  color: var(--color-text-muted);
+  text-decoration: none;
+  transition: color 0.15s;
+}
+
+.footer-contact-item a:hover {
+  color: var(--color-primary);
+}
+
+.footer-cta {
+  margin-top: var(--space-md);
+}
+
+.footer-cta .btn {
+  font-size: 0.875rem;
+  padding: 0.5rem 1rem;
+}
+
+.footer-bottom {
+  border-top: 1px solid var(--color-border);
+  padding-top: var(--space-md);
+  text-align: center;
+  font-size: 0.8125rem;
+  color: var(--color-text-muted);
+}
+
+/* ── Certification badges ── */
+.certifications {
+  margin-top: var(--space-xl);
+  padding-top: var(--space-xl);
+  border-top: 1px solid var(--color-border);
+}
+
+.certifications-heading {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-md);
+}
+
+.badge-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-md);
+}
+
+.badge-img {
+  height: 5rem;
+  width: auto;
+  object-fit: contain;
+}
+
+.badge-row--footer {
+  margin-top: var(--space-md);
+  gap: var(--space-sm);
+}
+
+.badge-row--footer .badge-img {
+  height: 3.5rem;
 }
 
 /* ── Main content ── */
@@ -423,6 +548,85 @@ main {
   flex-wrap: wrap;
   font-size: 0.8125rem;
   color: var(--color-text-muted);
+}
+
+.blog-layout {
+  display: grid;
+  grid-template-columns: 1fr 13rem;
+  gap: var(--space-xl);
+  align-items: start;
+}
+
+@media (max-width: 48rem) {
+  .blog-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .blog-sidebar {
+    order: -1;
+  }
+}
+
+.blog-sidebar {
+  position: sticky;
+  top: var(--space-lg);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 0.5rem;
+  padding: var(--space-md);
+}
+
+.blog-sidebar-heading {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-sm);
+}
+
+.tag-filter-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.375rem;
+}
+
+@media (max-width: 48rem) {
+  .tag-filter-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+.tag-filter-btn {
+  display: block;
+  width: 100%;
+  text-align: left;
+  background: none;
+  border: none;
+  padding: 0.375rem 0.5rem;
+  border-radius: 0.375rem;
+  font-size: 0.875rem;
+  color: var(--color-text-muted);
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+}
+
+.tag-filter-btn:hover {
+  background: var(--color-border);
+  color: var(--color-navy);
+}
+
+.tag-filter-btn.active {
+  background: var(--color-primary);
+  color: #fff;
+  font-weight: 600;
+}
+
+@media (max-width: 48rem) {
+  .tag-filter-btn {
+    width: auto;
+  }
 }
 
 .blog-grid {
