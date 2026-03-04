@@ -1,0 +1,37 @@
+---
+interface Props {
+  title?: string;
+  description?: string;
+  ogType?: string;
+  canonicalUrl?: string;
+}
+
+const siteName = "Summit Ledger Co.";
+const defaultDescription = "Professional bookkeeping services for small businesses. Accurate records, stress-free finances.";
+
+const {
+  title,
+  description = defaultDescription,
+  ogType = "website",
+  canonicalUrl,
+} = Astro.props;
+
+const pageTitle = title ? `${title} | ${siteName}` : siteName;
+const canonical = canonicalUrl || new URL(Astro.url.pathname, Astro.site).href;
+---
+
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>{pageTitle}</title>
+<meta name="description" content={description} />
+<link rel="canonical" href={canonical} />
+
+<!-- Open Graph -->
+<meta property="og:title" content={pageTitle} />
+<meta property="og:description" content={description} />
+<meta property="og:type" content={ogType} />
+<meta property="og:url" content={canonical} />
+<meta property="og:site_name" content={siteName} />
+
+<!-- RSS -->
+<link rel="alternate" type="application/rss+xml" title={siteName} href="/rss.xml" />

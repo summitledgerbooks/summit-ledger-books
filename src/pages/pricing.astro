@@ -1,0 +1,55 @@
+---
+import Base from "../layouts/Base.astro";
+---
+
+<Base title="Pricing" description="Transparent, affordable bookkeeping pricing for small businesses. Choose the plan that fits your needs.">
+  <div class="container">
+    <h1 class="section-heading" style="text-align: center;">Simple, Transparent Pricing</h1>
+    <p style="text-align: center; color: var(--color-text-muted); margin-bottom: var(--space-xl); max-width: 36rem; margin-left: auto; margin-right: auto;">No hidden fees. No long-term contracts. Just reliable bookkeeping at a fair price.</p>
+
+    <div class="card-grid">
+      <div class="card pricing-card">
+        <h3>Starter</h3>
+        <div class="price">$250<span style="font-size: 1rem; font-weight: 400; color: var(--color-text-muted);">/mo</span></div>
+        <ul>
+          <li>Up to 100 transactions/month</li>
+          <li>Monthly reconciliation</li>
+          <li>Profit &amp; loss statement</li>
+          <li>Email support</li>
+        </ul>
+        <a href="/contact" class="btn btn-primary">Get Started</a>
+      </div>
+
+      <div class="card pricing-card popular" style="border-color: var(--color-primary);">
+        <h3>Growth</h3>
+        <div class="price">$500<span style="font-size: 1rem; font-weight: 400; color: var(--color-text-muted);">/mo</span></div>
+        <ul>
+          <li>Up to 300 transactions/month</li>
+          <li>Monthly reconciliation</li>
+          <li>Full financial statements</li>
+          <li>Accounts payable &amp; receivable</li>
+          <li>Priority email &amp; phone support</li>
+        </ul>
+        <a href="/contact" class="btn btn-primary">Get Started</a>
+      </div>
+
+      <div class="card pricing-card">
+        <h3>Premium</h3>
+        <div class="price">$900<span style="font-size: 1rem; font-weight: 400; color: var(--color-text-muted);">/mo</span></div>
+        <ul>
+          <li>Unlimited transactions</li>
+          <li>Weekly reconciliation</li>
+          <li>Full financial statements</li>
+          <li>Payroll support</li>
+          <li>Tax preparation support</li>
+          <li>Dedicated bookkeeper</li>
+        </ul>
+        <a href="/contact" class="btn btn-primary">Get Started</a>
+      </div>
+    </div>
+
+    <div style="text-align: center; margin-top: var(--space-xl);">
+      <p style="color: var(--color-text-muted);">Need something custom? <a href="/contact">Contact us</a> for a tailored quote.</p>
+    </div>
+  </div>
+</Base>
