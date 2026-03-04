@@ -6,7 +6,7 @@ interface Props {
   canonicalUrl?: string;
 }
 
-const siteName = "Summit Ledger Co.";
+const siteName = "Summit Ledger Books";
 const defaultDescription = "Professional bookkeeping services for small businesses. Accurate records, stress-free finances.";
 
 const {
@@ -26,12 +26,20 @@ const canonical = canonicalUrl || new URL(Astro.url.pathname, Astro.site).href;
 <meta name="description" content={description} />
 <link rel="canonical" href={canonical} />
 
+<!-- Favicons -->
+<link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
+<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png" />
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+
 <!-- Open Graph -->
 <meta property="og:title" content={pageTitle} />
 <meta property="og:description" content={description} />
 <meta property="og:type" content={ogType} />
 <meta property="og:url" content={canonical} />
 <meta property="og:site_name" content={siteName} />
+<meta property="og:image" content="/images/logo.png" />
 
 <!-- RSS -->
 <link rel="alternate" type="application/rss+xml" title={siteName} href="/rss.xml" />

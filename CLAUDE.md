@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-Summit Ledger Co. — a bookkeeping business website built with **Astro 5** and deployed to **Netlify**. Static site (no SSR). Site URL: `https://summitledger.co`.
+Summit Ledger Books — a bookkeeping business website built with **Astro 5** and deployed to **Netlify**. Static site (no SSR). Site URL: `https://summitledgerbooks.com`.
 
 ## Commands
 

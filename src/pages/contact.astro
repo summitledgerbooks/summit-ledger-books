@@ -2,10 +2,18 @@
 import Base from "../layouts/Base.astro";
 ---
 
-<Base title="Contact" description="Get in touch with Summit Ledger Co. for a free bookkeeping consultation.">
+<Base title="Contact" description="Get in touch with Summit Ledger Books for a free bookkeeping consultation.">
   <div class="container">
-    <h1 class="section-heading">Contact Us</h1>
-    <p style="color: var(--color-text-muted); margin-bottom: var(--space-xl); max-width: 42rem;">Have questions or ready to get started? Fill out the form below and we'll get back to you within one business day.</p>
+    <h1 class="section-heading">Book a Free Consultation</h1>
+    <p style="color: var(--color-text-muted); margin-bottom: var(--space-xl); max-width: 42rem;">Pick a time that works for you and we'll talk through your bookkeeping needs — no obligation.</p>
+
+    <div class="calendly-inline-widget" data-url="https://calendly.com/summit-ledger-books/consultation" style="min-width: 320px; height: 700px;"></div>
+    <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+
+    <hr style="border: none; border-top: 1px solid var(--color-border); margin: var(--space-xl) 0;" />
+
+    <h2 style="font-size: 1.25rem; margin-bottom: var(--space-md);">Or send a message</h2>
+    <p style="color: var(--color-text-muted); margin-bottom: var(--space-lg); max-width: 42rem;">Prefer to reach out by form? We'll get back to you within one business day.</p>
 
     <form name="contact" method="POST" data-netlify="true" style="max-width: 36rem;">
       <input type="hidden" name="form-name" value="contact" />

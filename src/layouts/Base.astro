@@ -20,7 +20,9 @@ const pathname = Astro.url.pathname;
   <body>
     <header class="site-header">
       <div class="container">
-        <a href="/" class="logo">Summit Ledger Co.</a>
+        <a href="/" class="logo">
+          <img src="/images/logo.png" alt="Summit Ledger Books" />
+        </a>
         <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">&#9776;</button>
         <ul class="site-nav">
           <li><a href="/" aria-current={pathname === "/" ? "page" : undefined}>Home</a></li>
@@ -39,7 +41,7 @@ const pathname = Astro.url.pathname;
 
     <footer class="site-footer">
       <div class="container">
-        <p>&copy; {new Date().getFullYear()} Summit Ledger Co. All rights reserved.</p>
+        <p>&copy; {new Date().getFullYear()} Summit Ledger Books. All rights reserved.</p>
       </div>
     </footer>
 

@@ -8,7 +8,7 @@ export async function GET(context: APIContext) {
     .sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
 
   return rss({
-    title: "Summit Ledger Co.",
+    title: "Summit Ledger Books",
     description:
       "Bookkeeping tips, tax advice, and small business financial insights.",
     site: context.site!,
