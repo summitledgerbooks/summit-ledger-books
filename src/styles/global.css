@@ -300,6 +300,8 @@ main {
 /* ── Pricing ── */
 .pricing-card {
   text-align: center;
+  display: flex;
+  flex-direction: column;
 }
 .pricing-card .price {
   font-size: 2rem;
@@ -310,13 +312,17 @@ main {
 .pricing-card ul {
   list-style: none;
   margin-bottom: var(--space-lg);
+  flex: 1;
 }
 .pricing-card li {
   padding: var(--space-xs) 0;
   color: var(--color-text-muted);
   font-size: 0.9375rem;
 }
-.pricing-card .popular {
+.pricing-card .btn {
+  margin-top: auto;
+}
+.popular {
   border-color: var(--color-primary);
   box-shadow: 0 0 0 2px var(--color-primary);
 }
