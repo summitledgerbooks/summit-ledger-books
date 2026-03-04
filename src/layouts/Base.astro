@@ -29,6 +29,7 @@ const pathname = Astro.url.pathname;
           <li><a href="/about" aria-current={pathname === "/about/" ? "page" : undefined}>About</a></li>
           <li><a href="/services" aria-current={pathname === "/services/" ? "page" : undefined}>Services</a></li>
           <li><a href="/pricing" aria-current={pathname === "/pricing/" ? "page" : undefined}>Pricing</a></li>
+          <li><a href="/faq" aria-current={pathname === "/faq/" ? "page" : undefined}>FAQ</a></li>
           <li><a href="/blog" aria-current={pathname.startsWith("/blog") ? "page" : undefined}>Blog</a></li>
           <li><a href="/contact" aria-current={pathname === "/contact/" ? "page" : undefined}>Contact</a></li>
         </ul>
