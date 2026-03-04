@@ -97,7 +97,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 5rem;
+  height: 6rem;
 }
 .site-header .logo {
   font-weight: 700;
@@ -107,7 +107,7 @@ img {
   align-items: center;
 }
 .site-header .logo img {
-  height: 3.75rem;
+  height: 5rem;
   width: auto;
 }
 .site-header .logo:hover {
