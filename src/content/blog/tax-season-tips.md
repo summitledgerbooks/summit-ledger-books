@@ -18,11 +18,11 @@ Mixing business and personal spending is one of the most common bookkeeping mist
 
 ## 3. Track Every Deduction
 
-Business meals, mileage, home office expenses, software subscriptions — these all add up. Keep receipts and records throughout the year so you don't miss deductions you're entitled to.
+Business meals, mileage, home office expenses, software subscriptions. They all add up. Keep receipts and records throughout the year so you don't miss deductions you're entitled to.
 
 ## 4. Set Aside Money for Taxes
 
-A common cash flow crunch happens when the tax bill arrives. Set aside a percentage of each payment you receive — typically 25-30% for self-employed individuals — in a separate savings account.
+A common cash flow crunch happens when the tax bill arrives. Set aside a percentage of each payment you receive (typically 25-30% for self-employed individuals) in a separate savings account.
 
 ## 5. Work with a Professional
 

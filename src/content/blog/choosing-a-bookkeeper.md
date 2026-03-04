@@ -14,7 +14,7 @@ A bookkeeper who has worked with businesses like yours will already understand y
 
 ## Check Their Tools and Systems
 
-Modern bookkeeping runs on software like QuickBooks, Xero, or FreshBooks. Make sure your bookkeeper is proficient with the tools you use — or is willing to work within your preferred platform.
+Modern bookkeeping runs on software like QuickBooks, Xero, or FreshBooks. Make sure your bookkeeper is proficient with the tools you use, or willing to work within your preferred platform.
 
 ## Ask About Communication
 
@@ -30,6 +30,6 @@ Ask for references from current or past clients. A reputable bookkeeper will be 
 
 ## Trust Your Gut
 
-At the end of the day, you're trusting someone with your business's financial records. Choose someone you feel comfortable with — someone who communicates clearly and makes you feel confident about your finances.
+At the end of the day, you're trusting someone with your business's financial records. Choose someone you feel comfortable with: someone who communicates clearly and makes you feel confident about your finances.
 
 Looking for a bookkeeper you can trust? [Let's talk](/contact).

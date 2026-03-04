@@ -2,54 +2,90 @@
 import Base from "../layouts/Base.astro";
 ---
 
-<Base title="Pricing" description="Transparent, affordable bookkeeping pricing for small businesses. Choose the plan that fits your needs.">
+<Base title="Pricing" description="Transparent real estate bookkeeping pricing. Monthly plans starting at $500/month. Catch-up bookkeeping quoted by scope. No hidden fees, no long-term contracts.">
   <div class="container">
     <h1 class="section-heading" style="text-align: center;">Simple, Transparent Pricing</h1>
-    <p style="text-align: center; color: var(--color-text-muted); margin-bottom: var(--space-xl); max-width: 36rem; margin-left: auto; margin-right: auto;">No hidden fees. No long-term contracts. Just reliable bookkeeping at a fair price.</p>
+    <p style="text-align: center; color: var(--color-text-muted); margin-bottom: var(--space-xl); max-width: 36rem; margin-left: auto; margin-right: auto;">No hidden fees. No long-term contracts. Just reliable real estate bookkeeping at a fair price.</p>
 
+    <!-- Monthly Plans -->
+    <h2 class="section-heading" style="text-align: center; font-size: 1.25rem; margin-bottom: var(--space-lg);">Monthly Bookkeeping</h2>
     <div class="card-grid">
       <div class="card pricing-card">
         <h3>Starter</h3>
-        <div class="price">$250<span style="font-size: 1rem; font-weight: 400; color: var(--color-text-muted);">/mo</span></div>
+        <div class="price">$500<span style="font-size: 1rem; font-weight: 400; color: var(--color-text-muted);">/mo</span></div>
+        <p style="font-size: 0.8125rem; color: var(--color-text-muted); margin-bottom: var(--space-md);">Starting at</p>
         <ul>
-          <li>Up to 100 transactions/month</li>
-          <li>Monthly reconciliation</li>
+          <li>Monthly transaction categorization</li>
+          <li>Bank &amp; credit card reconciliation</li>
           <li>Profit &amp; loss statement</li>
+          <li>Balance sheet</li>
           <li>Email support</li>
         </ul>
-        <a href="/contact" class="btn btn-primary">Get Started</a>
+        <a href="https://calendly.com/summit-ledger-books/consultation" class="btn btn-primary">Get Started</a>
       </div>
 
-      <div class="card pricing-card popular" style="border-color: var(--color-primary);">
+      <div class="card pricing-card popular">
+        <div style="font-size: 0.75rem; font-weight: 700; color: var(--color-primary); letter-spacing: 0.05em; text-transform: uppercase; margin-bottom: var(--space-sm);">Most Popular</div>
         <h3>Growth</h3>
-        <div class="price">$500<span style="font-size: 1rem; font-weight: 400; color: var(--color-text-muted);">/mo</span></div>
+        <div class="price">$750<span style="font-size: 1rem; font-weight: 400; color: var(--color-text-muted);">/mo</span></div>
+        <p style="font-size: 0.8125rem; color: var(--color-text-muted); margin-bottom: var(--space-md);">Starting at</p>
         <ul>
-          <li>Up to 300 transactions/month</li>
-          <li>Monthly reconciliation</li>
-          <li>Full financial statements</li>
+          <li>Everything in Starter</li>
+          <li>Multi-property or multi-entity reporting</li>
           <li>Accounts payable &amp; receivable</li>
-          <li>Priority email &amp; phone support</li>
+          <li>Rent roll reconciliation</li>
+          <li>Tax prep support (Schedule E ready)</li>
         </ul>
-        <a href="/contact" class="btn btn-primary">Get Started</a>
+        <a href="https://calendly.com/summit-ledger-books/consultation" class="btn btn-primary">Get Started</a>
       </div>
 
       <div class="card pricing-card">
         <h3>Premium</h3>
-        <div class="price">$900<span style="font-size: 1rem; font-weight: 400; color: var(--color-text-muted);">/mo</span></div>
+        <div class="price">$1,200<span style="font-size: 1rem; font-weight: 400; color: var(--color-text-muted);">/mo</span></div>
+        <p style="font-size: 0.8125rem; color: var(--color-text-muted); margin-bottom: var(--space-md);">Starting at</p>
         <ul>
-          <li>Unlimited transactions</li>
-          <li>Weekly reconciliation</li>
-          <li>Full financial statements</li>
+          <li>Everything in Growth</li>
+          <li>Deeper monthly financial review</li>
+          <li>15-minute check-in call each month</li>
+          <li>Priority support (same-day response)</li>
+          <li>Depreciation schedule maintenance</li>
           <li>Payroll support</li>
-          <li>Tax preparation support</li>
-          <li>Dedicated bookkeeper</li>
         </ul>
-        <a href="/contact" class="btn btn-primary">Get Started</a>
+        <a href="https://calendly.com/summit-ledger-books/consultation" class="btn btn-primary">Get Started</a>
       </div>
     </div>
 
+    <!-- Catch-Up Pricing -->
+    <h2 class="section-heading" style="text-align: center; font-size: 1.25rem; margin-top: var(--space-xl); margin-bottom: var(--space-lg);">Catch-Up Bookkeeping</h2>
+    <p style="text-align: center; color: var(--color-text-muted); margin-bottom: var(--space-lg); max-width: 36rem; margin-left: auto; margin-right: auto;">Behind on your books? Pricing is based on how far back your records need to go and the volume of transactions involved.</p>
+
+    <div class="card-grid" style="grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));">
+      <div class="card pricing-card">
+        <h3>1 to 2 Months</h3>
+        <div class="price" style="font-size: 1.5rem;">$600 &ndash; $1,200</div>
+        <p style="color: var(--color-text-muted); font-size: 0.9375rem; margin-top: var(--space-sm);">One-time project fee</p>
+      </div>
+      <div class="card pricing-card popular">
+        <h3>3 to 6 Months</h3>
+        <div class="price" style="font-size: 1.5rem;">$1,500 &ndash; $2,500</div>
+        <p style="color: var(--color-text-muted); font-size: 0.9375rem; margin-top: var(--space-sm);">One-time project fee</p>
+      </div>
+      <div class="card pricing-card">
+        <h3>6 to 12+ Months</h3>
+        <div class="price" style="font-size: 1.5rem;">$3,000+</div>
+        <p style="color: var(--color-text-muted); font-size: 0.9375rem; margin-top: var(--space-sm);">Custom quote after review</p>
+      </div>
+    </div>
+
+    <!-- QuickBooks note -->
+    <div class="cpa-collab" style="margin-top: var(--space-xl); max-width: 100%;">
+      <p style="font-weight: 600; color: var(--color-navy); margin-bottom: var(--space-sm);">A note on QuickBooks</p>
+      <p style="color: var(--color-text-muted); font-size: 0.9375rem; line-height: 1.7;">QuickBooks subscription fees are billed separately and not included in the pricing above. If you need a QuickBooks subscription, I can help you enroll through my ProAdvisor access, which may qualify you for preferred pricing options.</p>
+    </div>
+
     <div style="text-align: center; margin-top: var(--space-xl);">
-      <p style="color: var(--color-text-muted);">Need something custom? <a href="/contact">Contact us</a> for a tailored quote.</p>
+      <p style="color: var(--color-text-muted); margin-bottom: var(--space-md);">Not sure which plan fits your portfolio? Let's talk through it.</p>
+      <a href="https://calendly.com/summit-ledger-books/consultation" class="btn btn-primary">Book a Free Call</a>
     </div>
   </div>
 </Base>

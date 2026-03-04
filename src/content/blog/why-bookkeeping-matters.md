@@ -10,7 +10,7 @@ Running a small business means wearing many hats. Between sales, operations, and
 
 ## Cash Flow Visibility
 
-Without accurate records, you're flying blind. Good bookkeeping gives you a clear picture of how money moves in and out of your business. You'll know exactly how much you have, how much you're owed, and how much you owe — at any given moment.
+Without accurate records, you're flying blind. Good bookkeeping gives you a clear picture of how money moves in and out of your business. You'll know exactly how much you have, how much you're owed, and how much you owe, at any given moment.
 
 ## Tax Season Without the Panic
 
@@ -26,6 +26,6 @@ Errors in your financial records can lead to missed payments, overdraft fees, in
 
 ## The Bottom Line
 
-Bookkeeping isn't just a chore — it's a tool for growth. Whether you do it yourself or bring in a professional, keeping your books in order is one of the best investments you can make in your business.
+Bookkeeping isn't just a chore; it's a tool for growth. Whether you do it yourself or bring in a professional, keeping your books in order is one of the best investments you can make in your business.
 
 Ready to take bookkeeping off your plate? [Contact us](/contact) for a free consultation.
