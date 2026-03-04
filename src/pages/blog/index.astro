@@ -5,31 +5,56 @@ import { getCollection } from "astro:content";
 const posts = (await getCollection("blog"))
   .filter((post) => !post.data.draft)
   .sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
+
+const [featured, ...rest] = posts;
 ---
 
 <Base title="Blog" description="Real estate bookkeeping tips, rental property tax advice, and financial insights for investors, property managers, and developers from Summit Ledger Books.">
   <div class="container">
     <h1 class="section-heading">Blog</h1>
+    <p style="color: var(--color-text-muted); margin-bottom: var(--space-xl); max-width: 42rem;">Practical guidance on real estate bookkeeping, taxes, and keeping your portfolio finances in order.</p>
 
-    <div class="post-list">
-      {posts.map((post) => (
-        <article class="post-card">
-          <h2><a href={`/blog/${post.id}`}>{post.data.title}</a></h2>
-          <div class="post-meta">
-            <time datetime={post.data.date.toISOString()}>
-              {post.data.date.toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" })}
-            </time>
-          </div>
-          {post.data.tags.length > 0 && (
+    {featured && (
+      <a href={`/blog/${featured.id}`} class="featured-post">
+        <div class="featured-label">Latest</div>
+        <h2 class="featured-post-title">{featured.data.title}</h2>
+        <p class="featured-post-desc">{featured.data.description}</p>
+        <div class="featured-post-meta">
+          <time datetime={featured.data.date.toISOString()}>
+            {featured.data.date.toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" })}
+          </time>
+          {featured.data.tags.length > 0 && (
             <div class="tag-list">
-              {post.data.tags.map((tag) => (
+              {featured.data.tags.map((tag) => (
                 <span class="tag">{tag}</span>
               ))}
             </div>
           )}
-          <p>{post.data.description}</p>
-        </article>
-      ))}
-    </div>
+        </div>
+      </a>
+    )}
+
+    {rest.length > 0 && (
+      <div class="blog-grid">
+        {rest.map((post) => (
+          <a href={`/blog/${post.id}`} class="blog-card">
+            <h2 class="blog-card-title">{post.data.title}</h2>
+            <p class="blog-card-desc">{post.data.description}</p>
+            <div class="blog-card-meta">
+              <time datetime={post.data.date.toISOString()}>
+                {post.data.date.toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" })}
+              </time>
+              {post.data.tags.length > 0 && (
+                <div class="tag-list">
+                  {post.data.tags.map((tag) => (
+                    <span class="tag">{tag}</span>
+                  ))}
+                </div>
+              )}
+            </div>
+          </a>
+        ))}
+      </div>
+    )}
   </div>
 </Base>
