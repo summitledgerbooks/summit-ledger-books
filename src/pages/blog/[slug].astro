@@ -30,10 +30,10 @@ const articleSchema = {
     "url": "https://summitledgerbooks.com",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://summitledgerbooks.com/images/logo.png"
+      "url": "https://summitledgerbooks.com/images/logos/logo.png"
     }
   },
-  "image": post.data.ogImage ? `https://summitledgerbooks.com${post.data.ogImage}` : "https://summitledgerbooks.com/images/og-image.jpg",
+  "image": post.data.ogImage ? `https://summitledgerbooks.com${post.data.ogImage}` : "https://summitledgerbooks.com/images/og-images/og-image.jpg",
   "url": `https://summitledgerbooks.com/blog/${post.id}`,
   "mainEntityOfPage": {
     "@type": "WebPage",

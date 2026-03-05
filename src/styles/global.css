@@ -342,7 +342,7 @@ main {
 /* ── Hero ── */
 .hero {
   position: relative;
-  background-image: url('/images/background-banner.jpg');
+  background-image: url('/images/og-images/templates/backgrounds/background-banner.jpg');
   background-size: cover;
   background-position: center 20%;
   text-align: center;
