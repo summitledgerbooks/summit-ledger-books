@@ -24,6 +24,10 @@ const path = pathname === "/" ? "/" : pathname.replace(/\/$/, "");
 <html lang="en">
   <head>
     <SEO title={title} description={description} ogType={ogType} />
+    <link rel="preconnect" href="https://calendly.com" />
+    <link rel="preconnect" href="https://assets.calendly.com" />
+    <link rel="dns-prefetch" href="https://calendly.com" />
+    <link rel="dns-prefetch" href="https://assets.calendly.com" />
     <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-ERKMFNNSXR" is:inline></script>
     <script is:inline>
