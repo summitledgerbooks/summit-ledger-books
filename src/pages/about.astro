@@ -1,11 +1,13 @@
 ---
+import { Image } from "astro:assets";
 import Base from "../layouts/Base.astro";
+import websiteHero from "../assets/images/website-hero.png";
 ---
 
 <Base title="About" description="Summit Ledger Books specializes in bookkeeping for real estate investors, property managers, and developers. Learn about our mission and values.">
   <div class="container">
     <div class="about-hero">
-      <img src="/images/website-hero.png" alt="Austin, founder of Summit Ledger Books" class="about-hero-img" />
+      <Image src={websiteHero} alt="Austin, founder of Summit Ledger Books" class="about-hero-img" />
     </div>
     <h1 class="section-heading">About Summit Ledger Books</h1>
 

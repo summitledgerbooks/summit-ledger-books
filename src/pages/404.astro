@@ -1,0 +1,17 @@
+---
+import Base from "../layouts/Base.astro";
+---
+
+<Base title="Page Not Found" description="The page you're looking for doesn't exist.">
+  <div class="container" style="text-align: center; padding: var(--space-xl) 0 calc(var(--space-xl) * 2);">
+    <div class="not-found-icon">404</div>
+    <h1 class="section-heading">Page not found.</h1>
+    <p style="color: var(--color-text-muted); max-width: 32rem; margin: 0 auto var(--space-xl);">
+      The page you're looking for doesn't exist or may have moved. Head back home or book a call if you have questions.
+    </p>
+    <div style="display: flex; gap: var(--space-md); justify-content: center; flex-wrap: wrap;">
+      <a href="/" class="btn btn-primary">Go Home</a>
+      <a href="https://calendly.com/summit-ledger-books/consultation" class="btn btn-outline">Book a Free Call</a>
+    </div>
+  </div>
+</Base>

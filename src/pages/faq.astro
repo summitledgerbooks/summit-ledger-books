@@ -1,5 +1,108 @@
 ---
 import Base from "../layouts/Base.astro";
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Are you a CPA?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. We're specialized bookkeepers, not certified public accountants. We handle the day-to-day recordkeeping, reconciliations, and financial reporting for your portfolio. We work alongside your CPA and handle everything they need from a bookkeeping standpoint, but we don't offer tax advice or file returns. If you need a CPA referral, we're happy to help."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are you remote? Do I need to be local?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We work with clients remotely. Everything runs through QuickBooks Online, secure document sharing, and email or video calls as needed. You don't need to be in a specific city or state to work with us."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you require a long-term contract?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. We don't lock clients into long-term contracts. Monthly bookkeeping is billed month to month. We keep clients by doing good work, not by making it hard to leave. That said, most clients stay because having clean, consistent books is something they quickly don't want to give up."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How does onboarding work?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We start with a free consultation to understand your portfolio structure, entity setup, and the current state of your books. From there, we connect your accounts in QuickBooks Online, set up or clean up your chart of accounts, and establish a clear baseline. If your books are behind, we work through the backlog first before moving into the regular monthly rhythm. Most clients are fully set up within two weeks."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can you handle multiple LLCs or entities?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Managing multiple entities is one of the most common situations we work with. We set up separate books for each LLC or entity, track income and expenses at the property and entity level, and deliver reporting that shows you both the individual and the combined picture. If you're structured across multiple entities, that's exactly the kind of complexity we're built for."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you work with short-term rentals?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Short-term rentals through Airbnb, VRBO, or direct booking come with their own bookkeeping needs: platform payouts, cleaning fees, occupancy taxes, and fluctuating income that has to be tracked carefully. We handle the categorization and reconciliation for short-term rental portfolios the same way we do for long-term rentals, just with the right accounts and reporting structure for how that income flows."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How is pricing determined?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Monthly bookkeeping is priced based on the number of properties or entities you have, the volume of transactions, and the complexity of your books. Plans start at $500/month. If you're not sure which tier fits, we'll talk through it on the consultation call and give you a clear number before anything starts."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What affects my monthly cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The main factors are transaction volume, number of bank and credit card accounts, how many properties or entities we're tracking, and whether you need extras like accounts payable and receivable, rent roll reconciliation, or payroll support. The more complexity involved, the higher the tier. There are no surprise fees once your plan is set."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you work with my CPA?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Coordinating with your CPA is a core part of what we do. We deliver clean, reconciled books organized by property and entity, prepare supporting schedules like depreciation and entity-level profit and loss statements, and communicate directly with your CPA during tax season. Our job is to make their job easier."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you handle payroll?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Payroll support is included in the Premium plan and available as an add-on for Growth clients. We help property management companies and development firms process payroll, track hours, and make sure payroll taxes are calculated correctly. We don't run payroll software independently; we work within QuickBooks Online or alongside your existing payroll provider."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What if I use property management software?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "That's common. Software like AppFolio, Buildium, or Rent Manager handles tenant-facing tasks well, but it doesn't replace clean bookkeeping in QuickBooks. We sync and reconcile data between your property management platform and QuickBooks so your financial records stay accurate and audit-ready. Let us know what you're using and we'll work out the best approach."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you do tax filing?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. We prepare and organize your books so your CPA has everything they need, but we don't prepare or file tax returns. For tax filing, you need a licensed CPA or enrolled agent. If you don't have one, we're happy to point you in the right direction."
+      }
+    }
+  ]
+};
 ---
 
 <Base title="FAQ" description="Common questions about Summit Ledger Books real estate bookkeeping services. Pricing, onboarding, multiple LLCs, short-term rentals, payroll, tax filing, and CPA coordination.">
@@ -76,4 +179,6 @@ import Base from "../layouts/Base.astro";
       <a href="https://calendly.com/summit-ledger-books/consultation" class="btn btn-primary">Book a Free Call</a>
     </div>
   </div>
+
+  <script is:inline type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
 </Base>
