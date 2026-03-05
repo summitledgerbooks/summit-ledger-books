@@ -501,26 +501,24 @@ main {
 
 /* ── About ── */
 .about-hero {
-  display: flex;
-  justify-content: center;
   margin-top: var(--space-xl);
   margin-bottom: var(--space-xl);
 }
 .about-hero-img {
-  width: 18rem !important;
-  max-width: 18rem !important;
-  height: 18rem;
+  width: 24rem !important;
+  max-width: 24rem !important;
+  height: 24rem;
   object-fit: cover;
-  object-position: center 15%;
+  object-position: center 10%;
   border-radius: 50%;
   display: block;
   box-shadow: 0 4px 24px rgba(0, 0, 0, 0.12);
 }
 @media (max-width: 48rem) {
   .about-hero-img {
-    width: 14rem !important;
-    max-width: 14rem !important;
-    height: 14rem;
+    width: 18rem !important;
+    max-width: 18rem !important;
+    height: 18rem;
   }
 }
 
