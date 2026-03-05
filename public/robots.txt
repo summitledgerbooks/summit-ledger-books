@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://summitledgerbooks.com/sitemap-index.xml

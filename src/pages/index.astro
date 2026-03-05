@@ -1,5 +1,24 @@
 ---
 import Base from "../layouts/Base.astro";
+
+const localBusinessSchema = {
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "Summit Ledger Books",
+  "description": "Professional bookkeeping for real estate investors, property managers, and developers. We track rental income, property expenses, and portfolio performance across every entity and property you own.",
+  "url": "https://summitledgerbooks.com",
+  "telephone": "+13854502276",
+  "email": "austin@summitledgerbooks.com",
+  "areaServed": {
+    "@type": "Country",
+    "name": "United States"
+  },
+  "serviceType": "Bookkeeping",
+  "priceRange": "$$",
+  "sameAs": [
+    "https://www.linkedin.com/in/summitledgerbooks/"
+  ]
+};
 ---
 
 <Base description="Real estate bookkeeping for investors, property managers, and developers. Books closed by the 10th, every property, every entity, every month. Summit Ledger Books.">
@@ -192,4 +211,6 @@ import Base from "../layouts/Base.astro";
     <p style="color: var(--color-text-muted); margin-bottom: var(--space-lg);">Let's talk about how Summit Ledger Books can help your portfolio run more efficiently.</p>
     <a href="https://calendly.com/summit-ledger-books/consultation" class="btn btn-primary">Book a Free Call</a>
   </section>
+
+  <script is:inline type="application/ld+json" set:html={JSON.stringify(localBusinessSchema)} />
 </Base>
