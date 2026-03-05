@@ -97,21 +97,34 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 6rem;
+  height: 5rem;
 }
 .site-header .logo {
-  font-weight: 700;
-  font-size: 1.125rem;
-  color: var(--color-navy);
   display: flex;
   align-items: center;
+  gap: 0.625rem;
+  text-decoration: none;
 }
 .site-header .logo img {
-  height: 5rem;
+  height: 3rem;
   width: auto;
 }
 .site-header .logo:hover {
   text-decoration: none;
+}
+.logo-text {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--color-navy);
+  line-height: 1.1;
+  display: flex;
+  flex-direction: column;
+}
+.logo-text-sub {
+  font-size: 0.8125rem;
+  font-weight: 500;
+  color: var(--color-primary);
+  letter-spacing: 0.04em;
 }
 
 /* Nav */
@@ -194,7 +207,7 @@ img {
 
 .footer-grid {
   display: grid;
-  grid-template-columns: 1.5fr 1fr 1fr;
+  grid-template-columns: 2.5fr 1fr 1fr;
   gap: var(--space-xl);
   margin-bottom: var(--space-lg);
 }
@@ -207,15 +220,15 @@ img {
 }
 
 .footer-brand .logo img {
-  height: 2.5rem;
+  height: 4rem;
   margin-bottom: var(--space-sm);
 }
 
 .footer-tagline {
   color: var(--color-text-muted);
-  font-size: 0.875rem;
+  font-size: 1rem;
   line-height: 1.5;
-  max-width: 18rem;
+  max-width: 24rem;
 }
 
 .footer-heading {
@@ -311,11 +324,11 @@ img {
 
 .badge-row--footer {
   margin-top: var(--space-md);
-  gap: var(--space-sm);
+  gap: var(--space-md);
 }
 
 .badge-row--footer .badge-img {
-  height: 3.5rem;
+  height: 5rem;
 }
 
 /* ── Main content ── */
