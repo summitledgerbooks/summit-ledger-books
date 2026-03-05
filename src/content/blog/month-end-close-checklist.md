@@ -4,6 +4,7 @@ description: "Closing your books at the end of each month keeps your financials 
 date: 2026-03-02
 tags: ["real estate", "bookkeeping", "rental properties", "tips"]
 draft: false
+ogImage: "/images/og-images/the-real-estate-investors-month-end-close.png"
 ---
 
 Month-end close sounds like an accounting term reserved for corporations with finance departments. But for real estate investors, it's just a structured habit: a set of steps you (or your bookkeeper) complete each month to confirm that your books are accurate, complete, and ready to use.

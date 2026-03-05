@@ -4,6 +4,7 @@ description: "A well-structured chart of accounts is the foundation of clean ren
 date: 2026-01-14
 tags: ["real estate", "bookkeeping", "QuickBooks"]
 draft: false
+ogImage: "/images/og-images/most-rental-property-books-are-set-up-wrong.png"
 ---
 
 Most real estate investors inherit a generic QuickBooks setup or piece one together over time. The result is a chart of accounts that sort of works until tax season, when the CPA has to spend an extra hour figuring out what half the categories mean.

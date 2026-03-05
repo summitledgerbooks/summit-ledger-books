@@ -13,9 +13,10 @@ interface Props {
   title?: string;
   description?: string;
   ogType?: string;
+  ogImage?: string;
 }
 
-const { title, description, ogType } = Astro.props;
+const { title, description, ogType, ogImage } = Astro.props;
 const pathname = Astro.url.pathname;
 const path = pathname === "/" ? "/" : pathname.replace(/\/$/, "");
 ---
@@ -23,7 +24,7 @@ const path = pathname === "/" ? "/" : pathname.replace(/\/$/, "");
 <!doctype html>
 <html lang="en">
   <head>
-    <SEO title={title} description={description} ogType={ogType} />
+    <SEO title={title} description={description} ogType={ogType} ogImage={ogImage} />
     <link rel="preconnect" href="https://calendly.com" />
     <link rel="preconnect" href="https://assets.calendly.com" />
     <link rel="dns-prefetch" href="https://calendly.com" />

@@ -4,6 +4,7 @@ description: "A Profit and Loss statement tells you whether your rental property
 date: 2026-01-26
 tags: ["real estate", "bookkeeping", "rental properties", "reporting"]
 draft: false
+ogImage: "/images/og-images/bookkeeping-is-not-just-for-taxes.png"
 ---
 
 Most real estate investors know they're supposed to look at a Profit and Loss statement, but fewer actually understand what they're reading. The P&L is one of the most useful reports in your bookkeeping software, when it's set up correctly and you know what each line means.

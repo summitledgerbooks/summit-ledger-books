@@ -4,20 +4,24 @@ interface Props {
   description?: string;
   ogType?: string;
   canonicalUrl?: string;
+  ogImage?: string;
 }
 
 const siteName = "Summit Ledger Books";
 const defaultDescription = "Professional bookkeeping for real estate investors, property managers, and developers. We track rental income, property expenses, and portfolio performance across every entity and property you own.";
+const defaultOgImage = "https://summitledgerbooks.com/images/og-image.jpg";
 
 const {
   title,
   description = defaultDescription,
   ogType = "website",
   canonicalUrl,
+  ogImage,
 } = Astro.props;
 
 const pageTitle = title ? `${title} | ${siteName}` : siteName;
 const canonical = canonicalUrl || new URL(Astro.url.pathname, Astro.site).href;
+const resolvedOgImage = ogImage ? `https://summitledgerbooks.com${ogImage}` : defaultOgImage;
 ---
 
 <meta charset="utf-8" />
@@ -39,7 +43,7 @@ const canonical = canonicalUrl || new URL(Astro.url.pathname, Astro.site).href;
 <meta property="og:type" content={ogType} />
 <meta property="og:url" content={canonical} />
 <meta property="og:site_name" content={siteName} />
-<meta property="og:image" content="https://summitledgerbooks.com/images/og-image.jpg" />
+<meta property="og:image" content={resolvedOgImage} />
 <meta property="og:image:width" content="1200" />
 <meta property="og:image:height" content="630" />
 
@@ -47,7 +51,7 @@ const canonical = canonicalUrl || new URL(Astro.url.pathname, Astro.site).href;
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content={pageTitle} />
 <meta name="twitter:description" content={description} />
-<meta name="twitter:image" content="https://summitledgerbooks.com/images/og-image.jpg" />
+<meta name="twitter:image" content={resolvedOgImage} />
 
 <!-- RSS -->
 <link rel="alternate" type="application/rss+xml" title={siteName} href="/rss.xml" />

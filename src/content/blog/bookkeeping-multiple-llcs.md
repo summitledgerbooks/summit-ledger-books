@@ -4,6 +4,7 @@ description: "Owning real estate through multiple LLCs is a smart asset protecti
 date: 2026-02-16
 tags: ["real estate", "bookkeeping", "LLCs", "entity structure"]
 draft: false
+ogImage: "/images/og-images/multiple-llcs-multiple-mistakes.png"
 ---
 
 Structuring real estate holdings across multiple LLCs is common advice from attorneys and CPAs, and for good reason. It limits liability exposure, separates risk between properties, and can offer flexibility for estate planning and financing.

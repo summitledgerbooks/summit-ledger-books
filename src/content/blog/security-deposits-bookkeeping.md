@@ -4,6 +4,7 @@ description: "Security deposits are liabilities, not income, but most landlords 
 date: 2026-01-19
 tags: ["real estate", "bookkeeping", "rental properties", "landlords"]
 draft: false
+ogImage: "/images/og-images/security-deposits-are-not-income.png"
 ---
 
 Security deposits are one of the most commonly mishandled items in rental property bookkeeping. Most landlords either record them as income when received or ignore them entirely until a tenant moves out. Both approaches are wrong, and both create problems at tax time.

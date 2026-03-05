@@ -4,6 +4,7 @@ description: "Short-term rentals have more moving parts than long-term leases: p
 date: 2026-02-02
 tags: ["real estate", "bookkeeping", "short-term rentals", "Airbnb"]
 draft: false
+ogImage: "/images/og-images/airbnb-bookkeeping-is-different.png"
 ---
 
 Short-term rental income feels simpler than it is. You list on Airbnb or VRBO, guests book, money shows up. But when you look at the actual payouts, you're dealing with nightly rates, cleaning fees, platform commissions, occupancy taxes, and wildly variable income month to month. Without a system, the books get messy fast.

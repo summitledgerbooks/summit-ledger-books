@@ -4,6 +4,7 @@ description: "A cash-out refinance on a rental property requires more documentat
 date: 2026-02-23
 tags: ["real estate", "bookkeeping", "rental properties", "financing"]
 draft: false
+ogImage: "/images/og-images/if-your-books-look-like-this-tax-season-gets-expensive.png"
 ---
 
 Cash-out refinancing is one of the most powerful tools in a real estate investor's playbook. Pull equity from an appreciated property, redeploy it into the next acquisition, and repeat. The strategy works well, until you get to underwriting and realize your books aren't in the shape the lender expects.

@@ -33,6 +33,7 @@ const articleSchema = {
       "url": "https://summitledgerbooks.com/images/logo.png"
     }
   },
+  "image": post.data.ogImage ? `https://summitledgerbooks.com${post.data.ogImage}` : "https://summitledgerbooks.com/images/og-image.jpg",
   "url": `https://summitledgerbooks.com/blog/${post.id}`,
   "mainEntityOfPage": {
     "@type": "WebPage",
@@ -41,7 +42,7 @@ const articleSchema = {
 };
 ---
 
-<Base title={post.data.title} description={post.data.description} ogType="article">
+<Base title={post.data.title} description={post.data.description} ogType="article" ogImage={post.data.ogImage}>
   <div class="article-header">
     <div class="container">
       <a href="/blog" class="article-back">&larr; Blog</a>

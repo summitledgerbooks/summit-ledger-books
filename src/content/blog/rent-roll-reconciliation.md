@@ -4,6 +4,7 @@ description: "A rent roll is more than a tenant list. It's a key financial docum
 date: 2026-02-09
 tags: ["real estate", "bookkeeping", "rental properties", "property management"]
 draft: false
+ogImage: "/images/og-images/the-one-report-every-real-estate-investor-needs.png"
 ---
 
 If you manage rental properties, you've probably heard the term rent roll. You may even have one: a spreadsheet listing your tenants and what they pay. But a rent roll used properly is more than a contact list. It's a financial document that should connect directly to your books.
