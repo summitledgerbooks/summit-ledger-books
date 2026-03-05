@@ -24,6 +24,14 @@ const path = pathname === "/" ? "/" : pathname.replace(/\/$/, "");
 <html lang="en">
   <head>
     <SEO title={title} description={description} ogType={ogType} />
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ERKMFNNSXR" is:inline></script>
+    <script is:inline>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-ERKMFNNSXR');
+    </script>
   </head>
   <body>
     <header class="site-header">
