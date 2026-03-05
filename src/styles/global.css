@@ -828,6 +828,33 @@ main {
 .article-prose {
   max-width: 42rem;
 }
+.article-related {
+  max-width: 42rem;
+  margin-top: var(--space-xl);
+  padding-top: var(--space-lg);
+  border-top: 1px solid var(--color-border);
+}
+.article-related-label {
+  font-size: 0.8125rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-sm);
+}
+.article-related-links {
+  display: flex;
+  gap: var(--space-lg);
+  flex-wrap: wrap;
+}
+.article-related-links a {
+  font-size: 0.9375rem;
+  font-weight: 500;
+  color: var(--color-primary);
+}
+.article-related-links a:hover {
+  text-decoration: underline;
+}
 .article-cta {
   max-width: 42rem;
   margin-top: var(--space-xl);
