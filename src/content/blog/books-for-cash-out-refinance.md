@@ -9,7 +9,7 @@ ogImage: "/images/og-images/if-your-books-look-like-this-tax-season-gets-expensi
 
 Cash-out refinancing is one of the most powerful tools in a real estate investor's playbook. Pull equity from an appreciated property, redeploy it into the next acquisition, and repeat. The strategy works well, until you get to underwriting and realize your books aren't in the shape the lender expects.
 
-Here's what lenders typically want to see and how to get your documentation ready before you apply.
+Our [financial reporting service](/services/financial-reporting) is built to produce the exact documents lenders ask for. Here's what they typically want to see and how to get your documentation ready before you apply.
 
 ## Two Years of Tax Returns Per Entity
 
@@ -21,7 +21,7 @@ If your entities haven't filed returns, or filed them with errors because the bo
 
 Most lenders will ask for year-to-date P&Ls for the current year alongside the tax returns. These need to be clean, organized, and match the bank statements they'll also pull.
 
-A P&L that was clearly produced in 10 minutes, with undifferentiated income, vague expense categories, and no property-level breakdown, raises questions. A well-organized P&L with consistent categories and clear income separated by property tells the underwriter the investor knows what they're doing and the numbers can be trusted.
+A P&L that was clearly produced in 10 minutes, with undifferentiated income, vague expense categories, and no property-level breakdown, raises questions. For more on what these reports should look like, see our guide on [reading a rental property P&L](/blog/reading-rental-property-pnl). A well-organized P&L with consistent categories and clear income separated by property tells the underwriter the investor knows what they're doing and the numbers can be trusted.
 
 ## Rent Rolls
 

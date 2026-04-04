@@ -13,7 +13,7 @@ But each LLC is a separate legal entity. That means separate books, separate ban
 
 ## One Set of Books Per Entity
 
-This is non-negotiable. Each LLC needs its own QuickBooks file (or at minimum, its own set of accounts in a multi-entity setup). Commingling transactions across entities (running LLC A's expenses through LLC B's account) defeats the liability protection the structure is supposed to provide and creates accounting chaos.
+This is non-negotiable. Each LLC needs its own QuickBooks file (or at minimum, its own set of accounts in a multi-entity setup). Professional [portfolio bookkeeping](/services/portfolio-bookkeeping) is built around this principle. Commingling transactions across entities (running LLC A's expenses through LLC B's account) defeats the liability protection the structure is supposed to provide and creates accounting chaos.
 
 In practice, this means:
 - Separate bank account for each LLC
@@ -35,7 +35,7 @@ Sloppy intercompany accounting is one of the most common issues we clean up when
 
 Some investors structure their portfolio with a parent LLC (holding company) that owns membership interests in multiple subsidiary LLCs. In this case, the holding company's books typically show the value of those ownership stakes, not the individual property transactions. The property-level detail lives in each subsidiary's books.
 
-If your CPA has set this up for you, make sure your bookkeeper understands the structure before touching anything. The way income and equity flow between entities affects both the financials and the tax returns.
+If your CPA has set this up for you, make sure your bookkeeper understands the structure before touching anything. The way income and equity flow between entities affects both the financials and the tax returns. We cover this in more detail in our guide on [how entity structure affects your books](/blog/entity-structure-bookkeeping).
 
 ## Reporting: The Individual vs. The Portfolio View
 

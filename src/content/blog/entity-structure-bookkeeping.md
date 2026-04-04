@@ -8,9 +8,9 @@ draft: false
 
 Most real estate investors spend a lot of time thinking about their entity structure from a legal and tax angle. Which properties go in which LLC. Whether a series LLC makes sense. How to hold a property management company separately from the properties it manages. That's all the right thinking.
 
-What gets less attention is what that structure does to your bookkeeping, and how quickly it can become a mess if you don't set it up correctly from the start.
+What gets less attention is what that structure does to your bookkeeping, and how quickly it can become a mess if you don't set it up correctly from the start. This is why [portfolio bookkeeping](/services/portfolio-bookkeeping) for multi-entity investors requires specialized setup.
 
-This post breaks down the most common multi-entity setups, what they mean for your books, and where things tend to go wrong.
+This post breaks down the most common multi-entity setups, what they mean for your books, and where things tend to go wrong. For a practical walkthrough of managing the books themselves, read our guide on [bookkeeping across multiple LLCs](/blog/bookkeeping-multiple-llcs).
 
 ---
 

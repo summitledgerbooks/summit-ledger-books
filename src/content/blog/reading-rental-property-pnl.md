@@ -9,7 +9,7 @@ ogImage: "/images/og-images/bookkeeping-is-not-just-for-taxes.png"
 
 Most real estate investors know they're supposed to look at a Profit and Loss statement, but fewer actually understand what they're reading. The P&L is one of the most useful reports in your bookkeeping software, when it's set up correctly and you know what each line means.
 
-Here's a practical guide to reading one for a rental property.
+Our [financial reporting service](/services/financial-reporting) is built around delivering property-level P&Ls like these. Here's a practical guide to reading one for a rental property.
 
 ## The Basic Structure
 
@@ -26,7 +26,7 @@ Other income lines might include:
 - **Laundry or storage income:** small but should be captured
 - **Forfeited security deposits:** income only when you keep a deposit after damages
 
-One thing to watch: if your income line is higher than expected, check whether security deposits were accidentally recorded as income. This is a common error.
+One thing to watch: if your income line is higher than expected, check whether security deposits were accidentally recorded as income. This is a common error. For a closer look at reviewing your reports each month, check out our [month-end close checklist](/blog/month-end-close-checklist).
 
 ## Expense Section
 

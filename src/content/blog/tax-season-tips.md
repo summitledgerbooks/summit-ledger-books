@@ -26,8 +26,8 @@ A common cash flow crunch happens when the tax bill arrives. Set aside a percent
 
 ## 5. Work with a Professional
 
-A bookkeeper keeps your records organized year-round, and a CPA ensures your return is filed correctly. This combination helps you minimize your tax burden and avoid surprises.
+A bookkeeper keeps your records organized year-round, and a CPA ensures your return is filed correctly. This combination helps you minimize your tax burden and avoid surprises. Our [tax preparation support](/services/tax-prep-support) service is designed to make this handoff seamless.
 
 ## Start Now
 
-The best time to prepare for tax season is today. Whether you need help catching up or want to stay organized going forward, [we're here to help](/contact).
+The best time to prepare for tax season is today. Whether you need help catching up or want to stay organized going forward, [we're here to help](/contact). See our [pricing](/pricing) for details on monthly plans.

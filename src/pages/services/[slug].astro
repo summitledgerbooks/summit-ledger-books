@@ -1,0 +1,122 @@
+---
+import Base from "../../layouts/Base.astro";
+import { getCollection, render } from "astro:content";
+
+export async function getStaticPaths() {
+  const services = await getCollection("services");
+  return services.map((service) => ({
+    params: { slug: service.id },
+    props: { service },
+  }));
+}
+
+const { service } = Astro.props;
+const { Content } = await render(service);
+
+const allPosts = await getCollection("blog", ({ data }) => !data.draft);
+const relatedPosts = service.data.relatedPosts
+  .map((slug) => allPosts.find((p) => p.id === slug))
+  .filter(Boolean);
+
+const serviceSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": service.data.title,
+  "description": service.data.description,
+  "provider": {
+    "@type": "ProfessionalService",
+    "name": "Summit Ledger Books",
+    "url": "https://summitledgerbooks.com",
+    "telephone": "+13854502276",
+    "email": "austin@summitledgerbooks.com"
+  },
+  "areaServed": {
+    "@type": "Country",
+    "name": "United States"
+  },
+  "url": `https://summitledgerbooks.com/services/${service.id}`
+};
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://summitledgerbooks.com"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Services",
+      "item": "https://summitledgerbooks.com/services"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": service.data.title
+    }
+  ]
+};
+---
+
+<Base title={service.data.title} description={service.data.description}>
+  <div class="article-header">
+    <div class="container">
+      <a href="/services" class="article-back">&larr; All Services</a>
+      <h1 class="article-title">{service.data.title}</h1>
+      <p style="color: rgba(255, 255, 255, 0.85); max-width: 42rem; font-size: 1.05rem;">{service.data.description}</p>
+    </div>
+  </div>
+
+  <div class="container">
+    {service.data.image && (
+      <div class="service-hero-image">
+        <img
+          src={service.data.image}
+          alt={service.data.imageAlt || service.data.title}
+          width="800"
+          height="450"
+          loading="eager"
+        />
+      </div>
+    )}
+
+    <div class="prose article-prose">
+      <Content />
+    </div>
+
+    {relatedPosts.length > 0 && (
+      <div class="article-related">
+        <p class="article-related-label">Related articles</p>
+        <div class="article-related-links">
+          {relatedPosts.map((post) => (
+            <a href={`/blog/${post!.id}`}>{post!.data.title} &rarr;</a>
+          ))}
+        </div>
+      </div>
+    )}
+
+    <div class="article-related" style="border-top: none; padding-top: 0;">
+      <p class="article-related-label">Explore</p>
+      <div class="article-related-links">
+        <a href="/services">All services &rarr;</a>
+        <a href="/pricing">Monthly plans and pricing &rarr;</a>
+      </div>
+    </div>
+
+    <div class="article-cta">
+      <p>Ready to get started?</p>
+      <a href="/contact" class="btn btn-primary">Book a Free Consultation</a>
+    </div>
+
+    <div class="article-footer">
+      <a href="/services">&larr; Back to all services</a>
+    </div>
+  </div>
+
+  <script is:inline type="application/ld+json" set:html={JSON.stringify(serviceSchema)} />
+  <script is:inline type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+</Base>

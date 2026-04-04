@@ -6,12 +6,25 @@ export async function getStaticPaths() {
   const posts = await getCollection("blog");
   return posts.map((post) => ({
     params: { slug: post.id },
-    props: { post },
+    props: { post, allPosts: posts },
   }));
 }
 
-const { post } = Astro.props;
+const { post, allPosts } = Astro.props;
 const { Content } = await render(post);
+
+// Find related posts by shared tags
+const currentTags = post.data.tags;
+const relatedPosts = allPosts
+  .filter((p) => p.id !== post.id && !p.data.draft)
+  .map((p) => ({
+    post: p,
+    sharedTags: p.data.tags.filter((t: string) => currentTags.includes(t)).length,
+  }))
+  .filter((p) => p.sharedTags > 0)
+  .sort((a, b) => b.sharedTags - a.sharedTags || b.post.data.date.getTime() - a.post.data.date.getTime())
+  .slice(0, 3)
+  .map((p) => p.post);
 
 const articleSchema = {
   "@context": "https://schema.org",
@@ -40,6 +53,30 @@ const articleSchema = {
     "@id": `https://summitledgerbooks.com/blog/${post.id}`
   }
 };
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://summitledgerbooks.com"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://summitledgerbooks.com/blog"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": post.data.title
+    }
+  ]
+};
 ---
 
 <Base title={post.data.title} description={post.data.description} ogType="article" ogImage={post.data.ogImage}>
@@ -67,7 +104,18 @@ const articleSchema = {
       <Content />
     </div>
 
-    <div class="article-related">
+    {relatedPosts.length > 0 && (
+      <div class="article-related">
+        <p class="article-related-label">Related posts</p>
+        <div class="article-related-links">
+          {relatedPosts.map((rp) => (
+            <a href={`/blog/${rp.id}`}>{rp.data.title} &rarr;</a>
+          ))}
+        </div>
+      </div>
+    )}
+
+    <div class="article-related" style={relatedPosts.length > 0 ? "border-top: none; padding-top: 0;" : ""}>
       <p class="article-related-label">Explore our services</p>
       <div class="article-related-links">
         <a href="/services">Real estate bookkeeping services &rarr;</a>
@@ -86,4 +134,5 @@ const articleSchema = {
   </div>
 
   <script is:inline type="application/ld+json" set:html={JSON.stringify(articleSchema)} />
+  <script is:inline type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
 </Base>

@@ -1,5 +1,11 @@
 ---
 import Base from "../layouts/Base.astro";
+import { getCollection } from "astro:content";
+
+const allPosts = await getCollection("blog", ({ data }) => !data.draft);
+const recentPosts = allPosts
+  .sort((a, b) => b.data.date.getTime() - a.data.date.getTime())
+  .slice(0, 3);
 
 const localBusinessSchema = {
   "@context": "https://schema.org",
@@ -26,7 +32,7 @@ const localBusinessSchema = {
     <div class="container">
       <h1>Bookkeeping Built for Real Estate Investors</h1>
       <p class="hero-tagline">We handle the books. You focus on the summit.</p>
-      <p>Books closed by the 10th. Every property, every entity, every month. So you show up to tax season prepared, not scrambling.</p>
+      <p>We give you property-level profit, clean entity separation, and monthly reports you can actually use to make decisions.</p>
       <a href="https://calendly.com/summit-ledger-books/consultation" class="btn btn-hero">Book a Free Call</a>
     </div>
   </section>
@@ -34,6 +40,14 @@ const localBusinessSchema = {
   <!-- Problem -->
   <section class="container section-block">
     <h2 class="section-heading" style="text-align: center;">Rental bookkeeping gets messy fast.</h2>
+    <img
+      src="/assets/real-estate-bookkeeping.jpg"
+      alt="Real estate bookkeeping services for investors and property managers"
+      width="800"
+      height="400"
+      loading="eager"
+      style="border-radius: var(--radius-md); margin-bottom: var(--space-lg); width: 100%; height: auto; object-fit: cover; max-height: 18rem;"
+    />
     <div class="two-col-section">
       <ul class="problem-list">
         <li>Personal and rental expenses mixed together</li>
@@ -58,7 +72,7 @@ const localBusinessSchema = {
           <li>Clear owner draw tracking</li>
           <li>CPA-ready reports at tax time</li>
         </ul>
-        <p class="section-prose">When your books are current and accurate, you can make confident decisions about your portfolio. You know what's performing, what isn't, and where your money is actually going.</p>
+        <p class="section-prose">When your books are current and accurate, you can make confident decisions about your portfolio. You know what's performing, what isn't, and where your money is actually going. See how our <a href="/services" style="color: var(--color-navy); text-decoration: underline;">real estate bookkeeping services</a> keep your portfolio organized.</p>
       </div>
     </div>
   </section>
@@ -67,31 +81,38 @@ const localBusinessSchema = {
   <section class="container section-block">
     <h2 class="section-heading" style="text-align: center;">What We Handle</h2>
     <div class="card-grid">
-      <div class="card">
+      <a href="/services/portfolio-bookkeeping" class="card card-link">
         <h3>Rental Property Bookkeeping</h3>
         <p>Track rental income and expenses across every property and entity. We categorize transactions, reconcile accounts, and deliver clear monthly statements for your entire portfolio.</p>
-      </div>
-      <div class="card">
+        <span class="card-arrow">Learn more &rarr;</span>
+      </a>
+      <a href="/services/catch-up-bookkeeping" class="card card-link">
         <h3>Catch-Up Bookkeeping</h3>
         <p>Behind on your property records? We'll work through your backlog, whether it's a few months or a few years, and bring everything current.</p>
-      </div>
-      <div class="card">
+        <span class="card-arrow">Learn more &rarr;</span>
+      </a>
+      <a href="/services/tax-prep-support" class="card card-link">
         <h3>Tax Preparation Support</h3>
         <p>We organize your real estate financials and work with your CPA on Schedule E filings, depreciation schedules, and entity-level reporting so tax season runs smoothly.</p>
-      </div>
-      <div class="card">
+        <span class="card-arrow">Learn more &rarr;</span>
+      </a>
+      <a href="/services/property-management-accounting" class="card card-link">
         <h3>Property Management Accounting</h3>
         <p>We track management fees, owner disbursements, and trust accounting separately so your books reflect how property management actually works. Rent roll reconciliation included.</p>
-      </div>
-      <div class="card">
+        <span class="card-arrow">Learn more &rarr;</span>
+      </a>
+      <a href="/services/development-project-tracking" class="card card-link">
         <h3>Development Project Tracking</h3>
         <p>We track hard costs, soft costs, land, and carrying costs by project. Draw schedules, construction loan reconciliation, and cost-to-complete reporting so you always know where your money is going.</p>
-      </div>
-      <div class="card">
+        <span class="card-arrow">Learn more &rarr;</span>
+      </a>
+      <a href="/services/portfolio-bookkeeping" class="card card-link">
         <h3>Multi-Entity Bookkeeping</h3>
         <p>Separate ledgers for each LLC or entity, with consolidated reporting across your entire portfolio. Whether you have two entities or twenty, we keep every set of books clean and audit-ready.</p>
-      </div>
+        <span class="card-arrow">Learn more &rarr;</span>
+      </a>
     </div>
+    <p style="text-align: center; margin-top: var(--space-lg);"><a href="/services">View all services &rarr;</a></p>
   </section>
 
   <!-- What You Get Each Month -->
@@ -154,7 +175,7 @@ const localBusinessSchema = {
   <section class="why-band">
     <div class="container">
       <h2 class="section-heading" style="text-align: center; color: var(--color-navy);">Why Summit Ledger Books</h2>
-      <p style="text-align: center; color: var(--color-text-muted); margin-bottom: var(--space-lg); max-width: 38rem; margin-left: auto; margin-right: auto;">Real estate investing is a climb. We make sure your books never slow you down.</p>
+      <p style="text-align: center; color: var(--color-text-muted); margin-bottom: var(--space-lg); max-width: 38rem; margin-left: auto; margin-right: auto;">Real estate investing is a climb. We make sure your books never slow you down. <a href="/about" style="color: var(--color-navy);">Learn more about who we are.</a></p>
       <div class="why-grid">
         <div class="why-item">
           <h3>Small firm, direct communication</h3>
@@ -207,11 +228,27 @@ const localBusinessSchema = {
     </div>
   </section>
 
+  <!-- From Our Blog -->
+  <section class="container section-block">
+    <h2 class="section-heading" style="text-align: center;">From Our Blog</h2>
+    <p style="text-align: center; color: var(--color-text-muted); margin-bottom: var(--space-lg);">Practical guidance on real estate bookkeeping, tax preparation, and portfolio management.</p>
+    <div class="card-grid">
+      {recentPosts.map((post) => (
+        <a href={`/blog/${post.id}`} class="card card-link">
+          <h3 style="font-size: 1.05rem;">{post.data.title}</h3>
+          <p>{post.data.description}</p>
+          <span class="card-arrow">Read more &rarr;</span>
+        </a>
+      ))}
+    </div>
+    <p style="text-align: center; margin-top: var(--space-lg);"><a href="/blog">View all posts &rarr;</a></p>
+  </section>
+
   <!-- Final CTA -->
   <section class="container" style="text-align: center; padding-bottom: var(--space-xl);">
     <h2 class="section-heading">Ready to get your real estate books in order?</h2>
     <p style="color: var(--color-text-muted); margin-bottom: var(--space-lg);">Let's talk about how Summit Ledger Books can help your portfolio run more efficiently.</p>
-    <a href="https://calendly.com/summit-ledger-books/consultation" class="btn btn-primary">Book a Free Call</a>
+    <a href="/contact" class="btn btn-primary">Book a Free Call</a>
   </section>
 
   <script is:inline type="application/ld+json" set:html={JSON.stringify(localBusinessSchema)} />

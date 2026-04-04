@@ -26,6 +26,6 @@ Errors in your financial records can lead to missed payments, overdraft fees, in
 
 ## The Bottom Line
 
-Bookkeeping isn't just a chore; it's a tool for growth. Whether you do it yourself or bring in a professional, keeping your books in order is one of the best investments you can make in your business.
+Bookkeeping isn't just a chore; it's a tool for growth. Whether you do it yourself or bring in a professional, keeping your books in order is one of the best investments you can make in your business. Not sure where to start? Read our guide on [how to choose the right bookkeeper](/blog/choosing-a-bookkeeper).
 
-Ready to take bookkeeping off your plate? [Contact us](/contact) for a free consultation.
+Ready to take bookkeeping off your plate? Check out our [services](/services) or [contact us](/contact) for a free consultation.

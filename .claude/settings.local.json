@@ -5,7 +5,11 @@
       "Bash(npm run:*)",
       "Bash(npx astro:*)",
       "Bash(gh repo:*)",
-      "Bash(\"/c/Program:*)"
+      "Bash(\"/c/Program:*)",
+      "Bash(head -20 /c/Users/austina/Documents/Personal/Bookkeeping/Website/src/content/blog/*.md)",
+      "Bash(grep -h \"\\\\[.*\\\\]\\(/\" \"/c/Users/austina/Documents/Personal/Bookkeeping/Website/src/content/blog\"/*.md)",
+      "Bash(grep -i \"alt\" \"/c/Users/austina/Documents/Personal/Bookkeeping/Website/src/pages\"/*.astro)",
+      "Bash(head -7 \"/c/Users/austina/Documents/Personal/Bookkeeping/Website/src/content/blog\"/*.md)"
     ],
     "additionalDirectories": [
       "c:\\Users\\austina\\.claude\\projects\\c--Users-austina-Documents-Personal-projects-Bookkeeping-Website\\memory"

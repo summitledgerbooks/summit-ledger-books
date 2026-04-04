@@ -1,5 +1,6 @@
 ---
 import { Image } from "astro:assets";
+import { getCollection } from "astro:content";
 import SEO from "../components/SEO.astro";
 import "../styles/global.css";
 import mtnLogo from "../assets/images/mtn-logo.png";
@@ -19,6 +20,9 @@ interface Props {
 const { title, description, ogType, ogImage } = Astro.props;
 const pathname = Astro.url.pathname;
 const path = pathname === "/" ? "/" : pathname.replace(/\/$/, "");
+
+const allServices = await getCollection("services");
+const sortedServices = allServices.sort((a, b) => a.data.order - b.data.order);
 ---
 
 <!doctype html>
@@ -49,7 +53,15 @@ const path = pathname === "/" ? "/" : pathname.replace(/\/$/, "");
         <ul class="site-nav">
           <li><a href="/" aria-current={path === "/" ? "page" : undefined}>Home</a></li>
           <li><a href="/about" aria-current={path === "/about" ? "page" : undefined}>About</a></li>
-          <li><a href="/services" aria-current={path === "/services" ? "page" : undefined}>Services</a></li>
+          <li class="nav-dropdown">
+            <a href="/services" aria-current={path.startsWith("/services") ? "page" : undefined}>Services <svg class="dropdown-chevron" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></a>
+            <ul class="dropdown-menu">
+              {sortedServices.map((s) => (
+                <li><a href={`/services/${s.id}`} aria-current={path === `/services/${s.id}` ? "page" : undefined}>{s.data.title}</a></li>
+              ))}
+              <li class="dropdown-divider"><a href="/services">View all services &rarr;</a></li>
+            </ul>
+          </li>
           <li><a href="/pricing" aria-current={path === "/pricing" ? "page" : undefined}>Pricing</a></li>
           <li><a href="/faq" aria-current={path === "/faq" ? "page" : undefined}>FAQ</a></li>
           <li><a href="/blog" aria-current={path.startsWith("/blog") ? "page" : undefined}>Blog</a></li>
@@ -69,7 +81,7 @@ const path = pathname === "/" ? "/" : pathname.replace(/\/$/, "");
             <a href="/" class="logo">
               <Image src={footerLogo} alt="Summit Ledger Books" />
             </a>
-            <p class="footer-tagline">Every investor is on a climb. We take the books off your back so you can reach the top.</p>
+            <p class="footer-tagline">Let me focus on the books. You focus on the summit.</p>
             <div class="badge-row badge-row--footer">
               <Image src={badgeQboLevel2} alt="QuickBooks Online Certified" class="badge-img" />
               <Image src={badgeQboPayroll} alt="QuickBooks Payroll Certified" class="badge-img" />
@@ -122,6 +134,16 @@ const path = pathname === "/" ? "/" : pathname.replace(/\/$/, "");
         toggle.addEventListener("click", () => {
           const expanded = nav.classList.toggle("open");
           toggle.setAttribute("aria-expanded", String(expanded));
+        });
+      }
+      // Mobile dropdown toggle
+      const dropdown = document.querySelector(".nav-dropdown > a");
+      if (dropdown && window.innerWidth <= 768) {
+        dropdown.addEventListener("click", (e) => {
+          if (window.innerWidth <= 768) {
+            e.preventDefault();
+            dropdown.parentElement?.classList.toggle("open");
+          }
         });
       }
     </script>

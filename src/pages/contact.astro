@@ -1,11 +1,21 @@
 ---
 import Base from "../layouts/Base.astro";
+
+const contactSchema = {
+  "@context": "https://schema.org",
+  "@type": "ContactPoint",
+  "contactType": "customer service",
+  "telephone": "+13854502276",
+  "email": "austin@summitledgerbooks.com",
+  "availableLanguage": "English",
+  "url": "https://summitledgerbooks.com/contact"
+};
 ---
 
 <Base title="Contact" description="Get in touch with Summit Ledger Books for a free bookkeeping consultation.">
   <div class="container">
     <h1 class="section-heading">Let's Get Your Books Clean.</h1>
-    <p style="color: var(--color-text-muted); margin-bottom: var(--space-xl); max-width: 42rem;">On the call, we'll go over your current setup, what's working, and what isn't. You'll walk away with a clear picture of what getting organized actually looks like for your portfolio, whether or not we end up working together.</p>
+    <p style="color: var(--color-text-muted); margin-bottom: var(--space-xl); max-width: 42rem;">On the call, we'll go over your current setup, what's working, and what isn't. You'll walk away with a clear picture of what getting organized actually looks like for your portfolio, whether or not we end up working together. Looking for details first? Check out our <a href="/services">services</a> or <a href="/pricing">pricing</a>.</p>
 
     <div class="contact-grid">
       <div class="contact-calendly">
@@ -46,4 +56,6 @@ import Base from "../layouts/Base.astro";
       </div>
     </div>
   </div>
+
+  <script is:inline type="application/ld+json" set:html={JSON.stringify(contactSchema)} />
 </Base>

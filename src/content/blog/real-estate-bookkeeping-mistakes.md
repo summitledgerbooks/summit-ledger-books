@@ -8,7 +8,7 @@ draft: false
 
 Real estate investing comes with enough complexity on its own: tenants, maintenance, financing, vacancies. Most investors don't get into the business to think about accounting. But the way you track your finances can quietly cost you thousands of dollars a year in missed deductions, bad decisions, and tax surprises.
 
-Here are five bookkeeping mistakes we see most often, and what to do instead.
+Here are five bookkeeping mistakes we see most often, and what to do instead. If you're already behind, our [catch-up bookkeeping](/services/catch-up-bookkeeping) service can help you get back on track.
 
 ## 1. Mixing Personal and Business Finances
 
@@ -20,7 +20,7 @@ This is the most common mistake, especially for investors who started with one o
 
 Not all properties carry the same financial structure. A short-term rental has different expense categories than a long-term lease. A property held in an LLC has different reporting requirements than one held personally. Lumping everything together means you lose property-level visibility and can't tell which units are actually profitable.
 
-**Fix it:** Set up a separate ledger or class for each property in your accounting software. QuickBooks Online makes this straightforward with its class and location tracking features. When you run a Profit and Loss by property, you can see exactly where you're making money and where you're not.
+**Fix it:** Set up a separate ledger or class for each property in your accounting software. QuickBooks Online makes this straightforward with its class and location tracking features. Our guide on [setting up a chart of accounts](/blog/chart-of-accounts-rental-properties) walks through this in detail. When you run a Profit and Loss by property, you can see exactly where you're making money and where you're not.
 
 ## 3. Missing Depreciation
 

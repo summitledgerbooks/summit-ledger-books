@@ -9,7 +9,7 @@ ogImage: "/images/og-images/most-rental-property-books-are-set-up-wrong.png"
 
 Most real estate investors inherit a generic QuickBooks setup or piece one together over time. The result is a chart of accounts that sort of works until tax season, when the CPA has to spend an extra hour figuring out what half the categories mean.
 
-A chart of accounts built specifically for rental properties isn't complicated, but it does require a few deliberate decisions upfront. Here's how to think about it.
+A chart of accounts built specifically for rental properties isn't complicated, but it does require a few deliberate decisions upfront. It's one of the first things we set up as part of our [rental property bookkeeping](/services/portfolio-bookkeeping) service. Here's how to think about it.
 
 ## What a Chart of Accounts Actually Does
 
@@ -59,7 +59,7 @@ The goal is to be able to run a Profit and Loss filtered to a single address and
 
 **Don't create an account for everything.** New investors often create an account for every vendor or expense type. "Home Depot," "Main Street Plumbing," "Lowe's." These all belong under Repairs and Maintenance with the vendor noted on the individual transaction.
 
-**Don't mix capital and operating expenses.** A new roof goes to Capital Improvements. Patching a section of that roof goes to Repairs and Maintenance. These are different for tax purposes and should never be combined into one account.
+**Don't mix capital and operating expenses.** A new roof goes to Capital Improvements. Patching a section of that roof goes to Repairs and Maintenance. These are different for tax purposes and should never be combined into one account. This is one of the [most common bookkeeping mistakes](/blog/real-estate-bookkeeping-mistakes) we see.
 
 **Don't record loan principal as an expense.** Only mortgage interest is deductible. Principal paydown is a balance sheet transaction. If you're running everything through an expense account labeled "Mortgage," your books are wrong.
 

@@ -9,7 +9,7 @@ ogImage: "/images/og-images/the-one-report-every-real-estate-investor-needs.png"
 
 If you manage rental properties, you've probably heard the term rent roll. You may even have one: a spreadsheet listing your tenants and what they pay. But a rent roll used properly is more than a contact list. It's a financial document that should connect directly to your books.
 
-Here's what a complete rent roll looks like and how to use it.
+Rent roll reconciliation is a key part of our [property management accounting](/services/property-management-accounting) service. Here's what a complete rent roll looks like and how to use it.
 
 ## What a Rent Roll Should Include
 
@@ -38,7 +38,7 @@ This is called **rent roll reconciliation**, and it's something your bookkeeper 
 
 If a tenant paid short, that difference sits as an accounts receivable until it's collected. If a unit is vacant, it shows up as lost income. If extra charges like late fees were assessed, they need to appear in the books too.
 
-Without this reconciliation, you might not notice that one tenant has been consistently paying $50 short for four months, or that a deposit was recorded twice.
+Without this reconciliation, you might not notice that one tenant has been consistently paying $50 short for four months, or that a deposit was recorded twice. Related to this, make sure you're also [recording security deposits correctly](/blog/security-deposits-bookkeeping) so they don't distort your income numbers.
 
 ## Vacancy Tracking
 

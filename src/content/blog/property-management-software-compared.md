@@ -14,7 +14,7 @@ This guide breaks down the most common tools in the real estate investor and pro
 
 ## Property Management Software
 
-These tools handle the landlord side of the business: leases, tenant communication, maintenance requests, rent collection, and sometimes basic bookkeeping.
+These tools handle the landlord side of the business: leases, tenant communication, maintenance requests, rent collection, and sometimes basic bookkeeping. Whichever tool you choose, having professional [property management accounting](/services/property-management-accounting) alongside it keeps your financials accurate.
 
 ### AppFolio
 
@@ -174,7 +174,7 @@ Landlord Studio sits between Stessa and a full property management tool. It hand
 
 ## Short-Term Rental Software
 
-STR portfolios have their own toolset. Channel managers handle distribution across Airbnb, VRBO, Booking.com, and direct booking sites. Some also include light accounting.
+STR portfolios have their own toolset. Channel managers handle distribution across Airbnb, VRBO, Booking.com, and direct booking sites. Some also include light accounting. No matter which platform you use, dedicated [short-term rental bookkeeping](/services/short-term-rental-bookkeeping) fills the gaps these tools leave behind.
 
 ### OwnerRez
 

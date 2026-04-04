@@ -10,7 +10,7 @@ Hiring a bookkeeper is a big decision. The right one becomes a trusted partner i
 
 ## Look for Relevant Experience
 
-A bookkeeper who has worked with businesses like yours will already understand your industry's common transactions, tax considerations, and reporting needs. Ask about their client base and areas of specialization.
+A bookkeeper who has worked with businesses like yours will already understand your industry's common transactions, tax considerations, and reporting needs. Ask about their client base and areas of specialization. Learn more [about our approach](/about) and the real estate investors we work with.
 
 ## Check Their Tools and Systems
 
@@ -22,7 +22,7 @@ How often will they provide updates? How quickly do they respond to questions? C
 
 ## Understand Their Pricing
 
-Bookkeeping fees vary widely. Some charge by the hour, others offer flat monthly rates. Flat-rate pricing is usually more predictable and better for budgeting. Make sure you understand exactly what's included.
+Bookkeeping fees vary widely. Some charge by the hour, others offer flat monthly rates. Flat-rate pricing is usually more predictable and better for budgeting. Make sure you understand exactly what's included. See our [pricing](/pricing) for an example of transparent flat-rate plans.
 
 ## Verify Their References
 
@@ -32,4 +32,4 @@ Ask for references from current or past clients. A reputable bookkeeper will be 
 
 At the end of the day, you're trusting someone with your business's financial records. Choose someone you feel comfortable with: someone who communicates clearly and makes you feel confident about your finances.
 
-Looking for a bookkeeper you can trust? [Let's talk](/contact).
+Looking for a bookkeeper you can trust? See our [services](/services) or [let's talk](/contact).

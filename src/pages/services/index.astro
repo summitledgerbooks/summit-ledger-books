@@ -1,5 +1,21 @@
 ---
-import Base from "../layouts/Base.astro";
+import Base from "../../layouts/Base.astro";
+import { getCollection } from "astro:content";
+
+const services = await getCollection("services");
+const sorted = services.sort((a, b) => a.data.order - b.data.order);
+
+const itemListSchema = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Real Estate Bookkeeping Services",
+  "itemListElement": sorted.map((s, i) => ({
+    "@type": "ListItem",
+    "position": i + 1,
+    "name": s.data.title,
+    "url": `https://summitledgerbooks.com/services/${s.id}`
+  }))
+};
 ---
 
 <Base title="Services" description="Real estate bookkeeping services for investors, property managers, and developers. Rental property accounting, catch-up bookkeeping, tax preparation support, and financial reporting.">
@@ -7,43 +23,23 @@ import Base from "../layouts/Base.astro";
     <h1 class="section-heading">Real Estate Bookkeeping Services</h1>
     <p style="color: var(--color-text-muted); margin-bottom: var(--space-xl); max-width: 42rem;">Built specifically for real estate investors, property managers, and developers. Every service is designed to keep your portfolio finances organized and your business on track.</p>
 
+    <img
+      src="/assets/real-estate-portfolio-bookkeeping.jpg"
+      alt="Real estate portfolio bookkeeping across multiple properties and entities"
+      width="800"
+      height="400"
+      loading="eager"
+      style="border-radius: var(--radius-md); margin-bottom: var(--space-xl); width: 100%; height: auto; object-fit: cover; max-height: 20rem;"
+    />
+
     <div class="card-grid">
-      <div class="card">
-        <h3>Portfolio Bookkeeping</h3>
-        <p>Ongoing bookkeeping for your entire real estate portfolio. We handle rental income tracking, property expense categorization, mortgage and loan reconciliation, rent roll reconciliation, and monthly financial statements for each entity or property.</p>
-      </div>
-      <div class="card">
-        <h3>Catch-Up Bookkeeping</h3>
-        <p>Fallen behind on your property records? We'll work through your backlog, whether it's a few months or a few years, and bring everything current so you start fresh.</p>
-      </div>
-      <div class="card">
-        <h3>Tax Preparation Support</h3>
-        <p>We organize your real estate financials and prepare the reports your CPA needs, including depreciation schedules, entity-level profit and loss statements, and Schedule E support. No more scrambling at tax time.</p>
-      </div>
-      <div class="card">
-        <h3>Accounts Payable &amp; Receivable</h3>
-        <p>Track rent collection, vendor payments, contractor invoices, and maintenance expenses across your portfolio. Stay on top of what you owe and what tenants owe you.</p>
-      </div>
-      <div class="card">
-        <h3>Property Management Accounting</h3>
-        <p>We track management fees, owner disbursements, and trust accounting separately so your books reflect how property management actually works. Rent roll reconciliation is included every month so you always know what was collected, what's outstanding, and what's owed.</p>
-      </div>
-      <div class="card">
-        <h3>Development Project Tracking</h3>
-        <p>We track hard costs, soft costs, land, and carrying costs by project. Draw schedules, construction loan reconciliation, and cost-to-complete reporting so you always know where your money is going and what's left in the budget.</p>
-      </div>
-      <div class="card">
-        <h3>Short-Term Rental Bookkeeping</h3>
-        <p>STR portfolios have their own accounting needs: platform payouts from Airbnb and VRBO, cleaning fee tracking, occupancy tax handling, and income that fluctuates month to month. We set up your books to handle all of it correctly and give you property-level reporting that reflects how each listing actually performs.</p>
-      </div>
-      <div class="card">
-        <h3>Payroll Support</h3>
-        <p>We help property management companies and development firms process payroll, track employee hours, and confirm payroll taxes are calculated correctly.</p>
-      </div>
-      <div class="card">
-        <h3>Financial Reporting</h3>
-        <p>Get clear, investor-ready reports including profit and loss by property, balance sheets, and cash flow statements. Delivered monthly so you always know where your portfolio stands.</p>
-      </div>
+      {sorted.map((service) => (
+        <a href={`/services/${service.id}`} class="card card-link">
+          <h3>{service.data.title}</h3>
+          <p>{service.data.shortDescription}</p>
+          <span class="card-arrow">Learn more &rarr;</span>
+        </a>
+      ))}
     </div>
 
     <!-- My Process -->
@@ -175,4 +171,6 @@ import Base from "../layouts/Base.astro";
       <a href="/contact" class="btn btn-primary">Book a Free Consultation</a>
     </div>
   </div>
+
+  <script is:inline type="application/ld+json" set:html={JSON.stringify(itemListSchema)} />
 </Base>

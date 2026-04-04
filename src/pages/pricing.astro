@@ -1,11 +1,49 @@
 ---
 import Base from "../layouts/Base.astro";
+
+const pricingSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Real Estate Bookkeeping",
+  "provider": {
+    "@type": "ProfessionalService",
+    "name": "Summit Ledger Books",
+    "url": "https://summitledgerbooks.com"
+  },
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Monthly Bookkeeping Plans",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "name": "Starter",
+        "price": "500",
+        "priceCurrency": "USD",
+        "description": "Best for 1-3 properties, single entity. Monthly transaction categorization, reconciliation, P&L, and balance sheet."
+      },
+      {
+        "@type": "Offer",
+        "name": "Growth",
+        "price": "750",
+        "priceCurrency": "USD",
+        "description": "Best for 4-10 properties or multiple entities. Includes multi-property reporting, AP/AR, rent roll reconciliation, and tax prep support."
+      },
+      {
+        "@type": "Offer",
+        "name": "Premium",
+        "price": "1200",
+        "priceCurrency": "USD",
+        "description": "Best for active portfolios, STR investors, and development projects. Includes monthly check-in calls, priority support, depreciation schedules, and payroll support."
+      }
+    ]
+  }
+};
 ---
 
 <Base title="Pricing" description="Transparent real estate bookkeeping pricing. Monthly plans starting at $500/month. Catch-up bookkeeping quoted by scope. No hidden fees, no long-term contracts.">
   <div class="container">
     <h1 class="section-heading" style="text-align: center;">Simple, Transparent Pricing</h1>
-    <p style="text-align: center; color: var(--color-text-muted); margin-bottom: var(--space-xl); max-width: 36rem; margin-left: auto; margin-right: auto;">No hidden fees. No long-term contracts. Just reliable real estate bookkeeping at a fair price.</p>
+    <p style="text-align: center; color: var(--color-text-muted); margin-bottom: var(--space-xl); max-width: 36rem; margin-left: auto; margin-right: auto;">No hidden fees. No long-term contracts. Just reliable real estate bookkeeping at a fair price. Not sure what you need? <a href="/services">See our full services breakdown.</a></p>
 
     <!-- Monthly Plans -->
     <h2 class="section-heading" style="text-align: center; font-size: 1.25rem; margin-bottom: var(--space-lg);">Monthly Bookkeeping</h2>
@@ -34,8 +72,8 @@ import Base from "../layouts/Base.astro";
           <li>Everything in Starter</li>
           <li>Multi-property or multi-entity reporting</li>
           <li>Accounts payable &amp; receivable</li>
-          <li>Rent roll reconciliation</li>
-          <li>Tax prep support (Schedule E ready)</li>
+          <li><a href="/services/property-management-accounting" style="color: inherit; text-decoration: underline; text-decoration-color: var(--color-border);">Rent roll reconciliation</a></li>
+          <li><a href="/services/tax-prep-support" style="color: inherit; text-decoration: underline; text-decoration-color: var(--color-border);">Tax prep support</a> (Schedule E ready)</li>
         </ul>
         <a href="https://calendly.com/summit-ledger-books/consultation" class="btn btn-primary">Get Started</a>
       </div>
@@ -51,7 +89,7 @@ import Base from "../layouts/Base.astro";
           <li>15-minute check-in call each month</li>
           <li>Priority support (same-day response)</li>
           <li>Depreciation schedule maintenance</li>
-          <li>Payroll support</li>
+          <li><a href="/services/payroll-support" style="color: inherit; text-decoration: underline; text-decoration-color: var(--color-border);">Payroll support</a></li>
         </ul>
         <a href="https://calendly.com/summit-ledger-books/consultation" class="btn btn-primary">Get Started</a>
       </div>
@@ -96,4 +134,6 @@ import Base from "../layouts/Base.astro";
       <a href="https://calendly.com/summit-ledger-books/consultation" class="btn btn-primary">Book a Free Call</a>
     </div>
   </div>
+
+  <script is:inline type="application/ld+json" set:html={JSON.stringify(pricingSchema)} />
 </Base>
