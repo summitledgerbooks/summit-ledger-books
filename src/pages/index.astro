@@ -15,10 +15,26 @@ const localBusinessSchema = {
   "url": "https://summitledgerbooks.com",
   "telephone": "+13854502276",
   "email": "austin@summitledgerbooks.com",
-  "areaServed": {
-    "@type": "Country",
-    "name": "United States"
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Kaysville",
+    "addressRegion": "UT",
+    "addressCountry": "US"
   },
+  "areaServed": [
+    {
+      "@type": "State",
+      "name": "Utah"
+    },
+    {
+      "@type": "AdministrativeArea",
+      "name": "Davis County, Utah"
+    },
+    {
+      "@type": "AdministrativeArea",
+      "name": "Salt Lake County, Utah"
+    }
+  ],
   "serviceType": "Bookkeeping",
   "priceRange": "$$",
   "sameAs": [
