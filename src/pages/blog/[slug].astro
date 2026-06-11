@@ -1,6 +1,9 @@
 ---
 import Base from "../../layouts/Base.astro";
 import { getCollection, render } from "astro:content";
+import AuthorByline from "../../components/AuthorByline.astro";
+import AuthorBio from "../../components/AuthorBio.astro";
+import { personSchema } from "../../lib/author";
 
 export async function getStaticPaths() {
   const posts = await getCollection("blog");
@@ -32,11 +35,7 @@ const articleSchema = {
   "headline": post.data.title,
   "description": post.data.description,
   "datePublished": post.data.date.toISOString(),
-  "author": {
-    "@type": "Organization",
-    "name": "Summit Ledger Books",
-    "url": "https://summitledgerbooks.com"
-  },
+  "author": personSchema,
   "publisher": {
     "@type": "Organization",
     "name": "Summit Ledger Books",
@@ -85,6 +84,7 @@ const breadcrumbSchema = {
       <a href="/blog" class="article-back">&larr; Blog</a>
       <h1 class="article-title">{post.data.title}</h1>
       <div class="article-meta">
+        <AuthorByline />
         <time datetime={post.data.date.toISOString()}>
           {post.data.date.toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" })}
         </time>
@@ -103,6 +103,8 @@ const breadcrumbSchema = {
     <div class="prose article-prose">
       <Content />
     </div>
+
+    <AuthorBio />
 
     {relatedPosts.length > 0 && (
       <div class="article-related">

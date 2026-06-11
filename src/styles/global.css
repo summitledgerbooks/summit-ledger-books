@@ -15,6 +15,13 @@
   --color-primary-hover:#1c5ca0;
   --color-accent:       #5ab0ec;
 
+  /* Summit sunrise accent */
+  --color-amber:        #f59e0b;
+  --color-amber-hover:  #fbbf24;
+  --color-amber-deep:   #b45309;
+  --color-amber-bg:     #fef3c7;
+  --color-amber-border: #fde68a;
+
   /* Surface & text */
   --color-bg:           #f0f5fb;
   --color-surface:      #ffffff;
@@ -430,11 +437,13 @@ main {
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(
-    to bottom,
-    rgba(18, 38, 70, 0.78) 0%,
-    rgba(24, 58, 110, 0.72) 100%
-  );
+  background:
+    linear-gradient(to top, rgba(245, 158, 11, 0.18), transparent 35%),
+    linear-gradient(
+      to bottom,
+      rgba(18, 38, 70, 0.78) 0%,
+      rgba(24, 58, 110, 0.72) 100%
+    );
 }
 .hero .container {
   position: relative;
@@ -458,7 +467,7 @@ main {
   font-size: 1.375rem;
   font-weight: 600;
   font-style: italic;
-  color: #ffffff !important;
+  color: var(--color-amber-hover) !important;
   margin-bottom: var(--space-sm) !important;
   text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
 }
@@ -475,19 +484,19 @@ main {
   transition: background 0.2s ease, transform 0.15s ease, box-shadow 0.15s ease;
 }
 .btn-primary {
-  background: var(--color-primary);
-  color: #fff;
+  background: var(--color-amber);
+  color: var(--color-navy);
 }
 .btn-primary:hover {
-  background: var(--color-primary-hover);
+  background: var(--color-amber-hover);
   transform: translateY(-1px);
-  box-shadow: 0 4px 14px rgba(36, 112, 190, 0.35);
+  box-shadow: 0 4px 14px rgba(245, 158, 11, 0.35);
   text-decoration: none;
-  color: #fff;
+  color: var(--color-navy);
 }
-/* Inverted button for use on the dark hero */
+/* Conversion button for use on the dark hero */
 .btn-hero {
-  background: #ffffff;
+  background: var(--color-amber);
   color: var(--color-navy);
   padding: 0.75rem 1.75rem;
   border-radius: var(--radius-sm);
@@ -499,9 +508,9 @@ main {
   transition: background 0.2s ease, transform 0.15s ease, box-shadow 0.15s ease;
 }
 .btn-hero:hover {
-  background: var(--color-accent-bg);
+  background: var(--color-amber-hover);
   transform: translateY(-1px);
-  box-shadow: 0 4px 14px rgba(255, 255, 255, 0.25);
+  box-shadow: 0 4px 14px rgba(245, 158, 11, 0.4);
   text-decoration: none;
   color: var(--color-navy);
 }
@@ -702,7 +711,7 @@ a.card-link:hover h3 {
 }
 
 .testimonial-stars {
-  color: #f59e0b;
+  color: var(--color-amber);
   font-size: 1rem;
   letter-spacing: 0.1em;
 }
@@ -1242,7 +1251,7 @@ a.card-link:hover h3 {
   content: '✕';
   position: absolute;
   left: 0;
-  color: #dc2626;
+  color: var(--color-amber-deep);
   font-size: 0.75rem;
   top: 0.2em;
   font-weight: 700;
@@ -1321,6 +1330,107 @@ a.card-link:hover h3 {
   font-size: 0.9375rem;
   color: var(--color-text-muted);
   line-height: 1.7;
+}
+
+/* ── Eyebrow kickers ── */
+.eyebrow {
+  display: block;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-amber-deep);
+  margin-bottom: var(--space-sm);
+}
+.eyebrow--on-dark {
+  color: var(--color-amber-hover);
+  text-shadow: 0 1px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* ── Differentiator band ── */
+.amber-band {
+  background: var(--color-amber-bg);
+  border-top: 1px solid var(--color-amber-border);
+  border-bottom: 1px solid var(--color-amber-border);
+  padding: var(--space-xl) 0;
+  margin-bottom: var(--space-xl);
+}
+
+/* ── Founder section ── */
+.founder-section {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-lg);
+  align-items: center;
+  margin-bottom: var(--space-xl);
+}
+.founder-photo {
+  width: 100%;
+  max-width: 14rem;
+  height: auto;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-md);
+  justify-self: center;
+}
+.founder-text p {
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-md);
+}
+@media (min-width: 48rem) {
+  .founder-section {
+    grid-template-columns: 14rem 1fr;
+  }
+  .founder-photo {
+    justify-self: start;
+  }
+}
+
+/* ── Author byline & bio ── */
+.author-byline {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-xs);
+  font-size: 0.875rem;
+}
+.author-bio {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-md);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-lg);
+  box-shadow: var(--shadow-sm);
+  margin: var(--space-lg) 0;
+}
+.author-bio-photo {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+.author-bio-name {
+  font-weight: 700;
+  color: var(--color-navy);
+  margin-bottom: var(--space-xs);
+}
+.author-bio p {
+  font-size: 0.9375rem;
+  color: var(--color-text-muted);
+  line-height: 1.6;
+  margin-bottom: var(--space-xs);
+}
+.author-bio-links {
+  font-size: 0.875rem;
+  display: flex;
+  gap: var(--space-md);
+}
+
+/* ── Jargon gloss ── */
+.term {
+  font-size: 0.9em;
+  color: var(--color-text-muted);
 }
 
 /* ── Location pages ── */

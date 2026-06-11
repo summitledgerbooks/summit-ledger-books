@@ -1,6 +1,7 @@
 ---
 import Base from "../layouts/Base.astro";
 import { getCollection } from "astro:content";
+import { AUTHOR, personSchema } from "../lib/author";
 
 const allPosts = await getCollection("blog", ({ data }) => !data.draft);
 const recentPosts = allPosts
@@ -37,6 +38,7 @@ const localBusinessSchema = {
   ],
   "serviceType": "Bookkeeping",
   "priceRange": "$$",
+  "founder": personSchema,
   "sameAs": [
     "https://www.linkedin.com/in/summitledgerbooks/"
   ]
@@ -46,15 +48,17 @@ const localBusinessSchema = {
 <Base description="Real estate bookkeeping for investors, property managers, and developers. Books closed by the 10th, every property, every entity, every month. Summit Ledger Books.">
   <section class="hero">
     <div class="container">
+      <span class="eyebrow eyebrow--on-dark">Real Estate Bookkeeping &middot; Built by a Software Engineer</span>
       <h1>Bookkeeping Built for Real Estate Investors</h1>
       <p class="hero-tagline">We handle the books. You focus on the summit.</p>
-      <p>We give you property-level profit, clean entity separation, and monthly reports you can actually use to make decisions.</p>
+      <p>We give you profit numbers for every property, clean books for every LLC, and monthly reports you can actually use to make decisions.</p>
       <a href="https://calendly.com/summit-ledger-books/consultation" class="btn btn-hero">Book a Free Call</a>
     </div>
   </section>
 
   <!-- Problem -->
   <section class="container section-block">
+    <span class="eyebrow" style="text-align: center;">The Mess</span>
     <h2 class="section-heading" style="text-align: center;">Rental bookkeeping gets messy fast.</h2>
     <img
       src="/assets/real-estate-bookkeeping.jpg"
@@ -68,11 +72,35 @@ const localBusinessSchema = {
       <ul class="problem-list">
         <li>Personal and rental expenses mixed together</li>
         <li>No visibility into profit by property</li>
-        <li>Bank balances that don't match QuickBooks</li>
+        <li>AppFolio, Buildium, or Stessa reports that never match QuickBooks</li>
+        <li>Hours of copy-paste between spreadsheets that should talk to each other</li>
         <li>Scrambling to pull records together at tax time</li>
         <li>No clear picture of actual cash flow</li>
       </ul>
-      <p class="section-prose">Inconsistent bookkeeping creates stress and leads to poor decisions. When your records are behind, disorganized, or inaccurate, you're flying blind on your own portfolio.</p>
+      <p class="section-prose">Inconsistent bookkeeping creates stress and leads to poor decisions. When your records are behind, your software doesn't match your books, and your real numbers live in a fragile spreadsheet, you're flying blind on your own portfolio.</p>
+    </div>
+  </section>
+
+  <!-- Differentiator -->
+  <section class="amber-band">
+    <div class="container">
+      <span class="eyebrow" style="text-align: center;">Why an Engineer</span>
+      <h2 class="section-heading" style="text-align: center;">Most bookkeepers categorize transactions. Austin builds the systems behind them.</h2>
+      <div class="why-grid">
+        <div class="why-item">
+          <h3>A career writing software</h3>
+          <p>Austin Adams spent his career as a software engineer building data systems. Precision, reconciliation, and automation aren't bookkeeping buzzwords to him. They're the job he's done every day.</p>
+        </div>
+        <div class="why-item">
+          <h3>QuickBooks Online certified</h3>
+          <p>Certified bookkeeping with a real estate niche. Property-level profit, clean entity separation, and books closed by the 10th of every month.</p>
+        </div>
+        <div class="why-item">
+          <h3>The combination is the point</h3>
+          <p>When your property management software and QuickBooks disagree, you don't need another workaround. You need someone who can read the data and fix the sync. Very few bookkeepers can do both.</p>
+        </div>
+      </div>
+      <p style="text-align: center; margin-top: var(--space-lg);"><a href="/services/systems-integration" style="color: var(--color-navy); font-weight: 600;">See Systems &amp; Integration services &rarr;</a></p>
     </div>
   </section>
 
@@ -84,8 +112,8 @@ const localBusinessSchema = {
         <ul class="outcome-list">
           <li>Accurate monthly profit by property</li>
           <li>Reliable cash flow visibility</li>
-          <li>Clean reconciliations every month</li>
-          <li>Clear owner draw tracking</li>
+          <li>Books that match your bank statements, every month</li>
+          <li>Clear tracking of owner draws <span class="term">(the money you take out)</span></li>
           <li>CPA-ready reports at tax time</li>
         </ul>
         <p class="section-prose">When your books are current and accurate, you can make confident decisions about your portfolio. You know what's performing, what isn't, and where your money is actually going. See how our <a href="/services" style="color: var(--color-navy); text-decoration: underline;">real estate bookkeeping services</a> keep your portfolio organized.</p>
@@ -99,7 +127,7 @@ const localBusinessSchema = {
     <div class="card-grid">
       <a href="/services/portfolio-bookkeeping" class="card card-link">
         <h3>Rental Property Bookkeeping</h3>
-        <p>Track rental income and expenses across every property and entity. We categorize transactions, reconcile accounts, and deliver clear monthly statements for your entire portfolio.</p>
+        <p>Track rental income and expenses across every property and entity, whether you have one LLC or twenty. We categorize transactions, reconcile accounts, and deliver clear monthly statements for your entire portfolio.</p>
         <span class="card-arrow">Learn more &rarr;</span>
       </a>
       <a href="/services/catch-up-bookkeeping" class="card card-link">
@@ -109,12 +137,12 @@ const localBusinessSchema = {
       </a>
       <a href="/services/tax-prep-support" class="card card-link">
         <h3>Tax Preparation Support</h3>
-        <p>We organize your real estate financials and work with your CPA on Schedule E filings, depreciation schedules, and entity-level reporting so tax season runs smoothly.</p>
+        <p>We organize your real estate financials and work with your CPA on Schedule E filings <span class="term">(the rental income tax form)</span>, depreciation schedules, and entity-level reporting so tax season runs smoothly.</p>
         <span class="card-arrow">Learn more &rarr;</span>
       </a>
       <a href="/services/property-management-accounting" class="card card-link">
         <h3>Property Management Accounting</h3>
-        <p>We track management fees, owner disbursements, and trust accounting separately so your books reflect how property management actually works. Rent roll reconciliation included.</p>
+        <p>We track management fees, owner disbursements, and trust accounting <span class="term">(keeping tenant and owner money legally separate)</span> so your books reflect how property management actually works. Rent roll reconciliation included.</p>
         <span class="card-arrow">Learn more &rarr;</span>
       </a>
       <a href="/services/development-project-tracking" class="card card-link">
@@ -122,9 +150,9 @@ const localBusinessSchema = {
         <p>We track hard costs, soft costs, land, and carrying costs by project. Draw schedules, construction loan reconciliation, and cost-to-complete reporting so you always know where your money is going.</p>
         <span class="card-arrow">Learn more &rarr;</span>
       </a>
-      <a href="/services/portfolio-bookkeeping" class="card card-link">
-        <h3>Multi-Entity Bookkeeping</h3>
-        <p>Separate ledgers for each LLC or entity, with consolidated reporting across your entire portfolio. Whether you have two entities or twenty, we keep every set of books clean and audit-ready.</p>
+      <a href="/services/systems-integration" class="card card-link">
+        <h3>Systems &amp; Integration</h3>
+        <p>When AppFolio, Buildium, or Stessa won't reconcile with QuickBooks, we fix the pipeline. Sync cleanup, automated reporting, data migration, and spreadsheet rescue from a bookkeeper who writes software.</p>
         <span class="card-arrow">Learn more &rarr;</span>
       </a>
     </div>
@@ -137,11 +165,11 @@ const localBusinessSchema = {
     <div class="deliverables-grid">
       <div class="deliverable-item">
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-        <span>Bank and credit card reconciliations</span>
+        <span>Bank and credit card reconciliations <span class="term">(your books matched to your actual statements)</span></span>
       </div>
       <div class="deliverable-item">
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-        <span>Organized chart of accounts</span>
+        <span>Organized chart of accounts <span class="term">(the category system your books are organized by)</span></span>
       </div>
       <div class="deliverable-item">
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
@@ -210,9 +238,27 @@ const localBusinessSchema = {
           <p>We work exclusively with real estate investors and property managers. We know the accounts, the schedules, and the reporting that matters for your business.</p>
         </div>
         <div class="why-item">
+          <h3>An engineer's eye on your books</h3>
+          <p>Austin spent his career building data systems as a software engineer. That shows up in your books: automated where it should be, double-checked where it matters.</p>
+        </div>
+        <div class="why-item">
           <h3>Financial planning, in-house</h3>
           <p>Through our partnership with Transamerica Financial Advisors, we can connect you with financial planning services alongside your bookkeeping, so your numbers and your long-term goals stay aligned.</p>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Meet Austin -->
+  <section class="container section-block">
+    <div class="founder-section">
+      <img src={AUTHOR.headshot} alt="Austin Adams, founder of Summit Ledger Books" class="founder-photo" width="224" height="224" loading="lazy" />
+      <div class="founder-text">
+        <span class="eyebrow">Meet Your Bookkeeper</span>
+        <h2 class="section-heading" style="margin-bottom: var(--space-md);">Hi, I'm Austin Adams.</h2>
+        <p>I'm a software engineer and QuickBooks-certified bookkeeper in Kaysville, Utah. I started Summit Ledger Books because real estate investors kept telling me the same story: software that doesn't match the books, spreadsheets nobody trusts, and a bookkeeper who shrugs at both.</p>
+        <p>When you work with Summit Ledger Books, you work with me. Directly, every month.</p>
+        <a href="/about">Read my story &rarr;</a>
       </div>
     </div>
   </section>

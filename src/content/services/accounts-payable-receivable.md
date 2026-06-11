@@ -3,7 +3,7 @@ title: "Accounts Payable & Receivable"
 description: "Track rent collection, vendor payments, contractor invoices, and maintenance expenses across your real estate portfolio."
 shortDescription: "Track rent collection, vendor payments, contractor invoices, and maintenance expenses across your portfolio."
 relatedPosts: ["rent-roll-reconciliation", "month-end-close-checklist", "security-deposits-bookkeeping"]
-order: 4
+order: 5
 ---
 
 ## Staying on Top of What You Owe and What's Owed to You

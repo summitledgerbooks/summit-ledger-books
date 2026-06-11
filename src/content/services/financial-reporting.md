@@ -5,7 +5,7 @@ shortDescription: "Clear, investor-ready reports: profit and loss by property, b
 image: "/assets/real-estate-portfolio-accounting.jpg"
 imageAlt: "Real estate portfolio financial reporting and accounting"
 relatedPosts: ["reading-rental-property-pnl", "month-end-close-checklist", "books-for-cash-out-refinance"]
-order: 9
+order: 10
 ---
 
 ## Financial Reports You Can Actually Use

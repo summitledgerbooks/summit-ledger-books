@@ -3,7 +3,7 @@ title: "Payroll Support"
 description: "Payroll processing support for property management companies and real estate development firms. Employee tracking, tax calculations, and payroll reconciliation."
 shortDescription: "Payroll processing, employee hour tracking, and payroll tax calculations for property management companies and development firms."
 relatedPosts: ["property-management-software-compared", "month-end-close-checklist"]
-order: 8
+order: 9
 ---
 
 ## Payroll Support for Real Estate Businesses

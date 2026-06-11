@@ -2,37 +2,94 @@
 import { Image } from "astro:assets";
 import Base from "../layouts/Base.astro";
 import websiteHero from "../assets/images/website-hero.png";
+import badgeQboLevel2 from "../assets/images/badge-qbo-level-2.png";
+import badgeQboPayroll from "../assets/images/badge-qbo-payroll.png";
+import bookCert from "../assets/images/book-cert.png";
+import clientCert from "../assets/images/client-cert.png";
+import { personSchema } from "../lib/author";
+
+const aboutPageSchema = {
+  "@context": "https://schema.org",
+  "@type": "AboutPage",
+  "url": "https://summitledgerbooks.com/about",
+  "mainEntity": {
+    ...personSchema,
+    "knowsAbout": [
+      "Real estate bookkeeping",
+      "QuickBooks Online",
+      "Property management accounting",
+      "Software engineering",
+    ],
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Summit Ledger Books",
+      "url": "https://summitledgerbooks.com",
+    },
+  },
+};
 ---
 
-<Base title="About" description="Summit Ledger Books specializes in bookkeeping for real estate investors, property managers, and developers. Learn about our mission and values.">
+<Base title="About Austin Adams" description="Meet Austin Adams, founder of Summit Ledger Books: a career software engineer and QuickBooks-certified bookkeeper serving real estate investors in Utah.">
   <div class="container">
     <div class="about-hero">
-      <Image src={websiteHero} alt="Austin, founder of Summit Ledger Books" class="about-hero-img" />
+      <Image src={websiteHero} alt="Austin Adams, founder of Summit Ledger Books" class="about-hero-img" />
     </div>
-    <h1 class="section-heading">About Summit Ledger Books</h1>
+    <span class="eyebrow" style="text-align: center;">About Summit Ledger Books</span>
+    <h1 class="section-heading" style="text-align: center;">Hi, I'm Austin Adams.</h1>
 
     <div class="prose">
-      <p>Summit Ledger Books was founded with a simple belief: real estate investors and property managers deserve accurate, affordable bookkeeping that actually understands their business. Too many owners spend their evenings wrestling with spreadsheets instead of evaluating their next deal or managing their properties.</p>
+      <p>I'm a software engineer, a QuickBooks-certified bookkeeper, and the founder of Summit Ledger Books in Kaysville, Utah.</p>
 
-      <p>We started Summit Ledger Books to change that. Based in Kaysville, Utah, we specialize in real estate accounting and partner with investors, property managers, and developers across Davis County, Salt Lake County, and throughout the state to keep financial records organized, accurate, and ready for tax season, lenders, or any audit.</p>
+      <h2>From Software to Bookkeeping</h2>
 
-      <h2>Our Values</h2>
+      <p>I've spent my career as a software engineer, building and maintaining data systems where the numbers have to be right. That work taught me habits that turn out to be exactly what good bookkeeping requires: precision, double-checking everything, and treating a reconciliation that won't balance the way an engineer treats a bug. You don't shrug at it, you trace it until you find the cause.</p>
+
+      <p>It also taught me to automate. If a report gets built by hand every month, it should be built by a system instead. I use modern tools, including AI, every day to make the routine parts of bookkeeping faster and more reliable, so the time I spend on your books goes to the parts that need judgment.</p>
+
+      <h2>Why Real Estate Investors</h2>
+
+      <p>Bookkeeping wasn't a random pivot. I wanted more say in my own life: my schedule, who I answer to, and how much time I get with my wife and our houseful of kids. The path I kept coming back to was taking real charge of my finances and building passive income through real estate. Learning the books was step one. It turned out the engineering habits made me good at it, so I combined the two.</p>
+
+      <p>That matters for you because I'm chasing the same thing my clients are. When I keep an investor's books, I'm not translating from some other industry. I know why property-level profit matters, what a lender wants to see, and what it costs when the numbers are six months behind, because I hold myself to the same standard.</p>
+
+      <p>And once I started working with investors, I kept hearing the same story: AppFolio or Buildium says one thing, QuickBooks says another, and the real numbers live in a spreadsheet nobody fully trusts. Most bookkeepers work around that mess. With an engineering background, I can actually fix it, and then keep the books clean on top of a system that works.</p>
+
+      <p>That's why Summit Ledger Books specializes in real estate: investors, property managers, and developers across Davis County, Salt Lake County, and the rest of Utah. Rentals, short-term rentals, multi-entity portfolios, and development projects, with records that are organized, accurate, and ready for tax season, lenders, or any audit.</p>
+
+      <h2>Certifications</h2>
+
+      <p>I'm QuickBooks Online certified, including payroll, and I keep those certifications current. The badges below are mine, not a team's.</p>
+    </div>
+
+    <div class="badge-row" style="justify-content: center; margin: var(--space-lg) 0;">
+      <Image src={badgeQboLevel2} alt="QuickBooks Online Certified" class="badge-img" />
+      <Image src={badgeQboPayroll} alt="QuickBooks Payroll Certified" class="badge-img" />
+      <Image src={bookCert} alt="Bookkeeping Certified" class="badge-img" />
+      <Image src={clientCert} alt="QuickBooks Client Certified" class="badge-img" />
+    </div>
+
+    <div class="prose">
+      <h2>How I Work</h2>
 
       <ul>
-        <li><strong>Accuracy:</strong> Your books need to be right. We double-check every entry and reconciliation.</li>
+        <li><strong>Accuracy:</strong> Your books need to be right. I double-check every entry and reconciliation.</li>
         <li><strong>Transparency:</strong> No hidden fees, no surprises. You'll always know exactly what you're paying for.</li>
-        <li><strong>Reliability:</strong> We meet every deadline, every month. Your books are never behind.</li>
-        <li><strong>Simplicity:</strong> We explain your finances in plain language, not accounting jargon.</li>
+        <li><strong>Reliability:</strong> I meet every deadline, every month. Your books are never behind.</li>
+        <li><strong>Simplicity:</strong> I explain your finances in plain language, not accounting jargon.</li>
       </ul>
 
-      <h2>Who We Serve</h2>
+      <p>I'm also a licensed financial professional through Transamerica Financial Advisors, which means your books and your long-term financial plan can stay connected when you want them to be.</p>
 
-      <p>We specialize in bookkeeping for real estate investors, property managers, real estate developers, and agents. Whether you own a single rental property, manage a portfolio of units, or are developing your next project, we understand the financial complexity of real estate and know how to keep your books clean, organized, and audit-ready. See our full list of <a href="/services">bookkeeping services</a> to learn what we handle.</p>
+      <h2>Who I Serve</h2>
 
-      <p>Read our <a href="/blog">blog</a> for practical guidance on real estate bookkeeping, tax preparation, and portfolio management.</p>
+      <p>I work with real estate investors, property managers, developers, and agents. Whether you own a single rental, manage a portfolio of units, or are partway through your next development project, I know the financial complexity of real estate and how to keep your books clean, organized, and audit-ready. See the full list of <a href="/services">bookkeeping services</a>, including <a href="/services/systems-integration">systems and integration work</a> for when your software and your books don't agree.</p>
+
+      <p>Read the <a href="/blog">blog</a> for practical guidance on real estate bookkeeping, tax preparation, and portfolio management.</p>
 
       <p>Ready to take bookkeeping off your plate? <a href="/contact">Book a free consultation.</a></p>
     </div>
 
   </div>
+
+  <script is:inline type="application/ld+json" set:html={JSON.stringify(aboutPageSchema)} />
 </Base>

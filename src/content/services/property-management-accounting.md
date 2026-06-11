@@ -5,7 +5,7 @@ shortDescription: "Track management fees, owner disbursements, and trust account
 image: "/assets/property-management-accounting.jpg"
 imageAlt: "Property management accounting with trust accounting and rent roll reconciliation"
 relatedPosts: ["rent-roll-reconciliation", "property-management-software-compared", "security-deposits-bookkeeping"]
-order: 5
+order: 6
 ---
 
 ## Bookkeeping Built for How Property Management Actually Works
@@ -18,7 +18,7 @@ We set up and maintain your books to reflect the way property management actuall
 
 - Property management companies managing portfolios for property owners
 - Self-managing landlords who want professional-grade tracking
-- Property managers who need trust accounting and compliance-ready records
+- Property managers who need trust accounting (keeping tenant and owner money legally separate) and compliance-ready records
 - Management companies using software like AppFolio, Buildium, or Rent Manager alongside QuickBooks
 
 ## What's Included

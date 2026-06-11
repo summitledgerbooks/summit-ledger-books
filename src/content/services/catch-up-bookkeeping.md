@@ -5,12 +5,12 @@ shortDescription: "Fallen behind on your property records? We'll work through yo
 image: "/assets/bookkeeping-near-me.jpg"
 imageAlt: "Professional catch-up bookkeeping services for rental property owners"
 relatedPosts: ["real-estate-bookkeeping-mistakes", "chart-of-accounts-rental-properties", "tax-season-tips"]
-order: 2
+order: 3
 ---
 
 ## Getting Your Real Estate Books Back on Track
 
-It happens more than most investors want to admit. You bought a few properties, handled the bookkeeping yourself for a while, then things got busy. A few months slipped by. Then a year. Now you're staring at a pile of bank statements, receipts, and transactions that need to be sorted, categorized, and reconciled.
+It happens more than most investors want to admit. You bought a few properties, handled the bookkeeping yourself for a while, then things got busy. A few months slipped by. Then a year. Now you're staring at a pile of bank statements, receipts, and transactions that need to be sorted, categorized, and reconciled (matched against what your bank says actually happened).
 
 Catch-up bookkeeping is how we fix that. We work through your backlog systematically, whether it's three months or three years, and bring your real estate financials up to date.
 

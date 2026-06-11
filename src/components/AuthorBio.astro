@@ -1,0 +1,18 @@
+---
+import { AUTHOR } from "../lib/author";
+---
+
+<div class="author-bio">
+  <img src={AUTHOR.headshot} alt={AUTHOR.name} class="author-bio-photo" width="64" height="64" loading="lazy" />
+  <div>
+    <div class="author-bio-name">{AUTHOR.name}</div>
+    <p>
+      Founder of Summit Ledger Books. Career software engineer turned QuickBooks-certified
+      bookkeeper. I keep real estate investors' books clean and fix the systems that feed them.
+    </p>
+    <div class="author-bio-links">
+      <a href="/about">More about Austin &rarr;</a>
+      <a href={AUTHOR.sameAs[0]} target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+  </div>
+</div>

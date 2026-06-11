@@ -3,7 +3,7 @@ title: "Tax Preparation Support"
 description: "We organize your real estate financials and work with your CPA to prepare Schedule E filings, depreciation schedules, and entity-level reporting."
 shortDescription: "We organize your real estate financials and work with your CPA on Schedule E filings, depreciation schedules, and entity-level reporting."
 relatedPosts: ["tax-season-tips", "books-for-cash-out-refinance", "reading-rental-property-pnl"]
-order: 3
+order: 4
 ---
 
 ## Making Tax Season Simple for Real Estate Investors
@@ -23,9 +23,9 @@ We don't file your taxes. That's your CPA's job. What we do is make sure your CP
 
 **CPA-ready financials.** We deliver profit and loss statements and balance sheets by property and entity, formatted so your CPA can work from them directly.
 
-**Schedule E support.** We organize your rental income and expenses in the categories your CPA needs for Schedule E preparation. Each property's numbers are broken out clearly.
+**Schedule E support.** Schedule E is the tax form where your rental income gets reported. We organize your income and expenses in the categories your CPA needs to prepare it, with each property's numbers broken out clearly.
 
-**Depreciation schedules.** We maintain depreciation schedules for each property, including cost basis, improvements, and accumulated depreciation. Your CPA gets these without having to ask.
+**Depreciation schedules.** Depreciation is the year-by-year tax write-off of each property. We maintain the schedule for every property, including cost basis, improvements, and accumulated depreciation. Your CPA gets these without having to ask.
 
 **Entity-level reporting.** If you operate through multiple LLCs, each entity gets its own set of financials. No more untangling combined reports.
 

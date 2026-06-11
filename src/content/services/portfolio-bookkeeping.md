@@ -38,7 +38,7 @@ That's where dedicated rental property bookkeeping comes in. We handle the ongoi
 ## How It Works
 
 1. **We connect to your accounts.** Bank feeds, credit cards, and any property management software you use.
-2. **We configure your chart of accounts.** Organized specifically for real estate with classes or tracking categories for each property.
+2. **We configure your chart of accounts.** The category system your books are organized by, set up specifically for real estate with tracking categories for each property.
 3. **Weekly transaction review.** We categorize and review transactions throughout the month so nothing piles up.
 4. **Monthly close by the 10th.** Reconciliations, adjustments, and financial statements delivered on a predictable schedule.
 5. **Ongoing communication.** Questions come up. We flag items that need your input and stay available to discuss anything in your reports.

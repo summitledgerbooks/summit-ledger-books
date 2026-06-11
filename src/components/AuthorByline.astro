@@ -1,0 +1,17 @@
+---
+import { AUTHOR } from "../lib/author";
+---
+
+<span class="author-byline">By <a href="/about">{AUTHOR.name}</a></span>
+
+<style>
+  /* The byline sits on the dark article-header gradient */
+  .author-byline a {
+    color: rgba(255, 255, 255, 0.9);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+  .author-byline a:hover {
+    color: #ffffff;
+  }
+</style>

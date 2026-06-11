@@ -3,7 +3,7 @@ title: "Development Project Tracking"
 description: "Track hard costs, soft costs, land, and carrying costs by real estate development project. Draw schedules and construction loan reconciliation included."
 shortDescription: "Track hard costs, soft costs, land, and carrying costs by project. Draw schedules and construction loan reconciliation included."
 relatedPosts: ["bookkeeping-multiple-llcs", "entity-structure-bookkeeping", "reading-rental-property-pnl"]
-order: 6
+order: 7
 ---
 
 ## Financial Tracking for Real Estate Development Projects
@@ -16,7 +16,7 @@ We set up project-level tracking that gives you visibility into where your money
 
 - Real estate developers building or renovating residential and commercial properties
 - Investors doing fix-and-flip projects who need accurate cost tracking
-- Developers using construction loans who need draw schedule reconciliation
+- Developers using construction loans who need draw schedule reconciliation (matching what you've borrowed to what you've actually spent)
 - Development companies managing multiple active projects across different entities
 
 ## What's Included

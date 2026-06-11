@@ -5,7 +5,7 @@ shortDescription: "STR bookkeeping for Airbnb and VRBO hosts. Platform payouts, 
 image: "/assets/bookkeeping-for-landlords.jpg"
 imageAlt: "Bookkeeping for landlords managing Airbnb and VRBO short-term rentals"
 relatedPosts: ["short-term-rental-bookkeeping", "property-management-software-compared", "real-estate-bookkeeping-mistakes"]
-order: 7
+order: 8
 ---
 
 ## Bookkeeping That Handles the Complexity of Short-Term Rentals
