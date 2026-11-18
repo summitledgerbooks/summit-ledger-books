@@ -35,5 +35,8 @@ export const businessSchema = {
   ],
   priceRange: "$$",
   founder: personSchema,
-  sameAs: ["https://www.linkedin.com/in/summitledgerbooks/"],
+  sameAs: [
+    "https://www.linkedin.com/company/summit-ledger-books/",
+    "https://share.google/JSmmHjjUHcmw6QuOu",
+  ],
 };
