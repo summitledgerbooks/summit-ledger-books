@@ -1,9 +1,11 @@
 ---
+import { Image } from "astro:assets";
 import { AUTHOR } from "../lib/author";
+import headshot from "../assets/images/austin-headshot.png";
 ---
 
 <div class="author-bio">
-  <img src={AUTHOR.headshot} alt={AUTHOR.name} class="author-bio-photo" width="64" height="64" loading="lazy" />
+  <Image src={headshot} alt={AUTHOR.name} class="author-bio-photo" width={64} height={64} densities={[1, 2]} />
   <div>
     <div class="author-bio-name">{AUTHOR.name}</div>
     <p>
@@ -11,7 +13,7 @@ import { AUTHOR } from "../lib/author";
       bookkeeper. I keep real estate investors' books clean and fix the systems that feed them.
     </p>
     <div class="author-bio-links">
-      <a href="/about">More about Austin &rarr;</a>
+      <a href="/about/">More about Austin &rarr;</a>
       <a href={AUTHOR.sameAs[0]} target="_blank" rel="noopener">LinkedIn</a>
     </div>
   </div>

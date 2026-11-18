@@ -1,5 +1,6 @@
 ---
 title: "Rental Property Bookkeeping"
+seoTitle: "Rental Property Bookkeeping Services in Utah"
 description: "Ongoing bookkeeping for real estate investors with rental portfolios. Track income, expenses, and profit by property and entity every month."
 shortDescription: "Track rental income and expenses across every property and entity. Monthly reconciliations and financial statements for your entire portfolio."
 image: "/assets/rental-property-bookkeeping.jpg"

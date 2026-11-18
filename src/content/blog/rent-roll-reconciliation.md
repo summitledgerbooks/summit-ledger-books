@@ -1,5 +1,6 @@
 ---
 title: "What Is a Rent Roll and Why Does It Matter for Your Books?"
+seoTitle: "Rent Roll Reconciliation: How to Tie It to Your Books"
 description: "A rent roll is more than a tenant list. It's a key financial document that connects your leases to your books. Here's what it should include and how to use it."
 date: 2026-02-09
 tags: ["real estate", "bookkeeping", "rental properties", "property management"]
@@ -9,7 +10,7 @@ ogImage: "/images/og-images/the-one-report-every-real-estate-investor-needs.png"
 
 If you manage rental properties, you've probably heard the term rent roll. You may even have one: a spreadsheet listing your tenants and what they pay. But a rent roll used properly is more than a contact list. It's a financial document that should connect directly to your books.
 
-Rent roll reconciliation is a key part of our [property management accounting](/services/property-management-accounting) service. Here's what a complete rent roll looks like and how to use it.
+Rent roll reconciliation is a key part of our [property management accounting](/services/property-management-accounting/) service. Here's what a complete rent roll looks like and how to use it.
 
 ## What a Rent Roll Should Include
 
@@ -38,7 +39,7 @@ This is called **rent roll reconciliation**, and it's something your bookkeeper 
 
 If a tenant paid short, that difference sits as an accounts receivable until it's collected. If a unit is vacant, it shows up as lost income. If extra charges like late fees were assessed, they need to appear in the books too.
 
-Without this reconciliation, you might not notice that one tenant has been consistently paying $50 short for four months, or that a deposit was recorded twice. Related to this, make sure you're also [recording security deposits correctly](/blog/security-deposits-bookkeeping) so they don't distort your income numbers.
+Without this reconciliation, you might not notice that one tenant has been consistently paying $50 short for four months, or that a deposit was recorded twice. Related to this, make sure you're also [recording security deposits correctly](/blog/security-deposits-bookkeeping/) so they don't distort your income numbers.
 
 ## Vacancy Tracking
 
@@ -58,4 +59,4 @@ Some property management software (AppFolio, Buildium, Rent Manager) generates r
 
 The key is treating it as a live document, not something you pull together once a year when someone asks for it. Your bookkeeper should be able to request your rent roll at any time and reconcile it to your books without significant cleanup.
 
-If you're not sure whether your rent roll and your QuickBooks records are in sync, [book a free consultation](/contact) and we can walk through the reconciliation together.
+If you're not sure whether your rent roll and your QuickBooks records are in sync, [book a free consultation](/contact/) and we can walk through the reconciliation together.

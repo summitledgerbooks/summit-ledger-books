@@ -1,5 +1,6 @@
 ---
 title: "5 Tips to Prepare for Tax Season"
+seoTitle: "Rental Property Tax Prep Checklist for Landlords"
 description: "Tax season doesn't have to be stressful. Here are five practical tips to get your small business finances ready before the deadline."
 date: 2026-01-15
 tags: ["taxes", "tips"]
@@ -26,8 +27,8 @@ A common cash flow crunch happens when the tax bill arrives. Set aside a percent
 
 ## 5. Work with a Professional
 
-A bookkeeper keeps your records organized year-round, and a CPA ensures your return is filed correctly. This combination helps you minimize your tax burden and avoid surprises. Our [tax preparation support](/services/tax-prep-support) service is designed to make this handoff seamless.
+A bookkeeper keeps your records organized year-round, and a CPA ensures your return is filed correctly. This combination helps you minimize your tax burden and avoid surprises. Our [tax preparation support](/services/tax-prep-support/) service is designed to make this handoff seamless.
 
 ## Start Now
 
-The best time to prepare for tax season is today. Whether you need help catching up or want to stay organized going forward, [we're here to help](/contact). See our [pricing](/pricing) for details on monthly plans.
+The best time to prepare for tax season is today. Whether you need help catching up or want to stay organized going forward, [we're here to help](/contact/). See our [pricing](/pricing/) for details on monthly plans.

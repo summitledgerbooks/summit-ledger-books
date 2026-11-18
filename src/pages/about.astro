@@ -11,7 +11,7 @@ import { personSchema } from "../lib/author";
 const aboutPageSchema = {
   "@context": "https://schema.org",
   "@type": "AboutPage",
-  "url": "https://summitledgerbooks.com/about",
+  "url": "https://summitledgerbooks.com/about/",
   "mainEntity": {
     ...personSchema,
     "knowsAbout": [
@@ -23,7 +23,7 @@ const aboutPageSchema = {
     "worksFor": {
       "@type": "Organization",
       "name": "Summit Ledger Books",
-      "url": "https://summitledgerbooks.com",
+      "url": "https://summitledgerbooks.com/",
     },
   },
 };
@@ -62,10 +62,10 @@ const aboutPageSchema = {
     </div>
 
     <div class="badge-row" style="justify-content: center; margin: var(--space-lg) 0;">
-      <Image src={badgeQboLevel2} alt="QuickBooks Online Certified" class="badge-img" />
-      <Image src={badgeQboPayroll} alt="QuickBooks Payroll Certified" class="badge-img" />
-      <Image src={bookCert} alt="Bookkeeping Certified" class="badge-img" />
-      <Image src={clientCert} alt="QuickBooks Client Certified" class="badge-img" />
+      <Image src={badgeQboLevel2} alt="QuickBooks Online Certified" class="badge-img" width={80} height={80} densities={[1, 2]} />
+      <Image src={badgeQboPayroll} alt="QuickBooks Payroll Certified" class="badge-img" width={80} height={80} densities={[1, 2]} />
+      <Image src={bookCert} alt="Bookkeeping Certified" class="badge-img" width={80} height={80} densities={[1, 2]} />
+      <Image src={clientCert} alt="QuickBooks Client Certified" class="badge-img" width={80} height={80} densities={[1, 2]} />
     </div>
 
     <div class="prose">
@@ -82,11 +82,11 @@ const aboutPageSchema = {
 
       <h2>Who I Serve</h2>
 
-      <p>I work with real estate investors, property managers, developers, and agents. Whether you own a single rental, manage a portfolio of units, or are partway through your next development project, I know the financial complexity of real estate and how to keep your books clean, organized, and audit-ready. See the full list of <a href="/services">bookkeeping services</a>, including <a href="/services/systems-integration">systems and integration work</a> for when your software and your books don't agree.</p>
+      <p>I work with real estate investors, property managers, developers, and agents. Whether you own a single rental, manage a portfolio of units, or are partway through your next development project, I know the financial complexity of real estate and how to keep your books clean, organized, and audit-ready. See the full list of <a href="/services/">bookkeeping services</a>, including <a href="/services/systems-integration/">systems and integration work</a> for when your software and your books don't agree.</p>
 
-      <p>Read the <a href="/blog">blog</a> for practical guidance on real estate bookkeeping, tax preparation, and portfolio management.</p>
+      <p>Read the <a href="/blog/">blog</a> for practical guidance on real estate bookkeeping, tax preparation, and portfolio management.</p>
 
-      <p>Ready to take bookkeeping off your plate? <a href="/contact">Book a free consultation.</a></p>
+      <p>Ready to take bookkeeping off your plate? <a href="/contact/">Book a free consultation.</a></p>
     </div>
 
   </div>

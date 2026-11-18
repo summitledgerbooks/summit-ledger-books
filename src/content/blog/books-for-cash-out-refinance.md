@@ -1,6 +1,7 @@
 ---
 title: "What Lenders Actually Want to See Before a Cash-Out Refinance"
-description: "A cash-out refinance on a rental property requires more documentation than a primary home loan. Here's what your books need to show and what gets deals held up or killed."
+seoTitle: "What Lenders Want Before a Cash-Out Refinance"
+description: "A cash-out refinance on a rental needs more documentation than a home loan. What your books must show, and what holds deals up."
 date: 2026-02-23
 tags: ["real estate", "bookkeeping", "rental properties", "financing"]
 draft: false
@@ -9,7 +10,7 @@ ogImage: "/images/og-images/if-your-books-look-like-this-tax-season-gets-expensi
 
 Cash-out refinancing is one of the most powerful tools in a real estate investor's playbook. Pull equity from an appreciated property, redeploy it into the next acquisition, and repeat. The strategy works well, until you get to underwriting and realize your books aren't in the shape the lender expects.
 
-Our [financial reporting service](/services/financial-reporting) is built to produce the exact documents lenders ask for. Here's what they typically want to see and how to get your documentation ready before you apply.
+Our [financial reporting service](/services/financial-reporting/) is built to produce the exact documents lenders ask for. Here's what they typically want to see and how to get your documentation ready before you apply.
 
 ## Two Years of Tax Returns Per Entity
 
@@ -21,7 +22,7 @@ If your entities haven't filed returns, or filed them with errors because the bo
 
 Most lenders will ask for year-to-date P&Ls for the current year alongside the tax returns. These need to be clean, organized, and match the bank statements they'll also pull.
 
-A P&L that was clearly produced in 10 minutes, with undifferentiated income, vague expense categories, and no property-level breakdown, raises questions. For more on what these reports should look like, see our guide on [reading a rental property P&L](/blog/reading-rental-property-pnl). A well-organized P&L with consistent categories and clear income separated by property tells the underwriter the investor knows what they're doing and the numbers can be trusted.
+A P&L that was clearly produced in 10 minutes, with undifferentiated income, vague expense categories, and no property-level breakdown, raises questions. For more on what these reports should look like, see our guide on [reading a rental property P&L](/blog/reading-rental-property-pnl/). A well-organized P&L with consistent categories and clear income separated by property tells the underwriter the investor knows what they're doing and the numbers can be trusted.
 
 ## Rent Rolls
 
@@ -60,4 +61,4 @@ Investors with well-maintained books close refinances faster and with fewer cond
 
 If you're planning a refinance in the next 6–12 months, it's worth getting your books current now, not the week before you apply.
 
-[Book a free consultation](/contact) to discuss where your books stand and what would need to happen to get them refinance-ready.
+[Book a free consultation](/contact/) to discuss where your books stand and what would need to happen to get them refinance-ready.

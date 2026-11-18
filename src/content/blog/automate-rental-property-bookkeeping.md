@@ -1,5 +1,6 @@
 ---
 title: "How to Automate Rental Property Bookkeeping (and What Not to Automate)"
+seoTitle: "How to Automate Rental Property Bookkeeping"
 description: "What you can actually automate in rental property bookkeeping: bank feeds, rules, recurring reports, and where automation goes wrong without oversight."
 date: 2026-06-11
 tags: ["bookkeeping", "QuickBooks", "rental properties", "software", "tips"]
@@ -48,7 +49,7 @@ Automation does the typing. Judgment is still the job.
 
 **Reconciliation review.** Software can match transactions, but the monthly reconciliation, confirming the books agree with the bank statement, deserves human eyes. It's the step that catches everything else.
 
-**Anything involving security deposits or owner funds.** Money that isn't yours needs deliberate handling. Auto-categorizing trust money as income is one of the [classic bookkeeping mistakes](/blog/real-estate-bookkeeping-mistakes) that takes hours to unwind.
+**Anything involving security deposits or owner funds.** Money that isn't yours needs deliberate handling. Auto-categorizing trust money as income is one of the [classic bookkeeping mistakes](/blog/real-estate-bookkeeping-mistakes/) that takes hours to unwind.
 
 **Inter-entity transfers.** Money moving between your LLCs needs to land correctly on both sets of books. Rules and AI routinely guess wrong here because the same transfer looks like income on one side and an expense on the other. It's neither.
 
@@ -60,12 +61,12 @@ Automation does the typing. Judgment is still the job.
 
 Individual automations save minutes. The compounding payoff comes from designing the whole pipeline so data flows one direction, gets checked at known points, and produces reports nobody has to assemble by hand.
 
-That design work is where most investors get stuck, because it sits in the gap between bookkeeping knowledge and systems knowledge. It's also where things like property management software enter the picture; if AppFolio or Buildium is in your stack, the [sync between it and QuickBooks Online](/blog/appfolio-quickbooks-integration) is part of the same pipeline and breaks in its own special ways.
+That design work is where most investors get stuck, because it sits in the gap between bookkeeping knowledge and systems knowledge. It's also where things like property management software enter the picture; if AppFolio or Buildium is in your stack, the [sync between it and QuickBooks Online](/blog/appfolio-quickbooks-integration/) is part of the same pipeline and breaks in its own special ways.
 
-This gap is exactly what our [systems and integration service](/services/systems-integration) exists for: setting up the feeds, rules, and reporting so the routine work runs itself, with review steps where judgment matters.
+This gap is exactly what our [systems and integration service](/services/systems-integration/) exists for: setting up the feeds, rules, and reporting so the routine work runs itself, with review steps where judgment matters.
 
 ---
 
 Automate the typing, the categorizing of the predictable, and the report delivery. Keep human judgment on reconciliation, trust money, transfers, and anything with tax consequences. That split gives you books that are both low-effort and trustworthy, instead of one or the other.
 
-If you'd rather have someone build that system for your portfolio and then keep it running, [book a free consultation](/contact) and we'll look at how much of your current bookkeeping time could simply disappear.
+If you'd rather have someone build that system for your portfolio and then keep it running, [book a free consultation](/contact/) and we'll look at how much of your current bookkeeping time could simply disappear.

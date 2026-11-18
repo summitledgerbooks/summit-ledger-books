@@ -2,9 +2,8 @@
 export const AUTHOR = {
   name: "Austin Adams",
   jobTitle: "Founder & Bookkeeper, Summit Ledger Books",
-  url: "https://summitledgerbooks.com/about",
+  url: "https://summitledgerbooks.com/about/",
   sameAs: ["https://www.linkedin.com/in/summitledgerbooks/"],
-  headshot: "/images/headshots/austin-headshot.png",
 };
 
 export const personSchema = {

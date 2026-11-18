@@ -1,6 +1,6 @@
 ---
 title: "Financial Reporting"
-description: "Investor-ready financial reports for real estate portfolios. Profit and loss by property, balance sheets, cash flow statements, and owner summaries delivered monthly."
+description: "Investor-ready financial reports for real estate portfolios. Profit and loss by property, balance sheets, cash flow, and owner summaries monthly."
 shortDescription: "Clear, investor-ready reports: profit and loss by property, balance sheets, and cash flow statements delivered monthly."
 image: "/assets/real-estate-portfolio-accounting.jpg"
 imageAlt: "Real estate portfolio financial reporting and accounting"

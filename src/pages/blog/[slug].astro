@@ -32,24 +32,24 @@ const relatedPosts = allPosts
 const articleSchema = {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  "headline": post.data.title,
+  "headline": post.data.seoTitle ?? post.data.title,
   "description": post.data.description,
   "datePublished": post.data.date.toISOString(),
   "author": personSchema,
   "publisher": {
     "@type": "Organization",
     "name": "Summit Ledger Books",
-    "url": "https://summitledgerbooks.com",
+    "url": "https://summitledgerbooks.com/",
     "logo": {
       "@type": "ImageObject",
       "url": "https://summitledgerbooks.com/images/logos/logo.png"
     }
   },
   "image": post.data.ogImage ? `https://summitledgerbooks.com${post.data.ogImage}` : "https://summitledgerbooks.com/images/og-images/og-image.jpg",
-  "url": `https://summitledgerbooks.com/blog/${post.id}`,
+  "url": `https://summitledgerbooks.com/blog/${post.id}/`,
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": `https://summitledgerbooks.com/blog/${post.id}`
+    "@id": `https://summitledgerbooks.com/blog/${post.id}/`
   }
 };
 
@@ -61,13 +61,13 @@ const breadcrumbSchema = {
       "@type": "ListItem",
       "position": 1,
       "name": "Home",
-      "item": "https://summitledgerbooks.com"
+      "item": "https://summitledgerbooks.com/"
     },
     {
       "@type": "ListItem",
       "position": 2,
       "name": "Blog",
-      "item": "https://summitledgerbooks.com/blog"
+      "item": "https://summitledgerbooks.com/blog/"
     },
     {
       "@type": "ListItem",
@@ -78,10 +78,10 @@ const breadcrumbSchema = {
 };
 ---
 
-<Base title={post.data.title} description={post.data.description} ogType="article" ogImage={post.data.ogImage}>
+<Base title={post.data.title} seoTitle={post.data.seoTitle} description={post.data.description} ogType="article" ogImage={post.data.ogImage}>
   <div class="article-header">
     <div class="container">
-      <a href="/blog" class="article-back">&larr; Blog</a>
+      <a href="/blog/" class="article-back">&larr; Blog</a>
       <h1 class="article-title">{post.data.title}</h1>
       <div class="article-meta">
         <AuthorByline />
@@ -111,7 +111,7 @@ const breadcrumbSchema = {
         <p class="article-related-label">Related posts</p>
         <div class="article-related-links">
           {relatedPosts.map((rp) => (
-            <a href={`/blog/${rp.id}`}>{rp.data.title} &rarr;</a>
+            <a href={`/blog/${rp.id}/`}>{rp.data.title} &rarr;</a>
           ))}
         </div>
       </div>
@@ -120,8 +120,8 @@ const breadcrumbSchema = {
     <div class="article-related" style={relatedPosts.length > 0 ? "border-top: none; padding-top: 0;" : ""}>
       <p class="article-related-label">Explore our services</p>
       <div class="article-related-links">
-        <a href="/services">Real estate bookkeeping services &rarr;</a>
-        <a href="/pricing">Monthly plans and pricing &rarr;</a>
+        <a href="/services/">Real estate bookkeeping services &rarr;</a>
+        <a href="/pricing/">Monthly plans and pricing &rarr;</a>
       </div>
     </div>
 
@@ -131,7 +131,7 @@ const breadcrumbSchema = {
     </div>
 
     <div class="article-footer">
-      <a href="/blog">&larr; Back to all posts</a>
+      <a href="/blog/">&larr; Back to all posts</a>
     </div>
   </div>
 

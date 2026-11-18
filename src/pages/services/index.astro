@@ -13,15 +13,15 @@ const itemListSchema = {
     "@type": "ListItem",
     "position": i + 1,
     "name": s.data.title,
-    "url": `https://summitledgerbooks.com/services/${s.id}`
+    "url": `https://summitledgerbooks.com/services/${s.id}/`
   }))
 };
 ---
 
-<Base title="Services" description="Real estate bookkeeping services for investors, property managers, and developers. Rental property accounting, catch-up bookkeeping, tax preparation support, and financial reporting.">
+<Base seoTitle="Real Estate Investor Bookkeeping Services" description="Real estate investor bookkeeping services for landlords, property managers, and developers. Portfolio accounting, catch-up, tax prep, and reporting.">
   <div class="container">
     <h1 class="section-heading">Real Estate Bookkeeping Services</h1>
-    <p style="color: var(--color-text-muted); margin-bottom: var(--space-xl); max-width: 42rem;">Built specifically for real estate investors, property managers, and developers. Every service is designed to keep your portfolio finances organized and your business on track.</p>
+    <p style="color: var(--color-text-muted); margin-bottom: var(--space-xl); max-width: 42rem;">Real estate investor bookkeeping services for landlords, property managers, and developers. Every service is built to keep your portfolio finances organized and your business on track.</p>
 
     <img
       src="/assets/real-estate-portfolio-bookkeeping.jpg"
@@ -34,7 +34,7 @@ const itemListSchema = {
 
     <div class="card-grid">
       {sorted.map((service) => (
-        <a href={`/services/${service.id}`} class="card card-link">
+        <a href={`/services/${service.id}/`} class="card card-link">
           <h3>{service.data.title}</h3>
           <p>{service.data.shortDescription}</p>
           <span class="card-arrow">Learn more &rarr;</span>
@@ -168,7 +168,7 @@ const itemListSchema = {
     </div>
 
     <div style="text-align: center; margin-top: var(--space-xl);">
-      <a href="/contact" class="btn btn-primary">Book a Free Consultation</a>
+      <a href="/contact/" class="btn btn-primary">Book a Free Consultation</a>
     </div>
   </div>
 

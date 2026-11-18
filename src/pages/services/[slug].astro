@@ -21,12 +21,12 @@ const relatedPosts = service.data.relatedPosts
 const serviceSchema = {
   "@context": "https://schema.org",
   "@type": "Service",
-  "name": service.data.title,
+  "name": service.data.seoTitle ?? service.data.title,
   "description": service.data.description,
   "provider": {
     "@type": "ProfessionalService",
     "name": "Summit Ledger Books",
-    "url": "https://summitledgerbooks.com",
+    "url": "https://summitledgerbooks.com/",
     "telephone": "+13854502276",
     "email": "austin@summitledgerbooks.com"
   },
@@ -34,7 +34,7 @@ const serviceSchema = {
     "@type": "Country",
     "name": "United States"
   },
-  "url": `https://summitledgerbooks.com/services/${service.id}`
+  "url": `https://summitledgerbooks.com/services/${service.id}/`
 };
 
 const breadcrumbSchema = {
@@ -45,13 +45,13 @@ const breadcrumbSchema = {
       "@type": "ListItem",
       "position": 1,
       "name": "Home",
-      "item": "https://summitledgerbooks.com"
+      "item": "https://summitledgerbooks.com/"
     },
     {
       "@type": "ListItem",
       "position": 2,
       "name": "Services",
-      "item": "https://summitledgerbooks.com/services"
+      "item": "https://summitledgerbooks.com/services/"
     },
     {
       "@type": "ListItem",
@@ -62,10 +62,10 @@ const breadcrumbSchema = {
 };
 ---
 
-<Base title={service.data.title} description={service.data.description}>
+<Base title={service.data.title} seoTitle={service.data.seoTitle} description={service.data.description}>
   <div class="article-header">
     <div class="container">
-      <a href="/services" class="article-back">&larr; All Services</a>
+      <a href="/services/" class="article-back">&larr; All Services</a>
       <h1 class="article-title">{service.data.title}</h1>
       <p style="color: rgba(255, 255, 255, 0.85); max-width: 42rem; font-size: 1.05rem;">{service.data.description}</p>
     </div>
@@ -93,7 +93,7 @@ const breadcrumbSchema = {
         <p class="article-related-label">Related articles</p>
         <div class="article-related-links">
           {relatedPosts.map((post) => (
-            <a href={`/blog/${post!.id}`}>{post!.data.title} &rarr;</a>
+            <a href={`/blog/${post!.id}/`}>{post!.data.title} &rarr;</a>
           ))}
         </div>
       </div>
@@ -102,18 +102,18 @@ const breadcrumbSchema = {
     <div class="article-related" style="border-top: none; padding-top: 0;">
       <p class="article-related-label">Explore</p>
       <div class="article-related-links">
-        <a href="/services">All services &rarr;</a>
-        <a href="/pricing">Monthly plans and pricing &rarr;</a>
+        <a href="/services/">All services &rarr;</a>
+        <a href="/pricing/">Monthly plans and pricing &rarr;</a>
       </div>
     </div>
 
     <div class="article-cta">
       <p>Ready to get started?</p>
-      <a href="/contact" class="btn btn-primary">Book a Free Consultation</a>
+      <a href="/contact/" class="btn btn-primary">Book a Free Consultation</a>
     </div>
 
     <div class="article-footer">
-      <a href="/services">&larr; Back to all services</a>
+      <a href="/services/">&larr; Back to all services</a>
     </div>
   </div>
 
