@@ -1,5 +1,6 @@
 ---
 title: "Spreadsheets vs QuickBooks Online for Rental Properties: When to Switch"
+seoTitle: "Spreadsheets vs QuickBooks for Rental Properties"
 description: "When to move your rental property bookkeeping from spreadsheets to QuickBooks Online, and how to migrate without losing years of financial history."
 date: 2026-06-11
 tags: ["bookkeeping", "QuickBooks", "rental properties", "software"]
@@ -16,13 +17,13 @@ If that's where you are and it's working, you don't have a problem yet. Bookmark
 
 ## The Five Signs You've Outgrown It
 
-**1. You have more than one entity.** Once properties sit in different LLCs, your books need clean separation for legal protection to mean anything. A spreadsheet doesn't enforce separation; it relies on you never pasting a row in the wrong tab. We wrote about why this matters in [bookkeeping for multiple LLCs](/blog/bookkeeping-multiple-llcs).
+**1. You have more than one entity.** Once properties sit in different LLCs, your books need clean separation for legal protection to mean anything. A spreadsheet doesn't enforce separation; it relies on you never pasting a row in the wrong tab. We wrote about why this matters in [bookkeeping for multiple LLCs](/blog/bookkeeping-multiple-llcs/).
 
 **2. Nothing reconciles.** A spreadsheet records what you remember to type. It never checks itself against the bank. If you've never matched your spreadsheet against actual bank statements, there are errors in it right now. Not maybe. There are.
 
 **3. One person understands the file.** Fourteen tabs, color codes that mean something to you alone, formulas nobody dares touch. If you got sick for a month, could your spouse or partner produce a P&L? If the answer is no, your bookkeeping has a single point of failure.
 
-**4. A lender or CPA asked for reports you couldn't produce.** Refinancing, a new loan, or tax season turns into days of spreadsheet surgery to build statements QuickBooks Online generates in two clicks. We've seen investors lose rate locks waiting on their own books. More on that in [getting your books refinance-ready](/blog/books-for-cash-out-refinance).
+**4. A lender or CPA asked for reports you couldn't produce.** Refinancing, a new loan, or tax season turns into days of spreadsheet surgery to build statements QuickBooks Online generates in two clicks. We've seen investors lose rate locks waiting on their own books. More on that in [getting your books refinance-ready](/blog/books-for-cash-out-refinance/).
 
 **5. You're typing the same number twice.** Rent comes in, you type it in the spreadsheet, then again somewhere else for taxes. Double entry by hand is the clearest sign the tool is costing more time than it saves.
 
@@ -44,7 +45,7 @@ Two or more of those, and the switch will pay for itself quickly.
 
 This is the part people fear, and the part most often botched. Years of spreadsheet history matter for taxes, depreciation, and cost basis. Don't abandon it, and don't dump it into QuickBooks Online as one giant "opening balance" either.
 
-**Step 1: Set up the chart of accounts first.** Build the account structure for real estate before importing anything, with property-level tracking from day one. Our [chart of accounts guide](/blog/chart-of-accounts-rental-properties) walks through it.
+**Step 1: Set up the chart of accounts first.** Build the account structure for real estate before importing anything, with property-level tracking from day one. Our [chart of accounts guide](/blog/chart-of-accounts-rental-properties/) walks through it.
 
 **Step 2: Pick a clean start date.** Usually January 1 of the current year. Full transaction detail from that date forward.
 
@@ -66,4 +67,4 @@ A fair warning in the other direction: QuickBooks Online set up badly is not an 
 
 Spreadsheets are how everyone starts. QuickBooks Online, set up properly for real estate, is how portfolios scale without the books becoming a second job.
 
-If you're staring at a workbook with years of history and dreading the move, this is work we do all the time, including the spreadsheet rescue part. [Book a free consultation](/contact) and we'll map out what your migration would look like before you commit to anything.
+If you're staring at a workbook with years of history and dreading the move, this is work we do all the time, including the spreadsheet rescue part. [Book a free consultation](/contact/) and we'll map out what your migration would look like before you commit to anything.

@@ -1,51 +1,18 @@
 ---
+import { Image } from "astro:assets";
 import Base from "../layouts/Base.astro";
 import { getCollection } from "astro:content";
-import { AUTHOR, personSchema } from "../lib/author";
+import { businessSchema } from "../lib/business";
+import headshot from "../assets/images/austin-headshot.png";
 
 const allPosts = await getCollection("blog", ({ data }) => !data.draft);
 const recentPosts = allPosts
   .sort((a, b) => b.data.date.getTime() - a.data.date.getTime())
   .slice(0, 3);
 
-const localBusinessSchema = {
-  "@context": "https://schema.org",
-  "@type": "ProfessionalService",
-  "name": "Summit Ledger Books",
-  "description": "Professional bookkeeping for real estate investors, property managers, and developers. We track rental income, property expenses, and portfolio performance across every entity and property you own.",
-  "url": "https://summitledgerbooks.com",
-  "telephone": "+13854502276",
-  "email": "austin@summitledgerbooks.com",
-  "address": {
-    "@type": "PostalAddress",
-    "addressLocality": "Kaysville",
-    "addressRegion": "UT",
-    "addressCountry": "US"
-  },
-  "areaServed": [
-    {
-      "@type": "State",
-      "name": "Utah"
-    },
-    {
-      "@type": "AdministrativeArea",
-      "name": "Davis County, Utah"
-    },
-    {
-      "@type": "AdministrativeArea",
-      "name": "Salt Lake County, Utah"
-    }
-  ],
-  "serviceType": "Bookkeeping",
-  "priceRange": "$$",
-  "founder": personSchema,
-  "sameAs": [
-    "https://www.linkedin.com/in/summitledgerbooks/"
-  ]
-};
 ---
 
-<Base description="Real estate bookkeeping for investors, property managers, and developers. Books closed by the 10th, every property, every entity, every month. Summit Ledger Books.">
+<Base seoTitle="Real Estate Bookkeeping in Utah" description="Real estate bookkeeping in Utah for investors, landlords, and property managers. Books closed by the 10th for every property and every entity.">
   <section class="hero">
     <div class="container">
       <span class="eyebrow eyebrow--on-dark">Real Estate Bookkeeping &middot; Built by a Software Engineer</span>
@@ -100,7 +67,7 @@ const localBusinessSchema = {
           <p>When your property management software and QuickBooks disagree, you don't need another workaround. You need someone who can read the data and fix the sync. Very few bookkeepers can do both.</p>
         </div>
       </div>
-      <p style="text-align: center; margin-top: var(--space-lg);"><a href="/services/systems-integration" style="color: var(--color-navy); font-weight: 600;">See Systems &amp; Integration services &rarr;</a></p>
+      <p style="text-align: center; margin-top: var(--space-lg);"><a href="/services/systems-integration/" style="color: var(--color-navy); font-weight: 600;">See Systems &amp; Integration services &rarr;</a></p>
     </div>
   </section>
 
@@ -116,7 +83,7 @@ const localBusinessSchema = {
           <li>Clear tracking of owner draws <span class="term">(the money you take out)</span></li>
           <li>CPA-ready reports at tax time</li>
         </ul>
-        <p class="section-prose">When your books are current and accurate, you can make confident decisions about your portfolio. You know what's performing, what isn't, and where your money is actually going. See how our <a href="/services" style="color: var(--color-navy); text-decoration: underline;">real estate bookkeeping services</a> keep your portfolio organized.</p>
+        <p class="section-prose">When your books are current and accurate, you can make confident decisions about your portfolio. You know what's performing, what isn't, and where your money is actually going. See how our <a href="/services/" style="color: var(--color-navy); text-decoration: underline;">real estate bookkeeping services</a> keep your portfolio organized.</p>
       </div>
     </div>
   </section>
@@ -125,38 +92,38 @@ const localBusinessSchema = {
   <section class="container section-block">
     <h2 class="section-heading" style="text-align: center;">What We Handle</h2>
     <div class="card-grid">
-      <a href="/services/portfolio-bookkeeping" class="card card-link">
+      <a href="/services/portfolio-bookkeeping/" class="card card-link">
         <h3>Rental Property Bookkeeping</h3>
         <p>Track rental income and expenses across every property and entity, whether you have one LLC or twenty. We categorize transactions, reconcile accounts, and deliver clear monthly statements for your entire portfolio.</p>
         <span class="card-arrow">Learn more &rarr;</span>
       </a>
-      <a href="/services/catch-up-bookkeeping" class="card card-link">
+      <a href="/services/catch-up-bookkeeping/" class="card card-link">
         <h3>Catch-Up Bookkeeping</h3>
         <p>Behind on your property records? We'll work through your backlog, whether it's a few months or a few years, and bring everything current.</p>
         <span class="card-arrow">Learn more &rarr;</span>
       </a>
-      <a href="/services/tax-prep-support" class="card card-link">
+      <a href="/services/tax-prep-support/" class="card card-link">
         <h3>Tax Preparation Support</h3>
         <p>We organize your real estate financials and work with your CPA on Schedule E filings <span class="term">(the rental income tax form)</span>, depreciation schedules, and entity-level reporting so tax season runs smoothly.</p>
         <span class="card-arrow">Learn more &rarr;</span>
       </a>
-      <a href="/services/property-management-accounting" class="card card-link">
+      <a href="/services/property-management-accounting/" class="card card-link">
         <h3>Property Management Accounting</h3>
         <p>We track management fees, owner disbursements, and trust accounting <span class="term">(keeping tenant and owner money legally separate)</span> so your books reflect how property management actually works. Rent roll reconciliation included.</p>
         <span class="card-arrow">Learn more &rarr;</span>
       </a>
-      <a href="/services/development-project-tracking" class="card card-link">
+      <a href="/services/development-project-tracking/" class="card card-link">
         <h3>Development Project Tracking</h3>
         <p>We track hard costs, soft costs, land, and carrying costs by project. Draw schedules, construction loan reconciliation, and cost-to-complete reporting so you always know where your money is going.</p>
         <span class="card-arrow">Learn more &rarr;</span>
       </a>
-      <a href="/services/systems-integration" class="card card-link">
+      <a href="/services/systems-integration/" class="card card-link">
         <h3>Systems &amp; Integration</h3>
         <p>When AppFolio, Buildium, or Stessa won't reconcile with QuickBooks, we fix the pipeline. Sync cleanup, automated reporting, data migration, and spreadsheet rescue from a bookkeeper who writes software.</p>
         <span class="card-arrow">Learn more &rarr;</span>
       </a>
     </div>
-    <p style="text-align: center; margin-top: var(--space-lg);"><a href="/services">View all services &rarr;</a></p>
+    <p style="text-align: center; margin-top: var(--space-lg);"><a href="/services/">View all services &rarr;</a></p>
   </section>
 
   <!-- What You Get Each Month -->
@@ -219,7 +186,7 @@ const localBusinessSchema = {
   <section class="why-band">
     <div class="container">
       <h2 class="section-heading" style="text-align: center; color: var(--color-navy);">Why Summit Ledger Books</h2>
-      <p style="text-align: center; color: var(--color-text-muted); margin-bottom: var(--space-lg); max-width: 38rem; margin-left: auto; margin-right: auto;">Real estate investing is a climb. We make sure your books never slow you down. <a href="/about" style="color: var(--color-navy);">Learn more about who we are.</a></p>
+      <p style="text-align: center; color: var(--color-text-muted); margin-bottom: var(--space-lg); max-width: 38rem; margin-left: auto; margin-right: auto;">Real estate investing is a climb. We make sure your books never slow you down. <a href="/about/" style="color: var(--color-navy);">Learn more about who we are.</a></p>
       <div class="why-grid">
         <div class="why-item">
           <h3>Small firm, direct communication</h3>
@@ -252,13 +219,13 @@ const localBusinessSchema = {
   <!-- Meet Austin -->
   <section class="container section-block">
     <div class="founder-section">
-      <img src={AUTHOR.headshot} alt="Austin Adams, founder of Summit Ledger Books" class="founder-photo" width="224" height="224" loading="lazy" />
+      <Image src={headshot} alt="Austin Adams, founder of Summit Ledger Books" class="founder-photo" width={224} height={224} densities={[1, 2]} />
       <div class="founder-text">
         <span class="eyebrow">Meet Your Bookkeeper</span>
         <h2 class="section-heading" style="margin-bottom: var(--space-md);">Hi, I'm Austin Adams.</h2>
         <p>I'm a software engineer and QuickBooks-certified bookkeeper in Kaysville, Utah. I started Summit Ledger Books because real estate investors kept telling me the same story: software that doesn't match the books, spreadsheets nobody trusts, and a bookkeeper who shrugs at both.</p>
         <p>When you work with Summit Ledger Books, you work with me. Directly, every month.</p>
-        <a href="/about">Read my story &rarr;</a>
+        <a href="/about/">Read my story &rarr;</a>
       </div>
     </div>
   </section>
@@ -296,22 +263,39 @@ const localBusinessSchema = {
     <p style="text-align: center; color: var(--color-text-muted); margin-bottom: var(--space-lg);">Practical guidance on real estate bookkeeping, tax preparation, and portfolio management.</p>
     <div class="card-grid">
       {recentPosts.map((post) => (
-        <a href={`/blog/${post.id}`} class="card card-link">
+        <a href={`/blog/${post.id}/`} class="card card-link">
           <h3 style="font-size: 1.05rem;">{post.data.title}</h3>
           <p>{post.data.description}</p>
           <span class="card-arrow">Read more &rarr;</span>
         </a>
       ))}
     </div>
-    <p style="text-align: center; margin-top: var(--space-lg);"><a href="/blog">View all posts &rarr;</a></p>
+    <p style="text-align: center; margin-top: var(--space-lg);"><a href="/blog/">View all posts &rarr;</a></p>
+  </section>
+
+  <section class="container section-block">
+    <h2 class="section-heading" style="text-align: center;">Real Estate Bookkeeping in Davis and Salt Lake Counties</h2>
+    <p style="text-align: center; color: var(--color-text-muted); max-width: 40rem; margin: 0 auto var(--space-lg);">Based in Kaysville, we keep the books for real estate investors, landlords, and property managers along the Wasatch Front.</p>
+    <div class="card-grid">
+      <a href="/bookkeeping-davis-county/" class="card card-link">
+        <h3>Davis County, Kaysville, and Layton</h3>
+        <p>A real estate bookkeeper for rental portfolios in Davis County, including Kaysville, Layton, and the nearby cities along the Wasatch Front.</p>
+        <span class="card-arrow">Davis County bookkeeping &rarr;</span>
+      </a>
+      <a href="/bookkeeping-salt-lake-county/" class="card card-link">
+        <h3>Salt Lake City and Salt Lake County</h3>
+        <p>Property management and real estate bookkeeping for investors and managers in Salt Lake City and across Salt Lake County.</p>
+        <span class="card-arrow">Salt Lake County bookkeeping &rarr;</span>
+      </a>
+    </div>
   </section>
 
   <!-- Final CTA -->
   <section class="container" style="text-align: center; padding-bottom: var(--space-xl);">
     <h2 class="section-heading">Ready to get your real estate books in order?</h2>
     <p style="color: var(--color-text-muted); margin-bottom: var(--space-lg);">Let's talk about how Summit Ledger Books can help your portfolio run more efficiently.</p>
-    <a href="/contact" class="btn btn-primary">Book a Free Call</a>
+    <a href="/contact/" class="btn btn-primary">Book a Free Call</a>
   </section>
 
-  <script is:inline type="application/ld+json" set:html={JSON.stringify(localBusinessSchema)} />
+  <script is:inline type="application/ld+json" set:html={JSON.stringify(businessSchema)} />
 </Base>

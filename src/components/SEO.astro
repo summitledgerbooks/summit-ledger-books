@@ -1,26 +1,48 @@
 ---
+import { buildPageTitle, SITE_NAME } from "../lib/page-title";
+
 interface Props {
   title?: string;
+  seoTitle?: string;
   description?: string;
   ogType?: string;
   canonicalUrl?: string;
   ogImage?: string;
 }
 
-const siteName = "Summit Ledger Books";
-const defaultDescription = "Professional bookkeeping for real estate investors, property managers, and developers. We track rental income, property expenses, and portfolio performance across every entity and property you own.";
+const siteName = SITE_NAME;
+const defaultDescription =
+  "Real estate bookkeeping for investors, landlords, and property managers in Utah. Monthly books and property-level reporting for every entity you own.";
 const defaultOgImage = "https://summitledgerbooks.com/images/og-images/og-image.jpg";
+const TITLE_MAX = 60;
+const DESCRIPTION_MAX = 160;
 
 const {
   title,
+  seoTitle,
   description = defaultDescription,
   ogType = "website",
   canonicalUrl,
   ogImage,
 } = Astro.props;
 
-const pageTitle = title ? `${title} | ${siteName}` : siteName;
-const canonical = canonicalUrl || new URL(Astro.url.pathname, Astro.site).href;
+const pageTitle = buildPageTitle(title, seoTitle);
+if (pageTitle.length > TITLE_MAX) {
+  throw new Error(`SEO title is ${pageTitle.length} characters (max ${TITLE_MAX}): ${pageTitle}`);
+}
+if (description.length > DESCRIPTION_MAX) {
+  throw new Error(
+    `Meta description is ${description.length} characters (max ${DESCRIPTION_MAX}): ${description}`,
+  );
+}
+
+function withTrailingSlash(pathname: string): string {
+  if (pathname === "/" || /\.[a-z0-9]+$/i.test(pathname)) return pathname;
+  return pathname.endsWith("/") ? pathname : `${pathname}/`;
+}
+
+const canonical =
+  canonicalUrl || new URL(withTrailingSlash(Astro.url.pathname), Astro.site).href;
 const resolvedOgImage = ogImage ? `https://summitledgerbooks.com${ogImage}` : defaultOgImage;
 ---
 

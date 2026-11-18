@@ -1,6 +1,6 @@
 ---
 title: "Systems & Integration"
-description: "QuickBooks systems work from a software engineer: property management software sync cleanup, automated reporting, data migration, and spreadsheet rescue for real estate investors."
+description: "QuickBooks systems work from a software engineer: sync cleanup, automated reporting, data migration, and spreadsheet rescue for investors."
 shortDescription: "When AppFolio, Buildium, or Stessa won't reconcile with QuickBooks, we fix the pipeline. Sync cleanup, automated reports, and spreadsheet rescue."
 image: "/assets/property-management-bookkeeping.jpg"
 imageAlt: "Connecting property management software and QuickBooks for real estate investors"

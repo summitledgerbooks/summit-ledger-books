@@ -1,6 +1,7 @@
 ---
 title: "5 Bookkeeping Mistakes Real Estate Investors Make (And How to Fix Them)"
-description: "Mixing accounts, skipping reconciliations, and missing deductions are costing rental property owners money. Here's what to watch for and how to get your books right."
+seoTitle: "5 Rental Property Bookkeeping Mistakes (and Fixes)"
+description: "Mixing accounts, skipped reconciliations, and missed deductions cost rental property owners money. What to watch for and how to fix the books."
 date: 2026-03-04
 tags: ["real estate", "bookkeeping", "rental properties"]
 draft: false
@@ -8,7 +9,7 @@ draft: false
 
 Real estate investing comes with enough complexity on its own: tenants, maintenance, financing, vacancies. Most investors don't get into the business to think about accounting. But the way you track your finances can quietly cost you thousands of dollars a year in missed deductions, bad decisions, and tax surprises.
 
-Here are five bookkeeping mistakes we see most often, and what to do instead. If you're already behind, our [catch-up bookkeeping](/services/catch-up-bookkeeping) service can help you get back on track.
+Here are five bookkeeping mistakes we see most often, and what to do instead. If you're already behind, our [catch-up bookkeeping](/services/catch-up-bookkeeping/) service can help you get back on track.
 
 ## 1. Mixing Personal and Business Finances
 
@@ -20,7 +21,7 @@ This is the most common mistake, especially for investors who started with one o
 
 Not all properties carry the same financial structure. A short-term rental has different expense categories than a long-term lease. A property held in an LLC has different reporting requirements than one held personally. Lumping everything together means you lose property-level visibility and can't tell which units are actually profitable.
 
-**Fix it:** Set up a separate ledger or class for each property in your accounting software. QuickBooks Online makes this straightforward with its class and location tracking features. Our guide on [setting up a chart of accounts](/blog/chart-of-accounts-rental-properties) walks through this in detail. When you run a Profit and Loss by property, you can see exactly where you're making money and where you're not.
+**Fix it:** Set up a separate ledger or class for each property in your accounting software. QuickBooks Online makes this straightforward with its class and location tracking features. Our guide on [setting up a chart of accounts](/blog/chart-of-accounts-rental-properties/) walks through this in detail. When you run a Profit and Loss by property, you can see exactly where you're making money and where you're not.
 
 ## 3. Missing Depreciation
 
@@ -44,4 +45,4 @@ This is a surprisingly costly error. A repair, like fixing a leaking pipe, is de
 
 Getting these details right isn't just about compliance. It's about having accurate numbers that help you evaluate deals, report to lenders, and make confident decisions about your portfolio.
 
-If your books are behind or your current system isn't giving you property-level visibility, [book a free consultation](/contact) and we'll walk through what it would take to get organized.
+If your books are behind or your current system isn't giving you property-level visibility, [book a free consultation](/contact/) and we'll walk through what it would take to get organized.

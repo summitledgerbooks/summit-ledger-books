@@ -1,6 +1,7 @@
 ---
 title: "Short-Term Rental Bookkeeping: What Airbnb and VRBO Hosts Need to Know"
-description: "Short-term rentals have more moving parts than long-term leases: platform payouts, occupancy taxes, cleaning fees, and fluctuating income. Here's how to keep your books straight."
+seoTitle: "How to Record Airbnb Payouts in QuickBooks Online"
+description: "Short-term rentals add platform payouts, occupancy taxes, cleaning fees, and uneven income. How Airbnb and VRBO hosts keep their books straight."
 date: 2026-02-02
 tags: ["real estate", "bookkeeping", "short-term rentals", "Airbnb"]
 draft: false
@@ -9,7 +10,7 @@ ogImage: "/images/og-images/airbnb-bookkeeping-is-different.png"
 
 Short-term rental income feels simpler than it is. You list on Airbnb or VRBO, guests book, money shows up. But when you look at the actual payouts, you're dealing with nightly rates, cleaning fees, platform commissions, occupancy taxes, and wildly variable income month to month. Without a system, the books get messy fast.
 
-Here's how to structure [short-term rental bookkeeping](/services/short-term-rental-bookkeeping) so your numbers are accurate and your CPA isn't guessing.
+Here's how to record the payouts. Ongoing books are handled by our [short-term rental bookkeeping service](/services/short-term-rental-bookkeeping/).
 
 ## How Platform Payouts Actually Work
 
@@ -44,7 +45,7 @@ Check your platform's tax documentation and confirm with your CPA which taxes ap
 
 ## Tracking Expenses by Property
 
-Short-term rentals tend to have higher operating costs than long-term rentals: more frequent turnovers, supplies, repairs from heavier use, photography, listing optimization tools. These all need to be tracked at the property level. The right [property management software](/blog/property-management-software-compared) can help streamline this tracking.
+Short-term rentals tend to have higher operating costs than long-term rentals: more frequent turnovers, supplies, repairs from heavier use, photography, listing optimization tools. These all need to be tracked at the property level. The right [property management software](/blog/property-management-software-compared/) can help streamline this tracking.
 
 Set up a class or location in QuickBooks for each STR property. Every income and expense entry gets tagged to the right property. At the end of the month (or year), you can pull a P&L by property and see exactly how each one performed.
 
@@ -71,4 +72,4 @@ Your bookkeeper's job is to make sure your CPA has:
 
 If your current books don't have this level of organization, tax season becomes a much harder problem than it needs to be.
 
-[Book a free consultation](/contact) to talk through how your short-term rental books are set up and whether there's a better approach for your portfolio.
+[Book a free consultation](/contact/) to talk through how your short-term rental books are set up and whether there's a better approach for your portfolio.

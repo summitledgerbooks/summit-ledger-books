@@ -1,5 +1,6 @@
 ---
 title: "The Real Estate Investor's Month-End Close Checklist"
+seoTitle: "Month-End Close Checklist for Rental Properties"
 description: "Closing your books at the end of each month keeps your financials accurate and your CPA happy. Here's the exact checklist we run for rental property portfolios."
 date: 2026-03-02
 tags: ["real estate", "bookkeeping", "rental properties", "tips"]
@@ -11,13 +12,13 @@ Month-end close sounds like an accounting term reserved for corporations with fi
 
 Without it, errors pile up, reconciliations get harder, and by the time tax season arrives, the cleanup takes weeks. With it, you always know where you stand.
 
-Here's the checklist we run as part of our [rental property bookkeeping](/services/portfolio-bookkeeping) service.
+Here's the checklist we run as part of our [rental property bookkeeping](/services/portfolio-bookkeeping/) service.
 
 ## 1. Categorize All Transactions
 
 Every bank and credit card transaction from the month needs to be assigned to the right account and property. No uncategorized transactions should remain when you close the month.
 
-This is the core bookkeeping task and the one that gets skipped when things get busy. A backlog of uncategorized transactions from June that you're sorting through in November means you're making guesses about expense types and properties from memory, which is a reliability problem. Once everything is categorized, you can [read your P&L](/blog/reading-rental-property-pnl) with confidence.
+This is the core bookkeeping task and the one that gets skipped when things get busy. A backlog of uncategorized transactions from June that you're sorting through in November means you're making guesses about expense types and properties from memory, which is a reliability problem. Once everything is categorized, you can [read your P&L](/blog/reading-rental-property-pnl/) with confidence.
 
 ## 2. Reconcile Every Bank Account
 
@@ -76,4 +77,4 @@ Receipts, invoices, lease agreements, contractor statements. These should be att
 
 Done consistently, this process takes 1–3 hours per month depending on transaction volume. Done inconsistently, it takes much longer because each missed month adds complexity to the next.
 
-If you'd like a bookkeeper to run this process for you every month, [book a free consultation](/contact) and we can walk through what it would look like for your portfolio.
+If you'd like a bookkeeper to run this process for you every month, [book a free consultation](/contact/) and we can walk through what it would look like for your portfolio.
