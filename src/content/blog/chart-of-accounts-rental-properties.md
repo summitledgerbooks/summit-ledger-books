@@ -70,4 +70,12 @@ Ideally, before you record your first transaction. In practice, most investors c
 
 Getting the chart of accounts right doesn't just make tax season easier. It gives you real data on which properties are actually profitable and which ones are draining cash without you realizing it.
 
+## Download a QuickBooks Online import template
+
+The accounts described above are also in a CSV formatted for QuickBooks Online's chart of accounts import. It is a starting template for a rental portfolio, not a finished file for your properties.
+
+[Download the rental property chart of accounts (CSV)](/downloads/rental-property-chart-of-accounts.csv)
+
+Test-import it into a sample QuickBooks Online company, or a backup of your file, before you import it into the company you use every day. An import is awkward to undo, and you will want to check account names, numbers, and detail types first.
+
 If you'd like help setting up or restructuring your QuickBooks file, [book a free consultation](/contact/) and we can walk through your specific portfolio.

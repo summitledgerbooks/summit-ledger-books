@@ -1,0 +1,45 @@
+Account Number,Account Name,Type,Detail Type
+1010,Operating Checking,Bank,Checking
+1020,Capital Reserve Savings,Bank,Savings
+1030,Security Deposit Account,Bank,Rents Held in Trust
+1200,Mortgage Escrow,Other Current Assets,Other Current Assets
+1210,1031 Exchange Funds Held by QI,Other Current Assets,Other Current Assets
+1500,Land,Fixed Assets,Land
+1510,Buildings,Fixed Assets,Buildings
+1520,Capital Improvements,Fixed Assets,Buildings
+1530,Furniture and Appliances,Fixed Assets,Furniture & Fixtures
+1590,Accumulated Depreciation,Fixed Assets,Accumulated Depreciation
+2010,Business Credit Card,Credit Card,Credit Card
+2100,Security Deposits Held,Other Current Liabilities,Rents in trust - Liability
+2110,Prepaid Rent,Other Current Liabilities,Other Current Liabilities
+2120,Sales Tax Payable,Other Current Liabilities,Sales Tax Payable
+2130,Transient Room Tax Payable,Other Current Liabilities,Other Current Liabilities
+2500,Mortgage Payable,Long Term Liabilities,Notes Payable
+3010,Owner Contributions,Equity,Owner's Equity
+3020,Owner Draws,Equity,Owner's Equity
+4010,Rental Income,Income,Other Primary Income
+4020,Late Fees,Income,Other Primary Income
+4030,Pet Rent and Fees,Income,Other Primary Income
+4040,Cleaning Fee Income,Income,Other Primary Income
+4050,Security Deposits Retained,Income,Other Primary Income
+5050,Advertising (Sch E Line 5),Expenses,Advertising/Promotional
+5060,Auto and Travel (Sch E Line 6),Expenses,Auto
+5070,Cleaning and Maintenance (Sch E Line 7),Expenses,Repair & Maintenance
+5080,Commissions (Sch E Line 8),Expenses,Other Miscellaneous Service Cost
+5090,Insurance (Sch E Line 9),Expenses,Insurance
+5100,Legal and Professional Fees (Sch E Line 10),Expenses,Legal & Professional Fees
+5110,Management Fees (Sch E Line 11),Expenses,Other Business Expenses
+5120,Mortgage Interest (Sch E Line 12),Expenses,Interest Paid
+5130,Other Interest (Sch E Line 13),Expenses,Interest Paid
+5140,Repairs (Sch E Line 14),Expenses,Repair & Maintenance
+5150,Supplies (Sch E Line 15),Expenses,Supplies & Materials
+5160,Property Taxes (Sch E Line 16),Expenses,Taxes Paid
+5170,Utilities (Sch E Line 17),Expenses,Utilities
+5190,HOA Dues (Sch E Line 19),Expenses,Dues & subscriptions
+5191,Bank Charges (Sch E Line 19),Expenses,Bank Charges
+5192,Software and Subscriptions (Sch E Line 19),Expenses,Dues & subscriptions
+5193,Licenses and Permits (Sch E Line 19),Expenses,Taxes Paid
+5194,Platform Service Fees (Sch E Line 19),Expenses,Other Business Expenses
+7010,Gain on Sale of Property,Other Income,Other Miscellaneous Income
+7020,Interest Income,Other Income,Interest Earned
+8010,Depreciation Expense (Sch E Line 18),Other Expense,Depreciation
