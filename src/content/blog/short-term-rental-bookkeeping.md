@@ -10,7 +10,7 @@ ogImage: "/images/og-images/airbnb-bookkeeping-is-different.png"
 
 Short-term rental income feels simpler than it is. You list on Airbnb or VRBO, guests book, money shows up. But when you look at the actual payouts, you're dealing with nightly rates, cleaning fees, platform commissions, occupancy taxes, and wildly variable income month to month. Without a system, the books get messy fast.
 
-Here's how to record the payouts. Ongoing books are handled by our [short-term rental bookkeeping service](/services/short-term-rental-bookkeeping/).
+Here's how to record the payouts. Ongoing books are handled by my [short-term rental bookkeeping service](/services/short-term-rental-bookkeeping/).
 
 ## How Platform Payouts Actually Work
 

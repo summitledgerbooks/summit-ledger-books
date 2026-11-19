@@ -12,7 +12,7 @@ order: 10
 
 Most real estate investors have access to reports in QuickBooks. The problem is those reports are only useful if the underlying data is clean, categorized correctly, and organized by property and entity. A profit and loss statement built on messy books tells you nothing.
 
-We deliver financial reports that are accurate, organized, and built specifically for real estate investors. Reports you can hand to your CPA, present to a lender, or use to make decisions about your portfolio.
+I deliver financial reports that are accurate, organized, and built specifically for real estate investors. Reports you can hand to your CPA, present to a lender, or use to make decisions about your portfolio.
 
 ## Who This Is For
 
@@ -35,14 +35,14 @@ We deliver financial reports that are accurate, organized, and built specificall
 
 **Entity-level reporting.** If you operate through multiple LLCs, each entity gets its own set of reports. No combined reports that force your CPA to untangle things.
 
-**Custom reports on request.** Need a specific report for a lender, a partner, or a property evaluation? We build custom reports based on your clean data.
+**Custom reports on request.** Need a specific report for a lender, a partner, or a property evaluation? I build custom reports based on your clean data.
 
 ## How It Works
 
-1. **Reporting setup.** We configure your QuickBooks reports with the right filters, classes, and date ranges for your portfolio.
+1. **Reporting setup.** I configure your QuickBooks reports with the right filters, classes, and date ranges for your portfolio.
 2. **Monthly delivery.** By the 10th of each month, your reports are delivered covering the prior month's activity.
-3. **Review call (optional).** We're available to walk you through your reports and answer questions about what the numbers mean.
-4. **Year-end package.** At the end of the year, we prepare a complete financial package for your CPA with all the supporting detail they need.
+3. **Review call (optional).** I'm available to walk you through your reports and answer questions about what the numbers mean.
+4. **Year-end package.** At the end of the year, I prepare a complete financial package for your CPA with all the supporting detail they need.
 
 ## Why This Matters
 

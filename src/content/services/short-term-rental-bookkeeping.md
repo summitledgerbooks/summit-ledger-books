@@ -12,7 +12,7 @@ order: 8
 
 Short-term rentals don't work like traditional rentals. Income fluctuates by season. Platforms take fees and remit payments on their own schedule. Cleaning costs hit after every turnover. Occupancy taxes vary by jurisdiction. And if you're running multiple listings across Airbnb and VRBO, the transaction volume adds up fast.
 
-We set up your books to handle all of this correctly and give you property-level reporting that reflects how each listing actually performs.
+I set up your books to handle all of this correctly and give you property-level reporting that reflects how each listing actually performs.
 
 ## Who This Is For
 
@@ -23,23 +23,23 @@ We set up your books to handle all of this correctly and give you property-level
 
 ## What's Included
 
-**Platform payout reconciliation.** Airbnb, VRBO, and other platforms deposit payouts on varying schedules with fees already deducted. We reconcile each payout against the underlying reservations so your books reflect gross income, platform fees, and net deposits accurately.
+**Platform payout reconciliation.** Airbnb, VRBO, and other platforms deposit payouts on varying schedules with fees already deducted. I reconcile each payout against the underlying reservations so your books reflect gross income, platform fees, and net deposits accurately.
 
 **Cleaning and turnover cost tracking.** Every cleaning fee, supply restock, and turnover expense is tracked by property. Over a year, these costs significantly impact your profitability, and you need to see them clearly.
 
-**Occupancy and lodging tax tracking.** Some platforms collect and remit occupancy taxes. Some don't. We track what's been collected, what's been remitted, and what you owe so you're never caught off guard by a tax liability.
+**Occupancy and lodging tax tracking.** Some platforms collect and remit occupancy taxes. Some don't. I track what's been collected, what's been remitted, and what you owe so you're never caught off guard by a tax liability.
 
 **Platform fee categorization.** Host service fees, payment processing fees, and any other platform charges are categorized separately from your operating expenses. You see exactly what the platforms are costing you.
 
 **Property-level P&L.** Each listing gets its own profit and loss statement showing gross revenue, platform fees, cleaning costs, supplies, maintenance, mortgage, insurance, and net profit. You know which properties are earning and which are underperforming.
 
-**Seasonal analysis.** We track your income and occupancy patterns over time so you can see seasonal trends and make pricing decisions with data.
+**Seasonal analysis.** I track your income and occupancy patterns over time so you can see seasonal trends and make pricing decisions with data.
 
 ## How It Works
 
-1. **Platform connection.** We connect to your Airbnb and VRBO accounts (or work from payout reports) alongside your bank feeds.
-2. **Chart of accounts setup.** We configure categories specific to STR operations: platform fees, cleaning, supplies, occupancy taxes, and per-property tracking.
-3. **Ongoing categorization.** Throughout the month, we categorize transactions and reconcile platform payouts against bank deposits.
+1. **Platform connection.** I connect to your Airbnb and VRBO accounts (or work from payout reports) alongside your bank feeds.
+2. **Chart of accounts setup.** I configure categories specific to STR operations: platform fees, cleaning, supplies, occupancy taxes, and per-property tracking.
+3. **Ongoing categorization.** Throughout the month, I categorize transactions and reconcile platform payouts against bank deposits.
 4. **Monthly close.** By the 10th of each month, your books are closed with property-level financials ready for review.
 
 ## Why This Matters

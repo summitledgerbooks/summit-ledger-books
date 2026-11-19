@@ -1,6 +1,7 @@
 ---
 import Base from "../../layouts/Base.astro";
 import { getCollection, render } from "astro:content";
+import { BOOKING_URL, SERVICE_STARTING_PRICE } from "../../lib/site";
 
 export async function getStaticPaths() {
   const services = await getCollection("services");
@@ -12,6 +13,7 @@ export async function getStaticPaths() {
 
 const { service } = Astro.props;
 const { Content } = await render(service);
+const startingPrice = SERVICE_STARTING_PRICE[service.id];
 
 const allPosts = await getCollection("blog", ({ data }) => !data.draft);
 const relatedPosts = service.data.relatedPosts
@@ -62,16 +64,18 @@ const breadcrumbSchema = {
 };
 ---
 
-<Base title={service.data.title} seoTitle={service.data.seoTitle} description={service.data.description}>
+<Base title={service.data.title} seoTitle={service.data.seoTitle} description={service.data.description} bookingBar>
   <div class="article-header">
     <div class="container">
       <a href="/services/" class="article-back">&larr; All Services</a>
       <h1 class="article-title">{service.data.title}</h1>
       <p style="color: rgba(255, 255, 255, 0.85); max-width: 42rem; font-size: 1.05rem;">{service.data.description}</p>
+      <a class="btn btn-hero" href={BOOKING_URL}>Book a Free Call</a>
     </div>
   </div>
 
-  <div class="container">
+  <div class="container service-layout">
+    <div>
     {service.data.image && (
       <div class="service-hero-image">
         <img
@@ -87,6 +91,13 @@ const breadcrumbSchema = {
     <div class="prose article-prose">
       <Content />
     </div>
+
+    <aside class="service-inline-cta mid-cta">
+      {startingPrice && <p class="service-price-label">Starting at</p>}
+      {startingPrice && <p class="service-price">{startingPrice}</p>}
+      <p class="service-promise">Books closed by the 10th</p>
+      <a class="btn btn-primary" href={BOOKING_URL}>Book a free call</a>
+    </aside>
 
     {relatedPosts.length > 0 && (
       <div class="article-related">
@@ -115,6 +126,14 @@ const breadcrumbSchema = {
     <div class="article-footer">
       <a href="/services/">&larr; Back to all services</a>
     </div>
+    </div>
+
+    <aside class="service-sidecard">
+      {startingPrice && <p class="service-price-label">Starting at</p>}
+      {startingPrice && <p class="service-price">{startingPrice}</p>}
+      <p class="service-promise">Books closed by the 10th</p>
+      <a class="btn btn-primary" href={BOOKING_URL}>Book a free call</a>
+    </aside>
   </div>
 
   <script is:inline type="application/ld+json" set:html={JSON.stringify(serviceSchema)} />

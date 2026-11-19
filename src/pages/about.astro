@@ -7,6 +7,7 @@ import badgeQboPayroll from "../assets/images/badge-qbo-payroll.png";
 import bookCert from "../assets/images/book-cert.png";
 import clientCert from "../assets/images/client-cert.png";
 import { personSchema } from "../lib/author";
+import { BOOKING_URL } from "../lib/site";
 
 const aboutPageSchema = {
   "@context": "https://schema.org",
@@ -31,15 +32,17 @@ const aboutPageSchema = {
 
 <Base title="About Austin Adams" description="Meet Austin Adams, founder of Summit Ledger Books: a career software engineer and QuickBooks-certified bookkeeper serving real estate investors in Utah.">
   <div class="container">
-    <div class="about-hero">
-      <Image src={websiteHero} alt="Austin Adams, founder of Summit Ledger Books" class="about-hero-img" />
+    <div class="about-layout">
+      <Image src={websiteHero} alt="Austin Adams, founder of Summit Ledger Books" class="about-hero-img" width={768} height={512} />
+      <div>
+        <span class="eyebrow">About Summit Ledger Books</span>
+        <h1 class="section-heading">Hi, I'm Austin Adams.</h1>
+        <p style="color: var(--color-text-muted); margin-bottom: var(--space-lg);">I'm a software engineer, a QuickBooks-certified bookkeeper, and the founder of Summit Ledger Books in Kaysville, Utah.</p>
+        <a class="btn btn-primary" href={BOOKING_URL}>Book a Free Call</a>
+      </div>
     </div>
-    <span class="eyebrow" style="text-align: center;">About Summit Ledger Books</span>
-    <h1 class="section-heading" style="text-align: center;">Hi, I'm Austin Adams.</h1>
 
-    <div class="prose">
-      <p>I'm a software engineer, a QuickBooks-certified bookkeeper, and the founder of Summit Ledger Books in Kaysville, Utah.</p>
-
+    <div class="prose about-prose">
       <h2>From Software to Bookkeeping</h2>
 
       <p>I've spent my career as a software engineer, building and maintaining data systems where the numbers have to be right. That work taught me habits that turn out to be exactly what good bookkeeping requires: precision, double-checking everything, and treating a reconciliation that won't balance the way an engineer treats a bug. You don't shrug at it, you trace it until you find the cause.</p>

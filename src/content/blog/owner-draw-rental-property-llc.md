@@ -5,6 +5,9 @@ description: "How to take an owner draw from your rental property LLC the right 
 date: 2026-06-11
 tags: ["LLCs", "bookkeeping", "rental properties", "taxes"]
 draft: false
+midCta:
+  after: "How to Record a Draw Correctly"
+  text: "Not sure your draws are recorded right? Book a free 20-minute books review."
 ---
 
 Your rental property LLC made money this year. Getting that money into your personal account sounds like it should be simple, and mechanically it is: you transfer it. But how you record an owner draw from a rental property LLC determines whether your books stay clean, your liability protection stays intact, and your CPA stays calm in April.
@@ -31,9 +34,9 @@ In QuickBooks Online, draws live on the balance sheet, not the P&L.
 
 **1. Paying personal bills straight from the LLC account.** Using the LLC debit card at the grocery store is technically a draw, but recorded transaction by transaction it makes your books a junk drawer. Worse, courts look at exactly this behavior when deciding whether to pierce the corporate veil. Commingling is how an LLC stops protecting you. Transfer money to your personal account first, then spend it like a normal human.
 
-**2. Recording draws as an expense.** Covered above, but it's the most common error we see in self-managed books, usually as a category called something like "Owner Pay."
+**2. Recording draws as an expense.** Covered above, but it's the most common error I see in self-managed books, usually as a category called something like "Owner Pay."
 
-**3. Drawing from the wrong entity.** If you have multiple LLCs, each draw comes from a specific entity and gets recorded on that entity's books. Pulling cash from whichever account has money, regardless of which LLC earned it, creates undocumented inter-company loans nobody remembers making. We covered this pattern in [bookkeeping for multiple LLCs](/blog/bookkeeping-multiple-llcs/).
+**3. Drawing from the wrong entity.** If you have multiple LLCs, each draw comes from a specific entity and gets recorded on that entity's books. Pulling cash from whichever account has money, regardless of which LLC earned it, creates undocumented inter-company loans nobody remembers making. I covered this pattern in [bookkeeping for multiple LLCs](/blog/bookkeeping-multiple-llcs/).
 
 **4. Draining the account without a reserve plan.** A draw isn't free cash flow until reserves are funded. Pull everything out in June and the July roof leak goes on a personal credit card, which becomes a contribution, which becomes more bookkeeping noise. Decide on a per-property reserve floor and draw what's above it.
 
@@ -45,7 +48,7 @@ Some investors elect S corporation taxation for an LLC, usually on the advice of
 
 **At tax time:** Your CPA gets a balance sheet where equity activity is obvious. K-1s and basis calculations come together without a forensic exercise.
 
-**At the bank:** Lenders reviewing your financials see true property performance, with your compensation visible in equity instead of buried in expenses. Clean statements move underwriting faster; we've written about this in [getting your books ready for a refinance](/blog/books-for-cash-out-refinance/).
+**At the bank:** Lenders reviewing your financials see true property performance, with your compensation visible in equity instead of buried in expenses. Clean statements move underwriting faster; I've written about this in [getting your books ready for a refinance](/blog/books-for-cash-out-refinance/).
 
 **In your own head:** When draws are tracked, you know what the portfolio actually pays you per year. Not what you feel like it pays you. That number should drive your next acquisition decision.
 
@@ -53,4 +56,4 @@ Some investors elect S corporation taxation for an LLC, usually on the advice of
 
 The mechanics are small: one equity account, one consistent way of recording transfers, and discipline about never spending personally from the business account. The payoff is books that protect your liability shield instead of undermining it.
 
-If you're behind on tracking draws, or your "Owner Pay" expense category just made you wince, [book a free consultation](/contact/) and we'll get your equity accounts straightened out as part of cleaning up the books.
+If you're behind on tracking draws, or your "Owner Pay" expense category just made you wince, [book a free consultation](/contact/) and I'll get your equity accounts straightened out as part of cleaning up the books.

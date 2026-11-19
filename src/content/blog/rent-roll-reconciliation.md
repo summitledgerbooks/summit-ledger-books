@@ -10,7 +10,7 @@ ogImage: "/images/og-images/the-one-report-every-real-estate-investor-needs.png"
 
 If you manage rental properties, you've probably heard the term rent roll. You may even have one: a spreadsheet listing your tenants and what they pay. But a rent roll used properly is more than a contact list. It's a financial document that should connect directly to your books.
 
-Rent roll reconciliation is a key part of our [property management accounting](/services/property-management-accounting/) service. Here's what a complete rent roll looks like and how to use it.
+Rent roll reconciliation is a key part of my [property management accounting](/services/property-management-accounting/) service. Here's what a complete rent roll looks like and how to use it.
 
 ## What a Rent Roll Should Include
 
@@ -59,4 +59,4 @@ Some property management software (AppFolio, Buildium, Rent Manager) generates r
 
 The key is treating it as a live document, not something you pull together once a year when someone asks for it. Your bookkeeper should be able to request your rent roll at any time and reconcile it to your books without significant cleanup.
 
-If you're not sure whether your rent roll and your QuickBooks records are in sync, [book a free consultation](/contact/) and we can walk through the reconciliation together.
+If you're not sure whether your rent roll and your QuickBooks records are in sync, [book a free consultation](/contact/) and I can walk through the reconciliation together.

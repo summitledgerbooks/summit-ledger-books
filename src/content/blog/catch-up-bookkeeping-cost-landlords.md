@@ -109,8 +109,8 @@ Backlogs that long vary a lot in volume and complexity, so I review your records
 That's the goal. You get profit and loss statements and balance sheets for each period, and your CPA can work from them directly.
 
 **Can you catch up just one year for taxes?**
-Yes. Tell me the deadline and we'll scope the project around it.
+Yes. Tell me the deadline and I'll scope the project around it.
 
 ## Get a Real Number
 
-Every backlog is different, and the fastest way to know where you'll land is to look at it together. [Book a free call](/contact/) and we'll go over how far behind you are, what records you have, and what a realistic quote looks like.
+Every backlog is different, and the fastest way to know where you'll land is to look at it together. [Book a free call](/contact/) and I'll go over how far behind you are, what records you have, and what a realistic quote looks like.

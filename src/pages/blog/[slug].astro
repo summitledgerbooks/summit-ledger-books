@@ -4,6 +4,7 @@ import { getCollection, render } from "astro:content";
 import AuthorByline from "../../components/AuthorByline.astro";
 import AuthorBio from "../../components/AuthorBio.astro";
 import { personSchema } from "../../lib/author";
+import { BOOKING_URL } from "../../lib/site";
 
 export async function getStaticPaths() {
   const posts = await getCollection("blog");
@@ -14,7 +15,9 @@ export async function getStaticPaths() {
 }
 
 const { post, allPosts } = Astro.props;
-const { Content } = await render(post);
+const { Content, headings } = await render(post);
+const toc = headings.filter((heading) => heading.depth === 2);
+const showToc = toc.length >= 6;
 
 // Find related posts by shared tags
 const currentTags = post.data.tags;
@@ -78,7 +81,7 @@ const breadcrumbSchema = {
 };
 ---
 
-<Base title={post.data.title} seoTitle={post.data.seoTitle} description={post.data.description} ogType="article" ogImage={post.data.ogImage}>
+<Base title={post.data.title} seoTitle={post.data.seoTitle} description={post.data.description} ogType="article" ogImage={post.data.ogImage} bookingBar>
   <div class="article-header">
     <div class="container">
       <a href="/blog/" class="article-back">&larr; Blog</a>
@@ -100,8 +103,24 @@ const breadcrumbSchema = {
   </div>
 
   <div class="container">
+    {showToc && (
+      <nav class="toc" aria-label="On this page">
+        <p class="toc-label">On this page</p>
+        <ol>
+          {toc.map((heading) => (
+            <li><a href={`#${heading.slug}`}>{heading.text}</a></li>
+          ))}
+        </ol>
+      </nav>
+    )}
+
     <div class="prose article-prose">
       <Content />
+    </div>
+
+    <div class="article-cta">
+      <p>Want clean books for your real estate portfolio?</p>
+      <a href={BOOKING_URL} class="btn btn-primary">Book a Free Call</a>
     </div>
 
     <AuthorBio />
@@ -118,16 +137,11 @@ const breadcrumbSchema = {
     )}
 
     <div class="article-related" style={relatedPosts.length > 0 ? "border-top: none; padding-top: 0;" : ""}>
-      <p class="article-related-label">Explore our services</p>
+      <p class="article-related-label">Explore my services</p>
       <div class="article-related-links">
         <a href="/services/">Real estate bookkeeping services &rarr;</a>
         <a href="/pricing/">Monthly plans and pricing &rarr;</a>
       </div>
-    </div>
-
-    <div class="article-cta">
-      <p>Want clean books for your real estate portfolio?</p>
-      <a href="https://calendly.com/summit-ledger-books/consultation" class="btn btn-primary">Book a Free Call</a>
     </div>
 
     <div class="article-footer">

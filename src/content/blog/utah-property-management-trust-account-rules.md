@@ -131,4 +131,4 @@ Yes, if the contract or owner authorizes it (R162-2f-403b(15)(c)). Your own mana
 
 A well-run trust account is boring: every dollar tagged, every fee moved on schedule, every reconciliation tied out. That's the kind of [property management accounting](/services/property-management-accounting/) work I do for Utah property managers, often alongside cleaning up the sync between property management software and QuickBooks (see [why AppFolio and QuickBooks don't match](/blog/appfolio-quickbooks-integration/)).
 
-If your trust reconciliation hasn't tied out in a while, or you want a second set of eyes before the 2027 changes, [book a free call](/contact/) and we'll talk through where things stand.
+If your trust reconciliation hasn't tied out in a while, or you want a second set of eyes before the 2027 changes, [book a free call](/contact/) and I'll talk through where things stand.

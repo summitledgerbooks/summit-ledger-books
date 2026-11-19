@@ -10,7 +10,7 @@ order: 5
 
 Real estate portfolios generate a constant flow of money in and money out. Rent payments come in from tenants. Vendor invoices come in from contractors, property managers, and service providers. Keeping track of all of it, especially across multiple properties and entities, is where most investors start to fall behind.
 
-We handle accounts payable and accounts receivable tracking so you always know where your cash stands.
+I handle accounts payable and accounts receivable tracking so you always know where your cash stands.
 
 ## Who This Is For
 
@@ -21,23 +21,23 @@ We handle accounts payable and accounts receivable tracking so you always know w
 
 ## What's Included
 
-**Rent receivable tracking.** We track what each tenant owes, what's been collected, and what's outstanding. Late payments and partial payments are flagged so nothing slips through.
+**Rent receivable tracking.** I track what each tenant owes, what's been collected, and what's outstanding. Late payments and partial payments are flagged so nothing slips through.
 
 **Vendor and contractor payments.** Every invoice from a contractor, maintenance provider, property manager, or service vendor gets recorded, categorized, and tracked through payment.
 
 **Bill management.** Recurring bills like insurance premiums, HOA dues, utility payments, and property taxes are tracked with due dates so you don't miss payments or incur late fees.
 
-**Aging reports.** We provide aging reports for both receivables and payables so you can see at a glance what's current, what's 30 days out, and what needs attention.
+**Aging reports.** I provide aging reports for both receivables and payables so you can see at a glance what's current, what's 30 days out, and what needs attention.
 
 **Property-level assignment.** Every receivable and payable is assigned to the correct property and entity. No more guessing which property a maintenance invoice belongs to.
 
-**1099 preparation.** At year end, we have clean records of what you paid each contractor, making 1099 preparation simple.
+**1099 preparation.** At year end, I have clean records of what you paid each contractor, making 1099 preparation simple.
 
 ## How It Works
 
-1. **Setup.** We configure your accounts payable and receivable tracking in QuickBooks, organized by property and entity.
-2. **Ongoing recording.** As invoices come in and payments go out, we record and categorize everything.
-3. **Weekly review.** We review outstanding balances weekly and flag anything that needs your attention.
+1. **Setup.** I configure your accounts payable and receivable tracking in QuickBooks, organized by property and entity.
+2. **Ongoing recording.** As invoices come in and payments go out, I record and categorize everything.
+3. **Weekly review.** I review outstanding balances weekly and flag anything that needs your attention.
 4. **Monthly reporting.** Your monthly financial package includes aging summaries and cash flow visibility.
 
 ## Why This Matters

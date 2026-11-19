@@ -63,10 +63,10 @@ Individual automations save minutes. The compounding payoff comes from designing
 
 That design work is where most investors get stuck, because it sits in the gap between bookkeeping knowledge and systems knowledge. It's also where things like property management software enter the picture; if AppFolio or Buildium is in your stack, the [sync between it and QuickBooks Online](/blog/appfolio-quickbooks-integration/) is part of the same pipeline and breaks in its own special ways.
 
-This gap is exactly what our [systems and integration service](/services/systems-integration/) exists for: setting up the feeds, rules, and reporting so the routine work runs itself, with review steps where judgment matters.
+This gap is exactly what my [systems and integration service](/services/systems-integration/) exists for: setting up the feeds, rules, and reporting so the routine work runs itself, with review steps where judgment matters.
 
 ---
 
 Automate the typing, the categorizing of the predictable, and the report delivery. Keep human judgment on reconciliation, trust money, transfers, and anything with tax consequences. That split gives you books that are both low-effort and trustworthy, instead of one or the other.
 
-If you'd rather have someone build that system for your portfolio and then keep it running, [book a free consultation](/contact/) and we'll look at how much of your current bookkeeping time could simply disappear.
+If you'd rather have someone build that system for your portfolio and then keep it running, [book a free consultation](/contact/) and I'll look at how much of your current bookkeeping time could simply disappear.

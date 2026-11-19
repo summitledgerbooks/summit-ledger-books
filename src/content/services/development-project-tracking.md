@@ -10,7 +10,7 @@ order: 7
 
 Real estate development is a different animal from rental property investing. You're not tracking monthly rent and recurring expenses. You're tracking construction draws, contractor payments, permit fees, carrying costs, and a budget that changes as the project evolves.
 
-We set up project-level tracking that gives you visibility into where your money is going, how much you've spent, and what's left in the budget at any point during the project.
+I set up project-level tracking that gives you visibility into where your money is going, how much you've spent, and what's left in the budget at any point during the project.
 
 ## Who This Is For
 
@@ -29,17 +29,17 @@ We set up project-level tracking that gives you visibility into where your money
 
 **Carrying cost monitoring.** Interest on construction loans, property taxes during development, insurance, and utilities are tracked as carrying costs. These add up fast and need their own visibility.
 
-**Draw schedule reconciliation.** We reconcile your construction loan draws against actual expenses to make sure what you've drawn matches what you've spent. Lenders require this, and clean records make the process faster.
+**Draw schedule reconciliation.** I reconcile your construction loan draws against actual expenses to make sure what you've drawn matches what you've spent. Lenders require this, and clean records make the process faster.
 
-**Budget vs. actual reporting.** We maintain your project budget alongside actual spending so you can see variances in real time. If a category is running over, you know before it becomes a problem.
+**Budget vs. actual reporting.** I maintain your project budget alongside actual spending so you can see variances in real time. If a category is running over, you know before it becomes a problem.
 
-**Cost-to-complete estimates.** Based on your budget and actuals, we help you understand how much is left to spend and whether you're on track to finish within budget.
+**Cost-to-complete estimates.** Based on your budget and actuals, I help you understand how much is left to spend and whether you're on track to finish within budget.
 
 ## How It Works
 
-1. **Project setup.** We create a tracking structure in QuickBooks for each development project with categories for hard costs, soft costs, land, and carrying costs.
-2. **Ongoing tracking.** As expenses are incurred and draws are made, we categorize and record everything by project.
-3. **Draw reconciliation.** When you request a draw, we provide the supporting documentation and reconcile the draw against actual expenses.
+1. **Project setup.** I create a tracking structure in QuickBooks for each development project with categories for hard costs, soft costs, land, and carrying costs.
+2. **Ongoing tracking.** As expenses are incurred and draws are made, I categorize and record everything by project.
+3. **Draw reconciliation.** When you request a draw, I provide the supporting documentation and reconcile the draw against actual expenses.
 4. **Regular reporting.** You receive budget vs. actual reports and cost-to-complete summaries on a schedule that matches your project cadence.
 
 ## Why This Matters

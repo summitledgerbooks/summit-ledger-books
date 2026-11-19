@@ -136,4 +136,4 @@ The IRS says property held primarily for sale doesn't qualify.
 
 A 1031 exchange is a good time to make sure your fixed asset records are accurate, because the numbers carry forward for as long as you own the replacement. That's part of my [tax prep support](/services/tax-prep-support/) and [financial reporting](/services/financial-reporting/) work, and it ties into [what lenders want to see](/blog/books-for-cash-out-refinance/) when you refinance the new property later.
 
-If you've got an exchange coming up or just finished one and the books haven't caught up, [book a free call](/contact/) and we'll walk through it.
+If you've got an exchange coming up or just finished one and the books haven't caught up, [book a free call](/contact/) and I'll walk through it.
