@@ -135,4 +135,4 @@ Not always. The Schedule E instructions note situations, like providing substant
 
 When your accounts mirror Schedule E and every transaction is tagged to a property, your CPA gets numbers they can use as-is. That's the goal of my [rental property bookkeeping](/services/portfolio-bookkeeping/) and [tax prep support](/services/tax-prep-support/) work.
 
-If your books don't line up with Schedule E today, [book a free call](/contact/) and we'll look at what it would take to get them there.
+If your books don't line up with Schedule E today, [book a free call](/contact/) and I'll look at what it would take to get them there.

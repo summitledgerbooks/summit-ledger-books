@@ -7,7 +7,7 @@ tags: ["software", "QuickBooks", "property management", "real estate"]
 draft: false
 ---
 
-You run a report in AppFolio and it says one number. You run the same report in QuickBooks Online and it says another. Neither one matches your bank account. If you've been blaming yourself for this, stop. AppFolio QuickBooks integration problems are one of the most common reasons real estate investors and property managers reach out to us, and the root cause is almost never a typo. It's the plumbing between the two systems.
+You run a report in AppFolio and it says one number. You run the same report in QuickBooks Online and it says another. Neither one matches your bank account. If you've been blaming yourself for this, stop. AppFolio QuickBooks integration problems are one of the most common reasons real estate investors and property managers reach out to me, and the root cause is almost never a typo. It's the plumbing between the two systems.
 
 ## Why the Numbers Never Match
 
@@ -35,25 +35,25 @@ Stessa is a portfolio tracking tool, not a full accounting system, and it doesn'
 
 **The fix:** Post entries at the level you need to reconcile, usually by property and by deposit batch, not one blended number per month.
 
-**2. Security deposits and owner funds treated as income.** Property management software tracks money that isn't yours: tenant deposits, owner reserves, trust funds. If the export or sync dumps those into income accounts in QuickBooks Online, your profit is overstated and your liability accounts are fiction. We covered the deposit side in detail in [our post on security deposits](/blog/security-deposits-bookkeeping/).
+**2. Security deposits and owner funds treated as income.** Property management software tracks money that isn't yours: tenant deposits, owner reserves, trust funds. If the export or sync dumps those into income accounts in QuickBooks Online, your profit is overstated and your liability accounts are fiction. I covered the deposit side in detail in [my post on security deposits](/blog/security-deposits-bookkeeping/).
 
 **The fix:** Map deposits and owner funds to liability accounts, then verify the mapping by reconciling the liability balance against your actual trust or deposit account.
 
 **3. Timing differences nobody documents.** AppFolio might record rent when it's charged. Your bank records it when it clears. QuickBooks Online records it whenever the entry was made. Three dates for one payment. Without a consistent rule, month-end totals will disagree even when nothing is actually wrong.
 
-**The fix:** Pick one convention, write it down, and apply it everywhere. Then your monthly close becomes a checklist instead of an investigation. Our [month-end close checklist](/blog/month-end-close-checklist/) shows what that rhythm looks like.
+**The fix:** Pick one convention, write it down, and apply it everywhere. Then your monthly close becomes a checklist instead of an investigation. My [month-end close checklist](/blog/month-end-close-checklist/) shows what that rhythm looks like.
 
 ---
 
 ## How to Actually Fix It
 
-Here's the order of operations we use when a client brings us mismatched systems.
+Here's the order of operations I use when a client brings me mismatched systems.
 
 **Step 1: Pick the system of record.** One system owns the truth for each type of data. Usually the property management software owns tenant-level detail (who paid, when, for what unit) and QuickBooks Online owns the financial statements. Once that's decided, you stop maintaining duplicate detail in both.
 
 **Step 2: Audit the mapping.** Trace ten real transactions from the property management side to QuickBooks Online. Where did each one land? This usually surfaces the broken account mappings within an hour.
 
-**Step 3: Fix the chart of accounts first.** A clean sync into a messy chart of accounts is still a mess. Your QuickBooks Online file needs property-level tracking and proper liability accounts before any data flows in. Our guide to [setting up a chart of accounts for rentals](/blog/chart-of-accounts-rental-properties/) covers the structure.
+**Step 3: Fix the chart of accounts first.** A clean sync into a messy chart of accounts is still a mess. Your QuickBooks Online file needs property-level tracking and proper liability accounts before any data flows in. My guide to [setting up a chart of accounts for rentals](/blog/chart-of-accounts-rental-properties/) covers the structure.
 
 **Step 4: Rebuild the bridge.** For Buildium, that means redoing the sync mapping and setting a schedule. For AppFolio and Stessa, it means designing a repeatable export-and-import workflow with checks, not a copy-paste ritual that depends on someone's memory.
 
@@ -63,10 +63,10 @@ Here's the order of operations we use when a client brings us mismatched systems
 
 If the gap between your systems is a few transactions, you can probably fix it yourself in an afternoon with the steps above. If the systems have been drifting for a year, or the person who set up the original mapping is long gone, it's a bigger job: part bookkeeping cleanup, part data repair.
 
-That second kind of problem is exactly why we built our [systems and integration service](/services/systems-integration/). Summit Ledger Books is run by a software engineer who became a bookkeeper, which means we don't just clean up the books, we fix the pipeline that keeps breaking them.
+That second kind of problem is exactly why I built my [systems and integration service](/services/systems-integration/). Summit Ledger Books is run by a software engineer who became a bookkeeper, which means I don't just clean up the books, I fix the pipeline that keeps breaking them.
 
 ---
 
 Your property management software and QuickBooks Online will never match by accident. They match when the account mapping is right, the workflow is documented, and both ends get reconciled every month.
 
-If your AppFolio, Buildium, or Stessa numbers haven't matched QuickBooks Online in months and you're done playing referee, [book a free consultation](/contact/) and we'll trace where the pipeline is broken and what it will take to fix it.
+If your AppFolio, Buildium, or Stessa numbers haven't matched QuickBooks Online in months and you're done playing referee, [book a free consultation](/contact/) and I'll trace where the pipeline is broken and what it will take to fix it.

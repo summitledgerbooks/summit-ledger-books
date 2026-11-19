@@ -30,13 +30,13 @@ Investors with multiple LLCs frequently move money between them: a parent entity
 
 **Management fees:** If you have a management company LLC that charges fees to your property-holding LLCs, each fee payment is income to the management company and an expense to the property LLC. Both sides need to be recorded, and they need to match.
 
-Sloppy intercompany accounting is one of the most common issues we clean up when onboarding clients with complex structures.
+Sloppy intercompany accounting is one of the most common issues I clean up when onboarding clients with complex structures.
 
 ## The Role of a Holding Company
 
 Some investors structure their portfolio with a parent LLC (holding company) that owns membership interests in multiple subsidiary LLCs. In this case, the holding company's books typically show the value of those ownership stakes, not the individual property transactions. The property-level detail lives in each subsidiary's books.
 
-If your CPA has set this up for you, make sure your bookkeeper understands the structure before touching anything. The way income and equity flow between entities affects both the financials and the tax returns. We cover this in more detail in our guide on [how entity structure affects your books](/blog/entity-structure-bookkeeping/).
+If your CPA has set this up for you, make sure your bookkeeper understands the structure before touching anything. The way income and equity flow between entities affects both the financials and the tax returns. I cover this in more detail in my guide on [how entity structure affects your books](/blog/entity-structure-bookkeeping/).
 
 ## Reporting: The Individual vs. The Portfolio View
 

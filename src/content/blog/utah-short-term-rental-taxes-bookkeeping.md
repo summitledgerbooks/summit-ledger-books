@@ -122,4 +122,4 @@ Pub 71 says marketplace sellers don't need a license for facilitated sales unles
 
 Short-term rental books go sideways when payouts, fees, and taxes all land in one income line. Splitting them correctly every month is the core of my [short-term rental bookkeeping](/services/short-term-rental-bookkeeping/) service, and it makes [tax prep support](/services/tax-prep-support/) at year-end a lot calmer.
 
-If your Airbnb payouts and your books haven't matched in a while, [book a free call](/contact/) and we'll sort out where the gap is.
+If your Airbnb payouts and your books haven't matched in a while, [book a free call](/contact/) and I'll sort out where the gap is.

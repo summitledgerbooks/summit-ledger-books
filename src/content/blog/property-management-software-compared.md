@@ -273,6 +273,6 @@ If you're setting up a new system or switching platforms, talk to your bookkeepe
 
 ---
 
-When property management software and QuickBooks still will not match, our [systems and integration service](/services/systems-integration/) fixes the sync instead of leaving the gap to manual entry.
+When property management software and QuickBooks still will not match, my [systems and integration service](/services/systems-integration/) fixes the sync instead of leaving the gap to manual entry.
 
-*Want help figuring out how your current software setup affects your books? [Book a free call](/contact/) and we'll take a look.*
+*Want help figuring out how your current software setup affects your books? [Book a free call](/contact/) and I'll take a look.*

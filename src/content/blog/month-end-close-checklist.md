@@ -1,7 +1,7 @@
 ---
 title: "The Real Estate Investor's Month-End Close Checklist"
 seoTitle: "Month-End Close Checklist for Rental Properties"
-description: "Closing your books at the end of each month keeps your financials accurate and your CPA happy. Here's the exact checklist we run for rental property portfolios."
+description: "Closing your books at the end of each month keeps your financials accurate and your CPA happy. Here's the exact checklist I run for rental property portfolios."
 date: 2026-03-02
 tags: ["real estate", "bookkeeping", "rental properties", "tips"]
 draft: false
@@ -12,7 +12,7 @@ Month-end close sounds like an accounting term reserved for corporations with fi
 
 Without it, errors pile up, reconciliations get harder, and by the time tax season arrives, the cleanup takes weeks. With it, you always know where you stand.
 
-Here's the checklist we run as part of our [rental property bookkeeping](/services/portfolio-bookkeeping/) service.
+Here's the checklist I run as part of my [rental property bookkeeping](/services/portfolio-bookkeeping/) service.
 
 ## 1. Categorize All Transactions
 
@@ -77,4 +77,4 @@ Receipts, invoices, lease agreements, contractor statements. These should be att
 
 Done consistently, this process takes 1–3 hours per month depending on transaction volume. Done inconsistently, it takes much longer because each missed month adds complexity to the next.
 
-If you'd like a bookkeeper to run this process for you every month, [book a free consultation](/contact/) and we can walk through what it would look like for your portfolio.
+If you'd like a bookkeeper to run this process for you every month, [book a free consultation](/contact/) and I can walk through what it would look like for your portfolio.

@@ -55,6 +55,6 @@ If you've been recording deposits as income, you'll need to reclassify them. Thi
 
 This cleanup can be done at any point, though catching it early is much easier than untangling years of misclassified transactions.
 
-Handling deposits correctly keeps your income statements accurate, your balance sheet meaningful, and your CPA's job straightforward at year-end. It's a small detail, but it's one that shows up on every set of books we review. For more on keeping your rental records tight, see our guide on [rent roll reconciliation](/blog/rent-roll-reconciliation/).
+Handling deposits correctly keeps your income statements accurate, your balance sheet meaningful, and your CPA's job straightforward at year-end. It's a small detail, but it's one that shows up on every set of books I review. For more on keeping your rental records tight, see my guide on [rent roll reconciliation](/blog/rent-roll-reconciliation/).
 
-If you'd like a second opinion on how your deposits are being handled, [book a free consultation](/contact/) and we'll take a look.
+If you'd like a second opinion on how your deposits are being handled, [book a free consultation](/contact/) and I'll take a look.

@@ -10,7 +10,7 @@ order: 9
 
 Once your real estate business has employees, payroll adds a layer of complexity to your bookkeeping. Property management companies with maintenance staff, leasing agents, and office employees need payroll processed accurately and on time. Development firms with project managers and on-site staff have the same requirement.
 
-We help you manage payroll processing, track employee hours, and make sure payroll taxes are calculated and recorded correctly in your books.
+I help you manage payroll processing, track employee hours, and make sure payroll taxes are calculated and recorded correctly in your books.
 
 ## Who This Is For
 
@@ -21,24 +21,24 @@ We help you manage payroll processing, track employee hours, and make sure payro
 
 ## What's Included
 
-**Payroll processing coordination.** We work with your payroll provider (like QuickBooks Payroll, Gusto, or ADP) to make sure payroll runs are recorded accurately in your books. If you don't have a payroll provider yet, we help you get set up.
+**Payroll processing coordination.** I work with your payroll provider (like QuickBooks Payroll, Gusto, or ADP) to make sure payroll runs are recorded accurately in your books. If you don't have a payroll provider yet, I help you get set up.
 
-**Employee hour tracking.** For hourly employees, we help establish time tracking processes and confirm that hours submitted match what's processed through payroll.
+**Employee hour tracking.** For hourly employees, I help establish time tracking processes and confirm that hours submitted match what's processed through payroll.
 
-**Payroll tax reconciliation.** Federal, state, and local payroll taxes are reconciled each pay period. We make sure withholdings match what's being remitted to tax authorities.
+**Payroll tax reconciliation.** Federal, state, and local payroll taxes are reconciled each pay period. I make sure withholdings match what's being remitted to tax authorities.
 
 **Payroll journal entries.** Every payroll run generates journal entries in your books that properly allocate wages, employer taxes, benefits, and other payroll costs to the right expense categories.
 
-**Property or project allocation.** For property management companies, we allocate payroll costs to the right properties or management functions. For development firms, we allocate labor costs to the right projects.
+**Property or project allocation.** For property management companies, I allocate payroll costs to the right properties or management functions. For development firms, I allocate labor costs to the right projects.
 
-**Year-end payroll reporting.** We make sure your payroll records are clean and reconciled for W-2 preparation and annual tax filings.
+**Year-end payroll reporting.** I make sure your payroll records are clean and reconciled for W-2 preparation and annual tax filings.
 
 ## How It Works
 
-1. **Payroll provider review.** We assess your current payroll setup (or help you choose a provider) and confirm it integrates cleanly with QuickBooks.
-2. **Process setup.** We establish the payroll recording process, including pay schedules, tax configurations, and allocation rules.
-3. **Ongoing recording.** Each pay period, we record payroll in your books with proper allocations and tax breakdowns.
-4. **Quarterly reconciliation.** We reconcile payroll taxes quarterly to catch any discrepancies before they become year-end problems.
+1. **Payroll provider review.** I assess your current payroll setup (or help you choose a provider) and confirm it integrates cleanly with QuickBooks.
+2. **Process setup.** I establish the payroll recording process, including pay schedules, tax configurations, and allocation rules.
+3. **Ongoing recording.** Each pay period, I record payroll in your books with proper allocations and tax breakdowns.
+4. **Quarterly reconciliation.** I reconcile payroll taxes quarterly to catch any discrepancies before they become year-end problems.
 
 ## Why This Matters
 

@@ -9,6 +9,7 @@ import badgeQboLevel2 from "../assets/images/badge-qbo-level-2.png";
 import badgeQboPayroll from "../assets/images/badge-qbo-payroll.png";
 import bookCert from "../assets/images/book-cert.png";
 import clientCert from "../assets/images/client-cert.png";
+import { BOOKING_URL } from "../lib/site";
 
 interface Props {
   title?: string;
@@ -16,9 +17,10 @@ interface Props {
   description?: string;
   ogType?: string;
   ogImage?: string;
+  bookingBar?: boolean;
 }
 
-const { title, seoTitle, description, ogType, ogImage } = Astro.props;
+const { title, seoTitle, description, ogType, ogImage, bookingBar = false } = Astro.props;
 const pathname = Astro.url.pathname;
 const path = pathname === "/" ? "/" : pathname.replace(/\/$/, "");
 
@@ -48,7 +50,7 @@ const sortedServices = allServices.sort((a, b) => a.data.order - b.data.order);
       loadScript(function(){beTracker.t({hash:"2a4c402b57cbd4be98358aacd61e78b2"})});
     </script>
   </head>
-  <body>
+  <body class={bookingBar ? "has-booking-bar" : undefined}>
     <header class="site-header">
       <div class="container">
         <a href="/" class="logo">
@@ -72,6 +74,7 @@ const sortedServices = allServices.sort((a, b) => a.data.order - b.data.order);
           <li><a href="/faq/" aria-current={path === "/faq" ? "page" : undefined}>FAQ</a></li>
           <li><a href="/blog/" aria-current={path.startsWith("/blog") ? "page" : undefined}>Blog</a></li>
           <li><a href="/contact/" aria-current={path === "/contact" ? "page" : undefined}>Contact</a></li>
+          <li><a class="btn btn-primary nav-book" href={BOOKING_URL}>Book a Free Call</a></li>
         </ul>
       </div>
     </header>
@@ -147,6 +150,12 @@ const sortedServices = allServices.sort((a, b) => a.data.order - b.data.order);
       </div>
     </footer>
 
+    {bookingBar && (
+      <div class="booking-bar" id="booking-bar">
+        <a class="btn btn-primary" href={BOOKING_URL}>Book a Free Call</a>
+      </div>
+    )}
+
     <script>
       const toggle = document.querySelector(".nav-toggle");
       const nav = document.querySelector(".site-nav");
@@ -165,6 +174,14 @@ const sortedServices = allServices.sort((a, b) => a.data.order - b.data.order);
             dropdown.parentElement?.classList.toggle("open");
           }
         });
+      }
+      const bookingBarEl = document.getElementById("booking-bar");
+      const footerEl = document.querySelector(".site-footer");
+      if (bookingBarEl && footerEl && "IntersectionObserver" in window) {
+        const observer = new IntersectionObserver((entries) => {
+          bookingBarEl.classList.toggle("is-hidden", entries[0]?.isIntersecting === true);
+        });
+        observer.observe(footerEl);
       }
     </script>
   </body>

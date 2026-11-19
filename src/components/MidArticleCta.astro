@@ -1,0 +1,13 @@
+---
+import { BOOKING_URL } from "../lib/site";
+
+interface Props {
+  text: string;
+}
+const { text } = Astro.props;
+---
+
+<aside class="mid-cta">
+  <p>{text}</p>
+  <a class="btn btn-primary" href={BOOKING_URL}>Book a Free Call</a>
+</aside>

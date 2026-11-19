@@ -1,0 +1,14 @@
+---
+import { GOOGLE_PROFILE_URL } from "../lib/site";
+
+interface Props {
+  align?: "start" | "center";
+}
+const { align = "center" } = Astro.props;
+---
+
+<p class:list={["google-rating", align === "center" && "google-rating--center"]}>
+  <a href={GOOGLE_PROFILE_URL} target="_blank" rel="noopener noreferrer">
+    <span class="google-rating-star" aria-hidden="true">★</span> 5.0 on Google · 7 reviews
+  </a>
+</p>

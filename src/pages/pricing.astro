@@ -1,5 +1,7 @@
 ---
 import Base from "../layouts/Base.astro";
+import GoogleRating from "../components/GoogleRating.astro";
+import { BOOKING_URL } from "../lib/site";
 
 const pricingSchema = {
   "@context": "https://schema.org",
@@ -43,15 +45,15 @@ const pricingSchema = {
 <Base title="Pricing" description="Transparent real estate bookkeeping pricing. Monthly plans starting at $500/month. Catch-up bookkeeping quoted by scope. No hidden fees, no long-term contracts.">
   <div class="container">
     <h1 class="section-heading" style="text-align: center;">Simple, Transparent Pricing</h1>
-    <p style="text-align: center; color: var(--color-text-muted); margin-bottom: var(--space-xl); max-width: 36rem; margin-left: auto; margin-right: auto;">No hidden fees. No long-term contracts. Just reliable real estate bookkeeping at a fair price. Not sure what you need? <a href="/services/">See our full services breakdown.</a></p>
+    <p style="text-align: center; color: var(--color-text-muted); margin-bottom: var(--space-xl); max-width: 36rem; margin-left: auto; margin-right: auto;">No hidden fees. No long-term contracts. Just reliable real estate bookkeeping at a fair price. Not sure what you need? <a href="/services/">See the full services breakdown.</a></p>
 
     <!-- Monthly Plans -->
     <h2 class="section-heading" style="text-align: center; font-size: 1.25rem; margin-bottom: var(--space-lg);">Monthly Bookkeeping</h2>
     <div class="card-grid">
       <div class="card pricing-card">
         <h3>Starter</h3>
+        <p class="price-kicker">Starting at</p>
         <div class="price">$500<span style="font-size: 1rem; font-weight: 400; color: var(--color-text-muted);">/mo</span></div>
-        <p style="font-size: 0.8125rem; color: var(--color-text-muted); margin-bottom: var(--space-xs);">Starting at</p>
         <p style="font-size: 0.8125rem; font-weight: 600; color: var(--color-navy); margin-bottom: var(--space-md);">Best for 1&ndash;3 properties, single entity</p>
         <ul>
           <li>Monthly transaction categorization</li>
@@ -60,13 +62,14 @@ const pricingSchema = {
           <li>Balance sheet</li>
           <li>Email support</li>
         </ul>
-        <a href="https://calendly.com/summit-ledger-books/consultation" class="btn btn-primary">Get Started</a>
+        <a href={BOOKING_URL} class="btn btn-primary">Book a free call</a>
       </div>
 
       <div class="card pricing-card popular">
+        <p class="popular-label">Most popular</p>
         <h3>Growth</h3>
+        <p class="price-kicker">Starting at</p>
         <div class="price">$750<span style="font-size: 1rem; font-weight: 400; color: var(--color-text-muted);">/mo</span></div>
-        <p style="font-size: 0.8125rem; color: var(--color-text-muted); margin-bottom: var(--space-xs);">Starting at</p>
         <p style="font-size: 0.8125rem; font-weight: 600; color: var(--color-navy); margin-bottom: var(--space-md);">Best for 4&ndash;10 properties or multiple entities</p>
         <ul>
           <li>Everything in Starter</li>
@@ -75,13 +78,13 @@ const pricingSchema = {
           <li><a href="/services/property-management-accounting/" style="color: inherit; text-decoration: underline; text-decoration-color: var(--color-border);">Rent roll reconciliation</a></li>
           <li><a href="/services/tax-prep-support/" style="color: inherit; text-decoration: underline; text-decoration-color: var(--color-border);">Tax prep support</a> (Schedule E ready)</li>
         </ul>
-        <a href="https://calendly.com/summit-ledger-books/consultation" class="btn btn-primary">Get Started</a>
+        <a href={BOOKING_URL} class="btn btn-primary">Book a free call</a>
       </div>
 
       <div class="card pricing-card">
         <h3>Premium</h3>
+        <p class="price-kicker">Starting at</p>
         <div class="price">$1,200<span style="font-size: 1rem; font-weight: 400; color: var(--color-text-muted);">/mo</span></div>
-        <p style="font-size: 0.8125rem; color: var(--color-text-muted); margin-bottom: var(--space-xs);">Starting at</p>
         <p style="font-size: 0.8125rem; font-weight: 600; color: var(--color-navy); margin-bottom: var(--space-md);">Best for active portfolios, STR investors, and development projects</p>
         <ul>
           <li>Everything in Growth</li>
@@ -91,7 +94,7 @@ const pricingSchema = {
           <li>Depreciation schedule maintenance</li>
           <li><a href="/services/payroll-support/" style="color: inherit; text-decoration: underline; text-decoration-color: var(--color-border);">Payroll support</a></li>
         </ul>
-        <a href="https://calendly.com/summit-ledger-books/consultation" class="btn btn-primary">Get Started</a>
+        <a href={BOOKING_URL} class="btn btn-primary">Book a free call</a>
       </div>
     </div>
 
@@ -105,7 +108,7 @@ const pricingSchema = {
         <div class="price" style="font-size: 1.5rem;">$600 &ndash; $1,200</div>
         <p style="color: var(--color-text-muted); font-size: 0.9375rem; margin-top: var(--space-sm);">One-time project fee</p>
       </div>
-      <div class="card pricing-card popular">
+      <div class="card pricing-card">
         <h3>3 to 6 Months</h3>
         <div class="price" style="font-size: 1.5rem;">$1,500 &ndash; $2,500</div>
         <p style="color: var(--color-text-muted); font-size: 0.9375rem; margin-top: var(--space-sm);">One-time project fee</p>
@@ -126,12 +129,13 @@ const pricingSchema = {
     <!-- QuickBooks note -->
     <div class="cpa-collab" style="margin-top: var(--space-md); max-width: 100%;">
       <p style="font-weight: 600; color: var(--color-navy); margin-bottom: var(--space-sm);">A note on QuickBooks</p>
-      <p style="color: var(--color-text-muted); font-size: 0.9375rem; line-height: 1.7;">QuickBooks subscription fees are billed separately and not included in the pricing above. If you need a QuickBooks subscription, we can help you enroll through our ProAdvisor access, which may qualify you for preferred pricing options.</p>
+      <p style="color: var(--color-text-muted); font-size: 0.9375rem; line-height: 1.7;">QuickBooks subscription fees are billed separately and not included in the pricing above. If you need a QuickBooks subscription, I can help you enroll through my ProAdvisor access, which may qualify you for preferred pricing options.</p>
     </div>
 
     <div style="text-align: center; margin-top: var(--space-xl);">
       <p style="color: var(--color-text-muted); margin-bottom: var(--space-md);">Not sure which plan fits your portfolio? Let's talk through it.</p>
-      <a href="https://calendly.com/summit-ledger-books/consultation" class="btn btn-primary">Book a Free Call</a>
+      <GoogleRating />
+      <a href={BOOKING_URL} class="btn btn-primary" style="margin-top: var(--space-md);">Book a free call</a>
     </div>
   </div>
 
