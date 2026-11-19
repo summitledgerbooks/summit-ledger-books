@@ -1722,6 +1722,11 @@ a.card-link:hover h3 {
   font-size: 0.875rem;
   color: var(--color-text-muted);
 }
+.form-error {
+  margin: 0 0 var(--space-md);
+  color: #9f1239;
+  font-weight: 600;
+}
 
 /* ── Google rating ── */
 .google-rating {
