@@ -5,6 +5,8 @@ import AuthorByline from "../../components/AuthorByline.astro";
 import AuthorBio from "../../components/AuthorBio.astro";
 import { personSchema } from "../../lib/author";
 import { BOOKING_URL } from "../../lib/site";
+import { freeTemplatePosts } from "../../data/templates";
+import FreeTemplatesPromo from "../../components/FreeTemplatesPromo.astro";
 
 export async function getStaticPaths() {
   const posts = await getCollection("blog");
@@ -143,6 +145,8 @@ const breadcrumbSchema = {
         <a href="/pricing/">Monthly plans and pricing &rarr;</a>
       </div>
     </div>
+
+    {freeTemplatePosts.has(post.id) && <FreeTemplatesPromo />}
 
     <div class="article-footer">
       <a href="/blog/">&larr; Back to all posts</a>

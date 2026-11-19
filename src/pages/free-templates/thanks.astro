@@ -1,0 +1,27 @@
+---
+import Base from "../../layouts/Base.astro";
+import { BOOKING_URL } from "../../lib/site";
+import { ETSY_SHOP_URL } from "../../data/templates";
+---
+
+<Base
+  seoTitle="Free Templates Are Ready"
+  description="Download your free real estate spreadsheet templates. The full versions are in the Etsy shop."
+  noindex
+>
+  <div class="container" style="max-width: 40rem;">
+    <h1 class="section-heading">Your free templates are ready.</h1>
+    <p style="color: var(--color-text-muted); margin-bottom: var(--space-lg);">
+      Download the lite bundle now. It includes the landlord tracker, deal analyzer, flip tracker, partner split tracker, and agent expense tracker.
+    </p>
+    <p style="margin-bottom: var(--space-xl);">
+      <a class="btn btn-primary" href="/downloads/Real-Estate-Templates-FREE.zip" download>Download the free templates</a>
+    </p>
+    <p style="margin-bottom: var(--space-md);">
+      <a href={ETSY_SHOP_URL} target="_blank" rel="noopener noreferrer">See the full versions in the Etsy shop</a>
+    </p>
+    <p>
+      <a class="btn btn-primary" href={BOOKING_URL}>Book a free call</a>
+    </p>
+  </div>
+</Base>

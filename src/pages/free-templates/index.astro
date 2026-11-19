@@ -1,0 +1,44 @@
+---
+import Base from "../../layouts/Base.astro";
+---
+
+<Base
+  seoTitle="Free Real Estate Spreadsheet Templates"
+  description="Lite spreadsheet templates for landlord books, deal analysis, house flips, partner splits, and agent expenses. Free when you share your email."
+>
+  <div class="container">
+    <h1 class="section-heading">Free Real Estate Spreadsheet Templates</h1>
+    <p style="color: var(--color-text-muted); max-width: 42rem; margin-bottom: var(--space-lg);">
+      Share your email and I'll send you lite versions of five spreadsheets I use with real estate clients: the Landlord Rental Bookkeeping Tracker, Rental &amp; BRRRR Deal Analyzer, House Flip Budget &amp; Profit Tracker, Partner Profit Split Tracker, and Agent Commission &amp; Expense Tracker.
+    </p>
+
+    <form
+      class="free-templates-form"
+      name="free-templates"
+      method="POST"
+      action="/free-templates/thanks/"
+      data-netlify="true"
+      netlify-honeypot="bot-field"
+    >
+      <input type="hidden" name="form-name" value="free-templates" />
+      <p class="form-honeypot">
+        <label>Don't fill this out if you're human: <input name="bot-field" /></label>
+      </p>
+
+      <div class="form-group">
+        <label for="first-name">First name <span class="form-optional">(optional)</span></label>
+        <input type="text" id="first-name" name="first-name" autocomplete="given-name" />
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required autocomplete="email" />
+      </div>
+
+      <button type="submit" class="btn btn-primary">Get the free templates</button>
+      <p class="form-consent">
+        I'll email you occasional bookkeeping and real estate tips. <a href="/privacy/">Unsubscribe anytime.</a>
+      </p>
+    </form>
+  </div>
+</Base>
