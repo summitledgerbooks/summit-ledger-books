@@ -9,7 +9,6 @@ import badgeQboPayroll from "../assets/images/badge-qbo-payroll.png";
 import bookCert from "../assets/images/book-cert.png";
 import clientCert from "../assets/images/client-cert.png";
 import GoogleRating from "../components/GoogleRating.astro";
-import FreeTemplatesPromo from "../components/FreeTemplatesPromo.astro";
 import { BOOKING_URL } from "../lib/site";
 
 const allPosts = await getCollection("blog", ({ data }) => !data.draft);
@@ -303,10 +302,6 @@ const recentPosts = allPosts
         <span class="card-arrow">Salt Lake County bookkeeping &rarr;</span>
       </a>
     </div>
-  </section>
-
-  <section class="container section-block">
-    <FreeTemplatesPromo />
   </section>
 
   <!-- Final CTA -->
