@@ -1,8 +1,7 @@
 ---
 import { Image } from "astro:assets";
 import Base from "../layouts/Base.astro";
-import FreeTemplatesPromo from "../components/FreeTemplatesPromo.astro";
-import { ETSY_SHOP_URL, templateProducts } from "../data/templates";
+import { templateProducts } from "../data/templates";
 
 const itemListSchema = {
   "@context": "https://schema.org",
@@ -34,12 +33,19 @@ const itemListSchema = {
     <p style="color: var(--color-text-muted); max-width: 42rem; margin-bottom: var(--space-lg);">
       I built these spreadsheets as a QuickBooks ProAdvisor and a real estate investor. I sell them on Etsy.
     </p>
-    <FreeTemplatesPromo />
-    <p style="margin: var(--space-lg) 0 var(--space-xl);">
-      <a class="btn btn-primary" href={ETSY_SHOP_URL} target="_blank" rel="noopener noreferrer">Visit the Etsy shop</a>
-    </p>
-
     <div class="template-grid">
+      <article class="card template-card template-card-free">
+        <div class="template-card-text" aria-hidden="true">
+          <span>Free Real Estate Templates</span>
+        </div>
+        <div class="template-card-body">
+          <h2>Free Real Estate Templates</h2>
+          <p>Lite landlord, deal, flip, partner, and agent trackers.</p>
+          <p class="template-price">Free</p>
+          <a class="btn btn-primary" href="/free-templates/">Get the Free Templates</a>
+        </div>
+        <span class="template-ribbon">Free</span>
+      </article>
       {templateProducts.map((product) => (
         <article class="card template-card">
           {product.image ? (
