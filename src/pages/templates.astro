@@ -2,6 +2,7 @@
 import { Image } from "astro:assets";
 import Base from "../layouts/Base.astro";
 import { templateProducts } from "../data/templates";
+import freeTemplatesImg from "../assets/templates/free-real-estate-templates.webp";
 
 const itemListSchema = {
   "@context": "https://schema.org",
@@ -35,9 +36,14 @@ const itemListSchema = {
     </p>
     <div class="template-grid">
       <article class="card template-card template-card-free">
-        <div class="template-card-text" aria-hidden="true">
-          <span>Free Real Estate Templates</span>
-        </div>
+        <Image
+          src={freeTemplatesImg}
+          alt="Free real estate spreadsheet templates"
+          width={400}
+          height={225}
+          densities={[1, 2]}
+          class="template-card-img"
+        />
         <div class="template-card-body">
           <h2>Free Real Estate Templates</h2>
           <p>Lite landlord, deal, flip, partner, and agent trackers.</p>
@@ -53,7 +59,7 @@ const itemListSchema = {
               src={product.image}
               alt={product.imageAlt || product.name}
               width={400}
-              height={300}
+              height={225}
               densities={[1, 2]}
               class="template-card-img"
             />
