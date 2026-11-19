@@ -5,6 +5,8 @@ import flip from "../assets/templates/house-flip-tracker.webp";
 import partner from "../assets/templates/partner-profit-split.webp";
 import contractor from "../assets/templates/contractor-job-costing.webp";
 import yearEnd from "../assets/templates/year-end-checklist.webp";
+import investorBundle from "../assets/templates/investor-bundle.webp";
+import agentCommission from "../assets/templates/agent-commission-expense-tracker.webp";
 
 export const ETSY_SHOP_URL = "https://www.etsy.com/shop/SummitLedgerShop";
 
@@ -29,6 +31,8 @@ export const templateProducts: TemplateProduct[] = [
     description:
       "Five tools, one bundle: the landlord tracker, deal analyzer, flip tracker, partner split tracker, and year-end checklist, with quick-start guides.",
     url: "https://www.etsy.com/listing/4621188747",
+    image: investorBundle,
+    imageAlt: "Investor bundle of real estate spreadsheet templates",
     badge: "Best value",
   },
   {
@@ -84,6 +88,8 @@ export const templateProducts: TemplateProduct[] = [
     description:
       "Track commissions, business expenses, and quarterly tax set-asides in one simple spreadsheet.",
     url: "https://www.etsy.com/listing/4621193656",
+    image: agentCommission,
+    imageAlt: "Agent commission and expense tracker spreadsheet",
   },
   {
     name: "Contractor Job Costing Workbook",
