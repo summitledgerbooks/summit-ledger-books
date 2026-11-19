@@ -67,6 +67,7 @@ const sortedServices = allServices.sort((a, b) => a.data.order - b.data.order);
               {sortedServices.map((s) => (
                 <li><a href={`/services/${s.id}/`} aria-current={path === `/services/${s.id}` ? "page" : undefined}>{s.data.title}</a></li>
               ))}
+              <li class="nav-templates-desktop"><a href="/templates/" aria-current={path === "/templates" ? "page" : undefined}>Templates</a></li>
               <li class="dropdown-divider"><a href="/services/">View all services &rarr;</a></li>
             </ul>
           </li>
@@ -74,6 +75,7 @@ const sortedServices = allServices.sort((a, b) => a.data.order - b.data.order);
           <li><a href="/faq/" aria-current={path === "/faq" ? "page" : undefined}>FAQ</a></li>
           <li><a href="/blog/" aria-current={path.startsWith("/blog") ? "page" : undefined}>Blog</a></li>
           <li><a href="/contact/" aria-current={path === "/contact" ? "page" : undefined}>Contact</a></li>
+          <li class="nav-templates-mobile"><a href="/templates/" aria-current={path === "/templates" ? "page" : undefined}>Templates</a></li>
           <li><a class="btn btn-primary nav-book" href={BOOKING_URL}>Book a Free Call</a></li>
         </ul>
       </div>
@@ -104,6 +106,7 @@ const sortedServices = allServices.sort((a, b) => a.data.order - b.data.order);
             <ul class="footer-nav">
               <li><a href="/about/">About</a></li>
               <li><a href="/services/">Services</a></li>
+              <li><a href="/templates/">Templates</a></li>
               <li><a href="/pricing/">Pricing</a></li>
               <li><a href="/faq/">FAQ</a></li>
               <li><a href="/blog/">Blog</a></li>

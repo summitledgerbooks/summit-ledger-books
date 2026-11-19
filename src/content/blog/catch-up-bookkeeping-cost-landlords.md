@@ -84,7 +84,7 @@ Most of these cost nothing but an afternoon:
 
 ## Catch-Up vs. Doing It Yourself
 
-Some landlords can catch up on their own, especially with one or two properties and good records. If you go that route, start with a solid [rental property chart of accounts](/blog/chart-of-accounts-rental-properties/), reconcile every month in order, and don't skip the balance sheet accounts like loans and deposits.
+Some landlords can catch up on their own, especially with one or two properties and good records. If you go that route, start with a solid [rental property chart of accounts](/blog/chart-of-accounts-rental-properties/), reconcile every month in order, and don't skip the balance sheet accounts like loans and deposits. The <a href="https://www.etsy.com/listing/4621189882" target="_blank" rel="noopener noreferrer">Landlord Rental Bookkeeping Tracker</a> is the spreadsheet I sell for rent, expenses, and Schedule E totals. It's listed with the other workbooks on my [templates page](/templates/).
 
 Hiring it out usually makes sense when:
 
