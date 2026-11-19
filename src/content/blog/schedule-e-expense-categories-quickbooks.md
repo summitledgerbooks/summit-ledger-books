@@ -117,6 +117,8 @@ If your lender escrows taxes and insurance, set up an **Escrow** account (Other 
 
 I put the accounts above into a CSV formatted for QuickBooks Online's chart of accounts import, with each expense mapped to its Schedule E line. Grab it from the [rental property chart of accounts post](/blog/chart-of-accounts-rental-properties/).
 
+If you want a spreadsheet that totals rent, expenses, and Schedule E lines, I sell the <a href="https://www.etsy.com/listing/4621189882" target="_blank" rel="noopener noreferrer">Landlord Rental Bookkeeping Tracker</a> on Etsy. The rest of the shop is on my [templates page](/templates/).
+
 ## FAQ
 
 **Should I make separate expense accounts for each property?**

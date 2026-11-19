@@ -155,6 +155,9 @@ img {
 .site-nav a.nav-book:hover {
   color: var(--color-navy);
 }
+.nav-templates-mobile {
+  display: none;
+}
 .site-nav {
   display: flex;
   gap: var(--space-lg);
@@ -282,6 +285,12 @@ img {
   .site-nav a.nav-book {
     justify-content: center;
     margin-top: 0.25rem;
+  }
+  .nav-templates-mobile {
+    display: block;
+  }
+  .nav-templates-desktop {
+    display: none;
   }
   .dropdown-menu {
     display: none;
@@ -1606,6 +1615,81 @@ a.card-link:hover h3 {
   font-size: 0.875rem;
   color: var(--color-text-muted);
   line-height: 1.6;
+}
+
+/* ── Templates shop ── */
+.template-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-lg);
+}
+@media (min-width: 48rem) {
+  .template-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media (min-width: 64rem) {
+  .template-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+.template-card {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  padding: 0;
+}
+.template-card-img,
+.template-card-text {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  background: var(--color-accent-bg);
+}
+.template-card-img {
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+.template-card-text {
+  display: flex;
+  align-items: flex-end;
+  padding: var(--space-lg);
+  background:
+    linear-gradient(160deg, var(--color-navy) 0%, var(--color-primary) 100%);
+  color: #ffffff;
+  font-size: 1.35rem;
+  font-weight: 700;
+  line-height: 1.25;
+}
+.template-card-body {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+  padding: var(--space-lg);
+  flex: 1;
+}
+.template-card-body h2 {
+  font-size: 1.15rem;
+  color: var(--color-navy);
+  margin: 0;
+}
+.template-card-body p {
+  color: var(--color-text-muted);
+  margin: 0;
+}
+.template-price {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--color-navy) !important;
+  margin-top: auto !important;
+}
+.template-card .btn {
+  text-align: center;
+}
+.template-note {
+  margin-top: var(--space-lg);
+  font-size: 0.875rem;
+  color: var(--color-text-muted);
 }
 
 /* ── Google rating ── */
