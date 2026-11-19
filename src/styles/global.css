@@ -1691,6 +1691,42 @@ a.card-link:hover h3 {
   font-size: 0.875rem;
   color: var(--color-text-muted);
 }
+.free-templates-promo {
+  max-width: 42rem;
+  margin: var(--space-lg) 0;
+  padding: var(--space-md) var(--space-lg);
+  background: var(--color-amber-bg);
+  border: 1px solid var(--color-amber-border);
+  border-radius: var(--radius-md);
+}
+.free-templates-promo p {
+  margin: 0 0 var(--space-sm);
+  color: var(--color-navy);
+}
+.free-templates-form {
+  max-width: 32rem;
+}
+.form-optional {
+  font-weight: 500;
+  color: var(--color-text-muted);
+}
+.form-honeypot {
+  position: absolute;
+  left: -10000px;
+  height: 0;
+  width: 0;
+  overflow: hidden;
+}
+.form-consent {
+  margin-top: var(--space-md);
+  font-size: 0.875rem;
+  color: var(--color-text-muted);
+}
+.form-error {
+  margin: 0 0 var(--space-md);
+  color: #9f1239;
+  font-weight: 600;
+}
 
 /* ── Google rating ── */
 .google-rating {

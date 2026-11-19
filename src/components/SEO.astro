@@ -8,6 +8,7 @@ interface Props {
   ogType?: string;
   canonicalUrl?: string;
   ogImage?: string;
+  noindex?: boolean;
 }
 
 const siteName = SITE_NAME;
@@ -24,6 +25,7 @@ const {
   ogType = "website",
   canonicalUrl,
   ogImage,
+  noindex = false,
 } = Astro.props;
 
 const pageTitle = buildPageTitle(title, seoTitle);
@@ -50,6 +52,7 @@ const resolvedOgImage = ogImage ? `https://summitledgerbooks.com${ogImage}` : de
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>{pageTitle}</title>
 <meta name="description" content={description} />
+{noindex && <meta name="robots" content="noindex" />}
 <link rel="canonical" href={canonical} />
 
 <!-- Favicons -->

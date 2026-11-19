@@ -18,9 +18,10 @@ interface Props {
   ogType?: string;
   ogImage?: string;
   bookingBar?: boolean;
+  noindex?: boolean;
 }
 
-const { title, seoTitle, description, ogType, ogImage, bookingBar = false } = Astro.props;
+const { title, seoTitle, description, ogType, ogImage, bookingBar = false, noindex = false } = Astro.props;
 const pathname = Astro.url.pathname;
 const path = pathname === "/" ? "/" : pathname.replace(/\/$/, "");
 
@@ -31,7 +32,7 @@ const sortedServices = allServices.sort((a, b) => a.data.order - b.data.order);
 <!doctype html>
 <html lang="en">
   <head>
-    <SEO title={title} seoTitle={seoTitle} description={description} ogType={ogType} ogImage={ogImage} />
+    <SEO title={title} seoTitle={seoTitle} description={description} ogType={ogType} ogImage={ogImage} noindex={noindex} />
     <link rel="preconnect" href="https://calendly.com" />
     <link rel="preconnect" href="https://assets.calendly.com" />
     <link rel="dns-prefetch" href="https://calendly.com" />
@@ -107,6 +108,7 @@ const sortedServices = allServices.sort((a, b) => a.data.order - b.data.order);
               <li><a href="/about/">About</a></li>
               <li><a href="/services/">Services</a></li>
               <li><a href="/templates/">Templates</a></li>
+              <li><a href="/free-templates/">Free Templates</a></li>
               <li><a href="/pricing/">Pricing</a></li>
               <li><a href="/faq/">FAQ</a></li>
               <li><a href="/blog/">Blog</a></li>
