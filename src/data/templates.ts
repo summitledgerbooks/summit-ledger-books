@@ -8,8 +8,7 @@ import yearEnd from "../assets/templates/year-end-checklist.webp";
 
 export const ETSY_SHOP_URL = "https://www.etsy.com/shop/SummitLedgerShop";
 
-// TODO: replace with the live Etsy listing URL when the Year-End Bookkeeping & Tax Prep Checklist is published.
-export const YEAR_END_LISTING_URL = ETSY_SHOP_URL;
+export const YEAR_END_LISTING_URL = "https://www.etsy.com/listing/4621269996";
 
 export interface TemplateProduct {
   name: string;
