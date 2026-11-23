@@ -12,7 +12,25 @@
       {
         "@type": "Offer",
         "name": "Starter",
-        "description": "Starting price. Best for 1-3 properties, single entity. Monthly transaction categorization, reconciliation, P&L, and balance sheet.",
+        "description": "Starting price. Best for one property or one flip, single entity. Monthly transaction categorization, reconciliation, P&L, and balance sheet.",
+        "priceCurrency": "USD",
+        "price": "150",
+        "priceSpecification": {
+          "@type": "UnitPriceSpecification",
+          "price": "150",
+          "priceCurrency": "USD",
+          "unitText": "MON",
+          "referenceQuantity": {
+            "@type": "QuantitativeValue",
+            "value": 1,
+            "unitCode": "MON"
+          }
+        }
+      },
+      {
+        "@type": "Offer",
+        "name": "Growth",
+        "description": "Starting price. Best for 2 to 7 properties, several flips a year, or multiple entities. Includes multi-property reporting, AP/AR, rent roll reconciliation, and tax prep support.",
         "priceCurrency": "USD",
         "price": "500",
         "priceSpecification": {
@@ -29,26 +47,8 @@
       },
       {
         "@type": "Offer",
-        "name": "Growth",
-        "description": "Starting price. Best for 4-10 properties or multiple entities. Includes multi-property reporting, AP/AR, rent roll reconciliation, and tax prep support.",
-        "priceCurrency": "USD",
-        "price": "750",
-        "priceSpecification": {
-          "@type": "UnitPriceSpecification",
-          "price": "750",
-          "priceCurrency": "USD",
-          "unitText": "MON",
-          "referenceQuantity": {
-            "@type": "QuantitativeValue",
-            "value": 1,
-            "unitCode": "MON"
-          }
-        }
-      },
-      {
-        "@type": "Offer",
         "name": "Premium",
-        "description": "Starting price. Best for active portfolios, STR investors, and development projects. Includes monthly check-in calls, priority support, depreciation schedules, and payroll support.",
+        "description": "Starting price. Best for 8+ properties, active portfolios, short-term rentals, and development projects. Includes monthly check-in calls, priority support, depreciation schedules, and payroll support.",
         "priceCurrency": "USD",
         "price": "1200",
         "priceSpecification": {
