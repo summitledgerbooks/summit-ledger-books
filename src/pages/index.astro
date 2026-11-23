@@ -2,276 +2,255 @@
 import { Image } from "astro:assets";
 import Base from "../layouts/Base.astro";
 import { getCollection } from "astro:content";
-import { businessSchema } from "../lib/business";
 import headshot from "../assets/images/austin-headshot.png";
-import badgeQboLevel2 from "../assets/images/badge-qbo-level-2.png";
-import badgeQboPayroll from "../assets/images/badge-qbo-payroll.png";
-import bookCert from "../assets/images/book-cert.png";
-import clientCert from "../assets/images/client-cert.png";
-import GoogleRating from "../components/GoogleRating.astro";
-import { BOOKING_URL } from "../lib/site";
+import { GOOGLE_PROFILE_URL, PROADVISOR_URL } from "../lib/site";
+import homeFaq from "../lib/schema/schema-home-faq.json";
 
 const allPosts = await getCollection("blog", ({ data }) => !data.draft);
 const recentPosts = allPosts
   .sort((a, b) => b.data.date.getTime() - a.data.date.getTime())
   .slice(0, 3);
 
+const faqs = homeFaq.mainEntity;
 ---
 
-<Base seoTitle="Real Estate Bookkeeping in Utah" description="Real estate bookkeeping in Utah for investors, landlords, and property managers. Books closed by the 10th for every property and every entity.">
+<Base seoTitle="Real Estate & Construction Bookkeeper in Kaysville, UT" description="Certified QuickBooks Online ProAdvisor for Utah real estate investors, property managers, and contractors. Books closed by the 10th. Plans from $500/month.">
   <section class="hero">
     <div class="container">
-      <span class="eyebrow eyebrow--on-dark">Real Estate Bookkeeping &middot; Built by a Software Engineer</span>
-      <h1>Bookkeeping Built for Real Estate Investors</h1>
-      <p class="hero-tagline">I handle the books. You focus on the summit.</p>
-      <p>I give you profit numbers for every property, clean books for every LLC, and monthly reports you can actually use to make decisions.</p>
-      <a href={BOOKING_URL} class="btn btn-hero">Book a Free Call</a>
-      <GoogleRating />
+      <span class="eyebrow eyebrow--on-dark">Kaysville, Utah · Certified QuickBooks Online ProAdvisor, Level 2</span>
+      <h1>Bookkeeping for Utah real estate and construction businesses</h1>
+      <p>I'm Austin Adams, a software engineer and Certified QuickBooks Online ProAdvisor in Kaysville. I keep monthly books for investors, property managers, builders, and trade contractors, with profit by property or by job and reports by the 10th.</p>
+      <div class="hero-actions">
+        <a href="/contact/" class="btn-hero">Book a free call</a>
+        <a href="/pricing/" class="btn-hero-secondary">See which plan fits</a>
+      </div>
+      <p class="hero-trust">
+        <a href={GOOGLE_PROFILE_URL}>★ 5.0 on Google (7 reviews)</a>
+        · <a href={PROADVISOR_URL} rel="noopener">Certified QuickBooks Online ProAdvisor, Level 2</a>
+        · Plans from $500/month
+      </p>
     </div>
   </section>
 
-  <!-- Problem -->
   <section class="container section-block">
-    <span class="eyebrow" style="text-align: center;">The Mess</span>
-    <h2 class="section-heading" style="text-align: center;">Rental bookkeeping gets messy fast.</h2>
-    <img
-      src="/assets/real-estate-bookkeeping.jpg"
-      alt="Real estate bookkeeping services for investors and property managers"
-      width="800"
-      height="400"
-      loading="eager"
-      style="border-radius: var(--radius-md); margin-bottom: var(--space-lg); width: 100%; height: auto; object-fit: cover; max-height: 18rem;"
-    />
-    <div class="two-col-section">
-      <ul class="problem-list">
-        <li>Personal and rental expenses mixed together</li>
-        <li>No visibility into profit by property</li>
-        <li>AppFolio, Buildium, or Stessa reports that never match QuickBooks</li>
-        <li>Hours of copy-paste between spreadsheets that should talk to each other</li>
-        <li>Scrambling to pull records together at tax time</li>
-        <li>No clear picture of actual cash flow</li>
-      </ul>
-      <p class="section-prose">Inconsistent bookkeeping creates stress and leads to poor decisions. When your records are behind, your software doesn't match your books, and your real numbers live in a fragile spreadsheet, you're flying blind on your own portfolio.</p>
-    </div>
+    <h2 class="section-heading">What Summit Ledger Books does</h2>
+    <p class="section-prose" style="max-width: 46rem;">Summit Ledger Books is a bookkeeping firm in Kaysville, Utah, run by Austin Adams, a Certified QuickBooks Online ProAdvisor (Level 2). I keep monthly books in QuickBooks Online for real estate investors, property managers, developers, builders, and trade contractors: reconciliations, profit by property or by job, job costing, and CPA-ready reports. Plans start at $500 a month.</p>
   </section>
 
-  <!-- Differentiator -->
+  <section class="container section-block">
+    <h2 class="section-heading">Messy books look different in every business</h2>
+    <ul class="problem-list" style="max-width: 40rem;">
+      <li>Personal and business expenses mixed together</li>
+      <li>No visibility into profit by property or by job</li>
+      <li>AppFolio, Buildium, or Stessa reports that never match QuickBooks</li>
+      <li>Change orders and retainage tracked in someone's head</li>
+      <li>Subcontractor W-9s missing when January's 1099 deadline hits</li>
+      <li>Scrambling to pull records together at tax time</li>
+    </ul>
+    <p class="section-prose" style="max-width: 46rem; margin-top: var(--space-lg);">When the books run months behind, the only numbers you trust live in a spreadsheet. That's the file a lender asks about at refinance time, and the pile your CPA asks for in March.</p>
+  </section>
+
   <section class="amber-band">
     <div class="container">
-      <span class="eyebrow" style="text-align: center;">Why an Engineer</span>
-      <h2 class="section-heading" style="text-align: center;">Most bookkeepers categorize transactions. Austin builds the systems behind them.</h2>
+      <h2 class="section-heading" style="text-align: center;">When AppFolio and QuickBooks disagree, I find out why</h2>
       <div class="why-grid">
         <div class="why-item">
-          <h3>A career writing software</h3>
-          <p>Austin Adams spent his career as a software engineer building data systems. Precision, reconciliation, and automation aren't bookkeeping buzzwords to him. They're the job he's done every day.</p>
+          <h3>A software engineer on your books</h3>
+          <p>I spent my career building data systems, where a number that doesn't tie out is a bug you trace to the cause. I treat a reconciliation that won't balance the same way.</p>
         </div>
         <div class="why-item">
-          <h3>QuickBooks Online certified</h3>
-          <p>Certified bookkeeping with a real estate niche. Property-level profit, clean entity separation, and books closed by the 10th of every month.</p>
+          <h3>Certified QuickBooks Online ProAdvisor, Level 2</h3>
+          <p>I hold Intuit's QuickBooks Online ProAdvisor Level 2 certification and the QuickBooks Payroll certification, and I keep both current. <a href={PROADVISOR_URL} rel="noopener">Verify my ProAdvisor listing</a>.</p>
         </div>
         <div class="why-item">
-          <h3>The combination is the point</h3>
-          <p>When your property management software and QuickBooks disagree, you don't need another workaround. You need someone who can read the data and fix the sync. Very few bookkeepers can do both.</p>
+          <h3>Sync fixes that hold</h3>
+          <p>When your property management or job-management software reports different numbers than QuickBooks, I fix the connection between them so next month's reports match too.</p>
         </div>
-      </div>
-      <div class="badge-row" style="justify-content: center; margin-top: var(--space-lg);">
-        <Image src={badgeQboLevel2} alt="QuickBooks Online Certified" class="badge-img" width={80} height={80} densities={[1, 2]} />
-        <Image src={badgeQboPayroll} alt="QuickBooks Payroll Certified" class="badge-img" width={80} height={80} densities={[1, 2]} />
-        <Image src={bookCert} alt="Bookkeeping Certified" class="badge-img" width={80} height={80} densities={[1, 2]} />
-        <Image src={clientCert} alt="QuickBooks Client Certified" class="badge-img" width={80} height={80} densities={[1, 2]} />
       </div>
       <p style="text-align: center; margin-top: var(--space-lg);"><a href="/services/systems-integration/" style="color: var(--color-navy); font-weight: 600;">See Systems &amp; Integration services &rarr;</a></p>
     </div>
   </section>
 
-  <!-- Outcome -->
-  <section class="outcome-band">
-    <div class="container">
-      <h2 class="section-heading" style="text-align: center; color: var(--color-navy);">What changes when your books are clean.</h2>
-      <div class="two-col-section">
-        <ul class="outcome-list">
-          <li>Accurate monthly profit by property</li>
-          <li>Reliable cash flow visibility</li>
-          <li>Books that match your bank statements, every month</li>
-          <li>Clear tracking of owner draws <span class="term">(the money you take out)</span></li>
-          <li>CPA-ready reports at tax time</li>
-        </ul>
-        <p class="section-prose">When your books are current and accurate, you can make confident decisions about your portfolio. You know what's performing, what isn't, and where your money is actually going. See how my <a href="/services/" style="color: var(--color-navy); text-decoration: underline;">real estate bookkeeping services</a> keep your portfolio organized.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- What I Handle -->
   <section class="container section-block">
-    <h2 class="section-heading" style="text-align: center;">What I Handle</h2>
+    <h2 class="section-heading" style="text-align: center;">What I handle</h2>
     <div class="card-grid">
       <a href="/services/portfolio-bookkeeping/" class="card card-link">
-        <h3>Rental Property Bookkeeping</h3>
-        <p>Track rental income and expenses across every property and entity, whether you have one LLC or twenty. I categorize transactions, reconcile accounts, and deliver clear monthly statements for your entire portfolio.</p>
+        <h3>Rental property bookkeeping</h3>
+        <p>Income and expenses tracked by property and by entity, whether you have one LLC or twenty.</p>
         <span class="card-arrow">Learn more &rarr;</span>
       </a>
-      <a href="/services/catch-up-bookkeeping/" class="card card-link">
-        <h3>Catch-Up Bookkeeping</h3>
-        <p>Behind on your property records? I'll work through your backlog, whether it's a few months or a few years, and bring everything current.</p>
-        <span class="card-arrow">Learn more &rarr;</span>
-      </a>
-      <a href="/services/tax-prep-support/" class="card card-link">
-        <h3>Tax Preparation Support</h3>
-        <p>I organize your real estate financials and work with your CPA on Schedule E filings <span class="term">(the rental income tax form)</span>, depreciation schedules, and entity-level reporting so tax season runs smoothly.</p>
+      <a href="/services/construction-bookkeeping/" class="card card-link">
+        <h3>Construction &amp; contractor bookkeeping</h3>
+        <p>Job costing, WIP schedules, progress billing, retainage, and subcontractor 1099s for builders and trade contractors.</p>
         <span class="card-arrow">Learn more &rarr;</span>
       </a>
       <a href="/services/property-management-accounting/" class="card card-link">
-        <h3>Property Management Accounting</h3>
-        <p>I track management fees, owner disbursements, and trust accounting <span class="term">(keeping tenant and owner money legally separate)</span> so your books reflect how property management actually works. Rent roll reconciliation included.</p>
+        <h3>Property management accounting</h3>
+        <p>Management fees, owner disbursements, trust accounting, and monthly rent roll reconciliation.</p>
         <span class="card-arrow">Learn more &rarr;</span>
       </a>
       <a href="/services/development-project-tracking/" class="card card-link">
-        <h3>Development Project Tracking</h3>
-        <p>I track hard costs, soft costs, land, and carrying costs by project. Draw schedules, construction loan reconciliation, and cost-to-complete reporting so you always know where your money is going.</p>
+        <h3>Development project tracking</h3>
+        <p>Hard costs, soft costs, land, and carrying costs by project, with draw schedules and construction loan reconciliation.</p>
+        <span class="card-arrow">Learn more &rarr;</span>
+      </a>
+      <a href="/services/catch-up-bookkeeping/" class="card card-link">
+        <h3>Catch-up bookkeeping</h3>
+        <p>A few months or a few years behind, brought current at a flat fee from $600.</p>
+        <span class="card-arrow">Learn more &rarr;</span>
+      </a>
+      <a href="/services/tax-prep-support/" class="card card-link">
+        <h3>Tax preparation support</h3>
+        <p>Schedule E-ready books, depreciation schedules, and entity-level reports, organized for your CPA. I don't file returns.</p>
         <span class="card-arrow">Learn more &rarr;</span>
       </a>
       <a href="/services/systems-integration/" class="card card-link">
-        <h3>Systems &amp; Integration</h3>
-        <p>When AppFolio, Buildium, or Stessa won't reconcile with QuickBooks, I fix the pipeline. Sync cleanup, automated reporting, data migration, and spreadsheet rescue from a bookkeeper who writes software.</p>
+        <h3>Systems &amp; integration</h3>
+        <p>AppFolio, Buildium, or Stessa synced to QuickBooks, plus automated reports and spreadsheet rescue.</p>
         <span class="card-arrow">Learn more &rarr;</span>
       </a>
     </div>
     <p style="text-align: center; margin-top: var(--space-lg);"><a href="/services/">View all services &rarr;</a></p>
   </section>
 
-  <!-- What You Get Each Month -->
   <section class="container section-block">
-    <h2 class="section-heading" style="text-align: center;">What You Get Each Month</h2>
-    <div class="deliverables-grid">
-      <div class="deliverable-item">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-        <span>Bank and credit card reconciliations <span class="term">(your books matched to your actual statements)</span></span>
-      </div>
-      <div class="deliverable-item">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-        <span>Organized chart of accounts <span class="term">(the category system your books are organized by)</span></span>
-      </div>
-      <div class="deliverable-item">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-        <span>Property-level income and expense tracking</span>
-      </div>
-      <div class="deliverable-item">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-        <span>Monthly profit and loss statement and balance sheet</span>
-      </div>
-      <div class="deliverable-item">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-        <span>Owner snapshot summary</span>
-      </div>
-      <div class="deliverable-item">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-        <span>Clear list of questions or items needing your review</span>
-      </div>
-    </div>
-    <p style="text-align: center; margin-top: var(--space-lg);">
-      <a href={BOOKING_URL} class="btn btn-primary">Book a Free Call</a>
-    </p>
+    <h2 class="section-heading" style="text-align: center;">What you get each month</h2>
+    <ul class="outcome-list" style="max-width: 40rem; margin: 0 auto;">
+      <li>Bank and credit card reconciliations, matched to your actual statements</li>
+      <li>A chart of accounts built for how your business runs (by property, entity, or job)</li>
+      <li>Monthly profit and loss statement and balance sheet</li>
+      <li>Profit by property or by job</li>
+      <li>An owner snapshot summary</li>
+    </ul>
   </section>
 
-  <!-- How It Works -->
   <section class="container section-block">
-    <h2 class="section-heading" style="text-align: center;">How It Works</h2>
+    <h2 class="section-heading" style="text-align: center;">How it works</h2>
     <div class="steps">
       <div class="step">
         <div>
-          <h3>Schedule a Consultation</h3>
-          <p>I start with a free call to understand your portfolio structure and bookkeeping needs.</p>
-          <a href={BOOKING_URL} class="btn btn-primary" style="margin-top: var(--space-sm);">Book a Free Call</a>
+          <h3>Free call</h3>
+          <p>Tell me how many properties, entities, or active jobs you have and what state the books are in.</p>
         </div>
       </div>
       <div class="step">
         <div>
-          <h3>I Get to Work</h3>
-          <p>I connect to your accounts and organize income, expenses, and transactions across all your properties and entities.</p>
+          <h3>Setup</h3>
+          <p>I connect your accounts in QuickBooks Online, set up the chart of accounts, and clear any backlog first. Most clients are fully set up within two weeks.</p>
         </div>
       </div>
       <div class="step">
         <div>
-          <h3>You Get Answers</h3>
-          <p>Receive monthly reports and real-time insight into your portfolio's financial performance.</p>
+          <h3>Monthly close</h3>
+          <p>I categorize transactions weekly, close the books by the 10th, and send your reports.</p>
         </div>
       </div>
     </div>
+    <p style="text-align: center;"><a href="/contact/" class="btn btn-primary">Book a free call</a></p>
   </section>
 
-  <!-- Why Summit Ledger -->
+  <section class="container section-block">
+    <h2 class="section-heading" style="text-align: center;">What it costs</h2>
+    <div class="data-table-wrap">
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>Plan</th>
+            <th>Starting at</th>
+            <th>Best for</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Starter</td>
+            <td>$500/month</td>
+            <td>1–3 properties, one entity</td>
+          </tr>
+          <tr>
+            <td>Growth</td>
+            <td>$750/month</td>
+            <td>4–10 properties or multiple entities</td>
+          </tr>
+          <tr>
+            <td>Premium</td>
+            <td>$1,200/month</td>
+            <td>Active portfolios, short-term rentals, development projects</td>
+          </tr>
+          <tr>
+            <td>Construction &amp; contractors</td>
+            <td>Quoted on a free call</td>
+            <td>Builders, remodelers, and trade contractors</td>
+          </tr>
+          <tr>
+            <td>Catch-up</td>
+            <td>from $600, flat fee</td>
+            <td>Books that are 1 month to 12+ months behind</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="text-align: center; color: var(--color-text-muted);">QuickBooks subscription billed separately. <a href="/pricing/">Full pricing</a></p>
+  </section>
+
   <section class="why-band">
     <div class="container">
-      <h2 class="section-heading" style="text-align: center; color: var(--color-navy);">Why Summit Ledger Books</h2>
-      <p style="text-align: center; color: var(--color-text-muted); margin-bottom: var(--space-lg); max-width: 38rem; margin-left: auto; margin-right: auto;">Real estate investing is a climb. I make sure your books never slow you down. <a href="/about/" style="color: var(--color-navy);">Learn more about who I am.</a></p>
+      <h2 class="section-heading" style="text-align: center; color: var(--color-navy);">Why clients work with me</h2>
       <div class="why-grid">
         <div class="why-item">
-          <h3>Small firm, direct communication</h3>
-          <p>You work directly with your bookkeeper, not a rotating support team. One person who knows your portfolio.</p>
+          <h3>You work with me directly</h3>
+          <p>The person who answers your email is the person who reconciled your accounts.</p>
         </div>
         <div class="why-item">
-          <h3>Structured monthly rhythm</h3>
-          <p>Books closed by the 10th, every month, without reminders. You know exactly when to expect your reports.</p>
+          <h3>The 10th, every month</h3>
+          <p>Your books close and your reports arrive by the 10th without you chasing anyone.</p>
         </div>
         <div class="why-item">
-          <h3>QuickBooks Online focus</h3>
-          <p>I build clean, organized QuickBooks files your CPA can work from directly, with no cleanup required on their end.</p>
+          <h3>Files your CPA can work from</h3>
+          <p>I build QuickBooks files organized by property, entity, or job, with supporting schedules. When your CPA has questions at tax time, they ask me.</p>
         </div>
         <div class="why-item">
-          <h3>Real estate niche specialization</h3>
-          <p>I work exclusively with real estate investors and property managers. I know the accounts, the schedules, and the reporting that matters for your business.</p>
-        </div>
-        <div class="why-item">
-          <h3>An engineer's eye on your books</h3>
-          <p>Austin spent his career building data systems as a software engineer. That shows up in your books: automated where it should be, double-checked where it matters.</p>
-        </div>
-        <div class="why-item">
-          <h3>Financial planning, in-house</h3>
-          <p>Through my partnership with Transamerica Financial Advisors, I can connect you with financial planning services alongside your bookkeeping, so your numbers and your long-term goals stay aligned.</p>
+          <h3>Real estate and construction are the specialty</h3>
+          <p>I know the Schedule E lines and rent rolls, and I know job costing, retainage, and draw schedules. You won't be explaining your business to a generalist.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Meet Austin -->
   <section class="container section-block">
     <div class="founder-section">
       <Image src={headshot} alt="Austin Adams, founder of Summit Ledger Books" class="founder-photo" width={224} height={224} densities={[1, 2]} />
       <div class="founder-text">
-        <span class="eyebrow">Meet Your Bookkeeper</span>
         <h2 class="section-heading" style="margin-bottom: var(--space-md);">Hi, I'm Austin Adams.</h2>
-        <p>I'm a software engineer and QuickBooks-certified bookkeeper in Kaysville, Utah. I started Summit Ledger Books because real estate investors kept telling me the same story: software that doesn't match the books, spreadsheets nobody trusts, and a bookkeeper who shrugs at both.</p>
-        <p>When you work with Summit Ledger Books, you work with me. Directly, every month.</p>
+        <p>I'm a software engineer and Certified QuickBooks Online ProAdvisor in Kaysville, Utah. I started Summit Ledger Books because investors and contractors kept telling me the same story: software that doesn't match the books, spreadsheets nobody trusts, and a bookkeeper who shrugs at both. When you work with Summit Ledger Books, you work with me, every month.</p>
         <a href="/about/">Read my story &rarr;</a>
       </div>
     </div>
   </section>
 
-  <!-- Testimonials -->
   <section class="container section-block">
     <h2 class="section-heading" style="text-align: center;">What clients say</h2>
-    <!-- Real Google review quotes can replace these cards once Austin has permission to publish them. -->
-    <GoogleRating />
+    <p style="text-align: center;">
+      <a href={GOOGLE_PROFILE_URL}>★ 5.0 on Google · 7 reviews</a>
+    </p>
     <div class="testimonial-grid">
       <div class="testimonial-card">
         <div class="testimonial-stars">★★★★★</div>
         <blockquote class="testimonial-quote">"It'd be hard to find someone with a higher work ethic than Austin! He is genuine, consistent, growth-oriented, selfless, and serviceable. You will not regret working with Austin!"</blockquote>
-        <div class="testimonial-author">Anna P.</div>
+        <div class="testimonial-author">Google review, 5 stars</div>
       </div>
       <div class="testimonial-card">
         <div class="testimonial-stars">★★★★★</div>
         <blockquote class="testimonial-quote">"Can't say enough good things! They will take a lot of stress off your plate."</blockquote>
-        <div class="testimonial-author">James Millward</div>
+        <div class="testimonial-author">Google review, 5 stars</div>
       </div>
       <div class="testimonial-card">
         <div class="testimonial-stars">★★★★★</div>
         <blockquote class="testimonial-quote">"You couldn't ask for a more professional, personable, honest, and straight-forward guy to work with!"</blockquote>
-        <div class="testimonial-author">Emma Andreasen</div>
+        <div class="testimonial-author">Google review, 5 stars</div>
       </div>
     </div>
   </section>
 
-  <!-- From the Blog -->
   <section class="container section-block">
     <h2 class="section-heading" style="text-align: center;">From the Blog</h2>
     <p style="text-align: center; color: var(--color-text-muted); margin-bottom: var(--space-lg);">Practical guidance on real estate bookkeeping, tax preparation, and portfolio management.</p>
@@ -288,8 +267,23 @@ const recentPosts = allPosts
   </section>
 
   <section class="container section-block">
-    <h2 class="section-heading" style="text-align: center;">Real Estate Bookkeeping in Davis and Salt Lake Counties</h2>
-    <p style="text-align: center; color: var(--color-text-muted); max-width: 40rem; margin: 0 auto var(--space-lg);">Based in Kaysville, I keep the books for real estate investors, landlords, and property managers along the Wasatch Front.</p>
+    <h2 class="section-heading" style="text-align: center;">Questions I hear most</h2>
+    <div class="faq-static">
+      {faqs.map((item) => (
+        <div>
+          <h3>{item.name}</h3>
+          <p>{item.acceptedAnswer.text}</p>
+          {item.name === "Do you work with contractors and trades?" && (
+            <p><a href="/services/construction-bookkeeping/">Construction &amp; contractor bookkeeping</a></p>
+          )}
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <section class="container section-block">
+    <h2 class="section-heading" style="text-align: center;">Bookkeeping in Davis and Salt Lake Counties</h2>
+    <p style="text-align: center; color: var(--color-text-muted); max-width: 40rem; margin: 0 auto var(--space-lg);">Based in Kaysville, I keep the books for real estate investors, property managers, builders, and trade contractors along the Wasatch Front.</p>
     <div class="card-grid">
       <a href="/bookkeeping-davis-county/" class="card card-link">
         <h3>Davis County, Kaysville, and Layton</h3>
@@ -304,12 +298,13 @@ const recentPosts = allPosts
     </div>
   </section>
 
-  <!-- Final CTA -->
   <section class="container" style="text-align: center; padding-bottom: var(--space-xl);">
-    <h2 class="section-heading">Ready to get your real estate books in order?</h2>
-    <p style="color: var(--color-text-muted); margin-bottom: var(--space-lg);">Let's talk about how Summit Ledger Books can help your portfolio run more efficiently.</p>
-    <a href="/contact/" class="btn btn-primary">Book a Free Call</a>
+    <h2 class="section-heading">Ready to get your books in order?</h2>
+    <p style="color: var(--color-text-muted); margin-bottom: var(--space-lg);">Book a free call and tell me what you own or build. I'll tell you which plan fits and what it costs.</p>
+    <p style="margin-bottom: var(--space-md);"><a href="/contact/" class="btn btn-primary">Book a free call</a></p>
+    <p style="color: var(--color-text-muted);">or call <a href="tel:+13854502276">385-450-2276</a></p>
+    <p style="margin-top: var(--space-lg); color: var(--color-text-muted);"><em>I handle the books. You focus on the summit.</em></p>
   </section>
 
-  <script is:inline type="application/ld+json" set:html={JSON.stringify(businessSchema)} />
+  <script is:inline type="application/ld+json" set:html={JSON.stringify(homeFaq)} />
 </Base>

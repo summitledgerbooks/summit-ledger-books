@@ -1,6 +1,5 @@
 ---
 import Base from "../layouts/Base.astro";
-import { businessSchema } from "../lib/business";
 ---
 
 <Base seoTitle="Property Management Bookkeeping in Salt Lake City" description="Property management and real estate bookkeeping in Salt Lake City and Salt Lake County. Monthly books, catch-up, tax prep, and reporting.">
@@ -67,24 +66,29 @@ import { businessSchema } from "../lib/business";
           <p>Profit and loss by property, balance sheets, cash flow statements, and investor-ready reports delivered monthly.</p>
           <span class="card-arrow">Learn more &rarr;</span>
         </a>
+        <a href="/services/construction-bookkeeping/" class="card card-link">
+          <h3>Construction &amp; contractor bookkeeping</h3>
+          <p>Job costing, progress billing, retainage, and subcontractor 1099s for builders and trades.</p>
+          <span class="card-arrow">Learn more &rarr;</span>
+        </a>
       </div>
       <p style="text-align: center; margin-top: var(--space-lg);"><a href="/services/">View all services &rarr;</a></p>
     </div>
   </section>
 
   <section class="container section-block">
-    <h2 class="section-heading" style="text-align: center;">Why Salt Lake County Investors Choose Me</h2>
+    <h2 class="section-heading" style="text-align: center;">Why Salt Lake County Clients Choose Me</h2>
     <div class="why-grid">
       <div class="why-item">
         <h3>I know the Wasatch Front market</h3>
         <p>I'm based in Kaysville and work with investors throughout the Salt Lake Valley. I understand the local rental market, Utah property tax schedules, and the financial rhythms of real estate investing along the Wasatch Front.</p>
       </div>
       <div class="why-item">
-        <h3>Real estate specialization</h3>
-        <p>I don't do general small business bookkeeping. I work exclusively with real estate investors, property managers, and developers. Your books are set up for how real estate actually works.</p>
+        <h3>Real estate and construction specialization</h3>
+        <p>I specialize in real estate and construction: investors, property managers, developers, builders, and trade contractors. Your books are set up by property, entity, or job, the way your business actually runs.</p>
       </div>
       <div class="why-item">
-        <h3>QuickBooks Online certified</h3>
+        <h3>Certified QuickBooks Online ProAdvisor</h3>
         <p>Your books are maintained in QuickBooks Online so your CPA can work from them directly. No cleanup needed on their end at tax time.</p>
       </div>
       <div class="why-item">
@@ -131,5 +135,4 @@ import { businessSchema } from "../lib/business";
     <a href="/contact/" class="btn btn-primary">Book a Free Call</a>
   </section>
 
-  <script is:inline type="application/ld+json" set:html={JSON.stringify(businessSchema)} />
 </Base>

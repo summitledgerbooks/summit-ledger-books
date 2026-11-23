@@ -5,11 +5,3 @@ export const AUTHOR = {
   url: "https://summitledgerbooks.com/about/",
   sameAs: ["https://www.linkedin.com/company/summit-ledger-books/"],
 };
-
-export const personSchema = {
-  "@type": "Person",
-  name: AUTHOR.name,
-  url: AUTHOR.url,
-  jobTitle: AUTHOR.jobTitle,
-  sameAs: AUTHOR.sameAs,
-};

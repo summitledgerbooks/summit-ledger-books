@@ -4,40 +4,18 @@ import Base from "../layouts/Base.astro";
 import websiteHero from "../assets/images/website-hero.png";
 import badgeQboLevel2 from "../assets/images/badge-qbo-level-2.png";
 import badgeQboPayroll from "../assets/images/badge-qbo-payroll.png";
-import bookCert from "../assets/images/book-cert.png";
-import clientCert from "../assets/images/client-cert.png";
-import { personSchema } from "../lib/author";
-import { BOOKING_URL } from "../lib/site";
-
-const aboutPageSchema = {
-  "@context": "https://schema.org",
-  "@type": "AboutPage",
-  "url": "https://summitledgerbooks.com/about/",
-  "mainEntity": {
-    ...personSchema,
-    "knowsAbout": [
-      "Real estate bookkeeping",
-      "QuickBooks Online",
-      "Property management accounting",
-      "Software engineering",
-    ],
-    "worksFor": {
-      "@type": "Organization",
-      "name": "Summit Ledger Books",
-      "url": "https://summitledgerbooks.com/",
-    },
-  },
-};
+import { BOOKING_URL, PROADVISOR_URL } from "../lib/site";
+import aboutPageSchema from "../lib/schema/schema-about-page.json";
 ---
 
-<Base title="About Austin Adams" description="Meet Austin Adams, founder of Summit Ledger Books: a career software engineer and QuickBooks-certified bookkeeper serving real estate investors in Utah.">
+<Base title="About Austin Adams" description="Meet Austin Adams, founder of Summit Ledger Books: a software engineer and Certified QuickBooks Online ProAdvisor serving real estate and construction businesses in Utah.">
   <div class="container">
     <div class="about-layout">
       <Image src={websiteHero} alt="Austin Adams, founder of Summit Ledger Books" class="about-hero-img" width={768} height={512} />
       <div>
         <span class="eyebrow">About Summit Ledger Books</span>
         <h1 class="section-heading">Hi, I'm Austin Adams.</h1>
-        <p style="color: var(--color-text-muted); margin-bottom: var(--space-lg);">I'm a software engineer, a QuickBooks-certified bookkeeper, and the founder of Summit Ledger Books in Kaysville, Utah.</p>
+        <p style="color: var(--color-text-muted); margin-bottom: var(--space-lg);">I'm a software engineer, a Certified QuickBooks Online ProAdvisor, and the founder of Summit Ledger Books in Kaysville, Utah.</p>
         <a class="btn btn-primary" href={BOOKING_URL}>Book a Free Call</a>
       </div>
     </div>
@@ -61,14 +39,14 @@ const aboutPageSchema = {
 
       <h2>Certifications</h2>
 
-      <p>I'm QuickBooks Online certified, including payroll, and I keep those certifications current. The badges below are mine, not a team's.</p>
+      <p>I'm a Certified QuickBooks Online ProAdvisor, Level 2, and I hold the QuickBooks Payroll certification. I keep both current, and you can verify them on <a href={PROADVISOR_URL} rel="noopener">my Intuit ProAdvisor listing</a>. The badges below are mine, not a team's.</p>
     </div>
 
     <div class="badge-row" style="justify-content: center; margin: var(--space-lg) 0;">
-      <Image src={badgeQboLevel2} alt="QuickBooks Online Certified" class="badge-img" width={80} height={80} densities={[1, 2]} />
-      <Image src={badgeQboPayroll} alt="QuickBooks Payroll Certified" class="badge-img" width={80} height={80} densities={[1, 2]} />
-      <Image src={bookCert} alt="Bookkeeping Certified" class="badge-img" width={80} height={80} densities={[1, 2]} />
-      <Image src={clientCert} alt="QuickBooks Client Certified" class="badge-img" width={80} height={80} densities={[1, 2]} />
+      <a href={PROADVISOR_URL} rel="noopener">
+        <Image src={badgeQboLevel2} alt="Certified QuickBooks Online ProAdvisor, Level 2" class="badge-img" width={80} height={80} densities={[1, 2]} />
+      </a>
+      <Image src={badgeQboPayroll} alt="QuickBooks Payroll certification" class="badge-img" width={80} height={80} densities={[1, 2]} />
     </div>
 
     <div class="prose">
@@ -81,11 +59,9 @@ const aboutPageSchema = {
         <li><strong>Simplicity:</strong> I explain your finances in plain language, not accounting jargon.</li>
       </ul>
 
-      <p>I'm also a licensed financial professional through Transamerica Financial Advisors, which means your books and your long-term financial plan can stay connected when you want them to be.</p>
-
       <h2>Who I Serve</h2>
 
-      <p>I work with real estate investors, property managers, developers, and agents. Whether you own a single rental, manage a portfolio of units, or are partway through your next development project, I know the financial complexity of real estate and how to keep your books clean, organized, and audit-ready. See the full list of <a href="/services/">bookkeeping services</a>, including <a href="/services/systems-integration/">systems and integration work</a> for when your software and your books don't agree.</p>
+      <p>I work with real estate investors, property managers, developers, agents, builders, and trade contractors. Whether you own a single rental, manage a portfolio of units, or are partway through your next development project, I know the financial complexity of real estate and how to keep your books clean, organized, and audit-ready. For contractors, that means job costing, WIP schedules, retainage, and subcontractor 1099s. See <a href="/services/construction-bookkeeping/">construction &amp; contractor bookkeeping</a>. See the full list of <a href="/services/">bookkeeping services</a>, including <a href="/services/systems-integration/">systems and integration work</a> for when your software and your books don't agree.</p>
 
       <p>Read the <a href="/blog/">blog</a> for practical guidance on real estate bookkeeping, tax preparation, and portfolio management.</p>
 

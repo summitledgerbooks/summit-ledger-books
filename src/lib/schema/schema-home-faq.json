@@ -1,0 +1,54 @@
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Are you a CPA? Do you file tax returns?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. I'm a bookkeeper and Certified QuickBooks Online ProAdvisor. I prepare tax-ready books and supporting schedules and work directly with your CPA, who files the return. If you need a CPA, I can refer you."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much does bookkeeping cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Real estate plans start at $500 a month for 1–3 properties in one entity, $750 for 4–10 properties or multiple entities, and $1,200 for active portfolios, short-term rentals, and development projects. Construction and contractor bookkeeping is quoted after a free call. Catch-up work is a flat fee starting at $600. Billing is month to month."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you work with contractors and trades?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. I keep books for builders, remodelers, and trade contractors, with job costing, progress billing, retainage, WIP schedules, and subcontractor 1099s."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need to be in Davis County?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. I'm based in Kaysville and work with clients across Davis County, Salt Lake County, and the rest of Utah. Everything runs remotely through QuickBooks Online, secure document sharing, and email or video calls, so you don't need to be in Utah at all."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What software do you work with?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "QuickBooks Online for the books. I also connect and reconcile AppFolio, Buildium, and Stessa, and I clean up the spreadsheets that sit between them."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "My books are months behind. Can you still help?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. I work through the backlog first, at a flat fee based on how many months are behind, then move you into the monthly close."
+      }
+    }
+  ]
+}

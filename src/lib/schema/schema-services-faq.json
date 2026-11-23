@@ -1,0 +1,38 @@
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Which service do I need if I own rentals in several LLCs?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Rental property bookkeeping on the Growth plan. I keep separate books for each LLC and give you both per-entity and combined reports. Growth starts at $750 a month."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you do job costing for contractors?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. I set up each job in QuickBooks Online with cost codes for labor, materials, subcontractors, and equipment, so every job has its own profit and loss. I also track progress billing and retainage, keep a WIP schedule, and handle subcontractor 1099s."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can you fix AppFolio and QuickBooks numbers that don't match?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. That's the Systems & Integration service. I trace where the two systems disagree, fix the sync or mapping, and reconcile so the reports match going forward."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you file my taxes?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. I prepare the books and schedules your CPA needs and answer their questions directly. A CPA or enrolled agent files the return."
+      }
+    }
+  ]
+}

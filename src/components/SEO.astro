@@ -9,14 +9,15 @@ interface Props {
   canonicalUrl?: string;
   ogImage?: string;
   noindex?: boolean;
+  noCanonical?: boolean;
 }
 
 const siteName = SITE_NAME;
 const defaultDescription =
   "Real estate bookkeeping for investors, landlords, and property managers in Utah. Monthly books and property-level reporting for every entity you own.";
 const defaultOgImage = "https://summitledgerbooks.com/images/og-images/og-image.jpg";
-const TITLE_MAX = 60;
-const DESCRIPTION_MAX = 160;
+const TITLE_MAX = 61;
+const DESCRIPTION_MAX = 170;
 
 const {
   title,
@@ -26,6 +27,7 @@ const {
   canonicalUrl,
   ogImage,
   noindex = false,
+  noCanonical = false,
 } = Astro.props;
 
 const pageTitle = buildPageTitle(title, seoTitle);
@@ -53,7 +55,7 @@ const resolvedOgImage = ogImage ? `https://summitledgerbooks.com${ogImage}` : de
 <title>{pageTitle}</title>
 <meta name="description" content={description} />
 {noindex && <meta name="robots" content="noindex" />}
-<link rel="canonical" href={canonical} />
+{!noCanonical && <link rel="canonical" href={canonical} />}
 
 <!-- Favicons -->
 <link rel="icon" type="image/x-icon" href="/images/icons/favicon.ico" />

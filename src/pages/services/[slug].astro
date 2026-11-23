@@ -1,6 +1,7 @@
 ---
 import Base from "../../layouts/Base.astro";
 import { getCollection, render } from "astro:content";
+import ConstructionBookkeeping from "../../components/ConstructionBookkeeping.astro";
 import { BOOKING_URL, SERVICE_STARTING_PRICE } from "../../lib/site";
 
 export async function getStaticPaths() {
@@ -14,6 +15,10 @@ export async function getStaticPaths() {
 const { service } = Astro.props;
 const { Content } = await render(service);
 const startingPrice = SERVICE_STARTING_PRICE[service.id];
+const isConstruction = service.id === "construction-bookkeeping";
+const pageSeoTitle = isConstruction
+  ? "Construction & Contractor Bookkeeping in Utah | Summit Ledger"
+  : service.data.seoTitle;
 
 const allPosts = await getCollection("blog", ({ data }) => !data.draft);
 const relatedPosts = service.data.relatedPosts
@@ -58,13 +63,18 @@ const breadcrumbSchema = {
     {
       "@type": "ListItem",
       "position": 3,
-      "name": service.data.title
+      "name": service.data.title,
+      "item": `https://summitledgerbooks.com/services/${service.id}/`
     }
   ]
 };
 ---
 
-<Base title={service.data.title} seoTitle={service.data.seoTitle} description={service.data.description} bookingBar>
+<Base title={service.data.title} seoTitle={pageSeoTitle} description={service.data.description} bookingBar>
+  {isConstruction ? (
+    <ConstructionBookkeeping />
+  ) : (
+  <>
   <div class="article-header">
     <div class="container">
       <a href="/services/" class="article-back">&larr; All Services</a>
@@ -138,4 +148,6 @@ const breadcrumbSchema = {
 
   <script is:inline type="application/ld+json" set:html={JSON.stringify(serviceSchema)} />
   <script is:inline type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+  </>
+  )}
 </Base>

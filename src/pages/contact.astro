@@ -1,19 +1,10 @@
 ---
 import Base from "../layouts/Base.astro";
 import GoogleRating from "../components/GoogleRating.astro";
-
-const contactSchema = {
-  "@context": "https://schema.org",
-  "@type": "ContactPoint",
-  "contactType": "customer service",
-  "telephone": "+13854502276",
-  "email": "austin@summitledgerbooks.com",
-  "availableLanguage": "English",
-  "url": "https://summitledgerbooks.com/contact/"
-};
+import contactSchema from "../lib/schema/schema-contact-page.json";
 ---
 
-<Base title="Contact" description="Get in touch with Summit Ledger Books for a free bookkeeping consultation.">
+<Base title="Contact" description="Book a free call with Summit Ledger Books in Kaysville, UT. Call 385-450-2276 or email austin@summitledgerbooks.com.">
   <div class="container">
     <h1 class="section-heading">Let's Get Your Books Clean.</h1>
     <p style="color: var(--color-text-muted); margin-bottom: var(--space-md); max-width: 42rem;">On the call, I'll go over your current setup, what's working, and what isn't. You'll walk away with a clear picture of what getting organized actually looks like for your portfolio, whether or not you decide to hire me. Looking for details first? Check out my <a href="/services/">services</a> or <a href="/pricing/">pricing</a>.</p>

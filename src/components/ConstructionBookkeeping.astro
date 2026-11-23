@@ -1,0 +1,119 @@
+---
+import { GOOGLE_PROFILE_URL, PROADVISOR_URL } from "../lib/site";
+import constructionSchema from "../lib/schema/schema-construction-page.json";
+
+const faq = constructionSchema["@graph"].find((node) => node["@type"] === "FAQPage");
+const questions = faq && "mainEntity" in faq ? faq.mainEntity : [];
+---
+
+<div class="article-header">
+  <div class="container">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="/">Home</a>
+      <span aria-hidden="true"> › </span>
+      <a href="/services/">Services</a>
+      <span aria-hidden="true"> › </span>
+      <span>Construction &amp; Contractor Bookkeeping</span>
+    </nav>
+    <span class="eyebrow eyebrow--on-dark">Construction &amp; contractor bookkeeping · Kaysville, Utah</span>
+    <h1 class="article-title">Know which jobs made money before the next bid goes out</h1>
+    <p style="color: rgba(255, 255, 255, 0.85); max-width: 42rem; font-size: 1.05rem;">I'm Austin Adams, a Certified QuickBooks Online ProAdvisor in Kaysville. I set up job costing in QuickBooks Online, track progress billing and retainage, and close your books by the 10th, so you see profit on each job every month.</p>
+    <div class="hero-actions" style="justify-content: flex-start;">
+      <a class="btn-hero" href="/contact/">Book a free call</a>
+      <a class="btn-hero-secondary" href="/templates/">Get the Contractor Job Costing Workbook</a>
+    </div>
+    <p class="hero-trust">
+      <a href={GOOGLE_PROFILE_URL}>★ 5.0 on Google (7 reviews)</a>
+      · <a href={PROADVISOR_URL} rel="noopener">Certified QuickBooks Online ProAdvisor, Level 2</a>
+      · QuickBooks Payroll certified
+    </p>
+  </div>
+</div>
+
+<div class="container service-layout">
+  <div>
+    <div class="prose article-prose">
+      <h2>What construction bookkeeping covers</h2>
+      <p>Construction bookkeeping tracks money by job instead of only by month. Every cost (labor, materials, subcontractors, equipment) is coded to a job and phase, billings and retainage are tracked against each contract, and a work-in-progress (WIP) schedule compares what you've billed with what you've earned. The result is a profit and loss for every job.</p>
+
+      <h2>Where contractor books usually break</h2>
+      <ul>
+        <li>Costs land in one big "materials" account, so no job shows its real margin</li>
+        <li>Change orders get done in the field and never billed</li>
+        <li>Retainage sits on the balance sheet with no one tracking when it's due back</li>
+        <li>You've billed 70% of a job that's 50% done, and the cash looks better than it is</li>
+        <li>Subcontractor W-9s are missing in January, when 1099s are due</li>
+        <li>Payroll hours don't tie to jobs, so labor cost per job is an estimate</li>
+      </ul>
+
+      <h2>What I handle for contractors</h2>
+      <p><strong>Job costing.</strong> I set up each job as a project in QuickBooks Online and code every bill, receipt, and payroll hour to it by cost type: labor, materials, subcontractors, equipment, and overhead. You get a P&amp;L for every job and a budget-versus-actual report, so you can see a job going over while there's still time to act. If you bid from a spreadsheet, I map your estimate lines to the same cost codes so the comparison is apples to apples.</p>
+      <p><strong>WIP schedule.</strong> Each month I update a work-in-progress schedule showing contract value, costs to date, estimated cost to complete, percent complete, and over- or under-billing for every open job. It's the report that tells you whether the cash in the bank is profit or a customer's prepayment. Lenders and bonding agents often ask for it.</p>
+      <p><strong>Progress billing and change orders.</strong> I invoice by percentage complete or by milestone straight from the job's estimate in QuickBooks Online, and I track approved change orders so they get billed.</p>
+      <p><strong>Retainage.</strong> I track retainage you're owed by customers and retainage you're holding from subcontractors, by job, so you know what's due back when each job closes out.</p>
+      <p><strong>Subcontractor payments and 1099s.</strong> I collect W-9s before the first payment, track what each subcontractor is paid during the year, and prepare 1099-NEC forms for January.</p>
+      <p><strong>Payroll by job.</strong> As a QuickBooks Payroll-certified ProAdvisor, I run payroll and tie hours to jobs, so labor shows up in job costs instead of overhead.</p>
+      <p><strong>Construction loans and draws.</strong> For builders and developers carrying construction loans, I reconcile draws and track cost-to-complete by project. See <a href="/services/development-project-tracking/">Development Project Tracking</a>.</p>
+
+      <h2>Who I work with</h2>
+      <p>General contractors, custom home builders, remodelers, and specialty trade contractors along the Wasatch Front and remotely across Utah. Real estate investors who self-perform rehabs use the same job-costing setup.</p>
+
+      <h2>What you get each month</h2>
+      <ul>
+        <li>Bank, credit card, and loan reconciliations</li>
+        <li>Profit and loss by job, plus company-wide P&amp;L and balance sheet</li>
+        <li>Budget versus actual for each open job</li>
+        <li>An updated WIP schedule with over- and under-billing</li>
+        <li>Retainage receivable and payable by job</li>
+        <li>A short note on any job running over budget</li>
+      </ul>
+
+      <h2>How it works</h2>
+      <ol>
+        <li><strong>Free call.</strong> Tell me how many jobs you run at once, how you bid, and how far behind the books are.</li>
+        <li><strong>Setup.</strong> I build your cost codes and job list in QuickBooks Online, load open jobs and their contract values, and clean up any backlog first. Most clients are fully set up within two weeks.</li>
+        <li><strong>Monthly close.</strong> I code costs weekly, close by the 10th, and send job reports and the WIP schedule.</li>
+      </ol>
+
+      <h2>What I don't do</h2>
+      <ul>
+        <li><strong>No tax filing.</strong> I prepare tax-ready books, and your CPA files.</li>
+        <li><strong>No reviewed or audited statements.</strong> If your bonding company or lender needs CPA-reviewed or audited financials, a CPA firm issues them. I'll have the books and WIP schedule ready.</li>
+        <li><strong>No legal advice</strong> on contracts, lien rights, or licensing. Ask a construction attorney.</li>
+      </ul>
+
+      <h2>Start with the workbook, or hand me the books</h2>
+      <p>If you're running a few jobs and want to start yourself, my Contractor Job Costing Workbook tracks budget, costs, and profit per job in a spreadsheet. <a href="/templates/">See templates</a>.</p>
+      <p>When you'd rather have the books done, book a call.</p>
+
+      <h2>Questions contractors ask</h2>
+    </div>
+
+    <div class="faq-static">
+      {questions.map((item) => (
+        <div>
+          <h3>{item.name}</h3>
+          <p>{item.acceptedAnswer.text}</p>
+        </div>
+      ))}
+    </div>
+
+    <div class="article-cta">
+      <p>Find out which of your jobs made money</p>
+      <p>Book a free call. Tell me how many jobs you have open, and I'll show you what the setup looks like and what it costs.</p>
+      <a href="/contact/" class="btn btn-primary">Book a free call</a>
+      <p style="margin-top: var(--space-md);">or call <a href="tel:+13854502276">385-450-2276</a></p>
+    </div>
+
+    <div class="article-footer">
+      <a href="/services/">&larr; Back to all services</a>
+    </div>
+  </div>
+
+  <aside class="service-sidecard">
+    <p class="service-promise">Books closed by the 10th</p>
+    <a class="btn btn-primary" href="/contact/">Book a free call</a>
+  </aside>
+</div>
+
+<script is:inline type="application/ld+json" set:html={JSON.stringify(constructionSchema)} />

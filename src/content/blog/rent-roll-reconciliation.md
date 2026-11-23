@@ -1,16 +1,19 @@
 ---
-title: "What Is a Rent Roll and Why Does It Matter for Your Books?"
+title: "Rent Roll Reconciliation: How to Tie It to Your Books"
 seoTitle: "Rent Roll Reconciliation: How to Tie It to Your Books"
 description: "A rent roll is more than a tenant list. It's a key financial document that connects your leases to your books. Here's what it should include and how to use it."
 date: 2026-02-09
+updatedDate: 2026-11-23
 tags: ["real estate", "bookkeeping", "rental properties", "property management"]
 draft: false
 ogImage: "/images/og-images/the-one-report-every-real-estate-investor-needs.png"
 ---
 
-If you manage rental properties, you've probably heard the term rent roll. You may even have one: a spreadsheet listing your tenants and what they pay. But a rent roll used properly is more than a contact list. It's a financial document that should connect directly to your books.
+Rent roll reconciliation is the monthly check that the rent your rent roll says you charged matches the rent recorded in your books and deposited in the bank. Every difference is either a late payment, a concession, or an error, and each one needs an entry.
 
 Rent roll reconciliation is a key part of my [property management accounting](/services/property-management-accounting/) service. Here's what a complete rent roll looks like and how to use it.
+
+Property managers: see [property management accounting](/services/property-management-accounting/) and [Utah's trust account rules](/blog/utah-property-management-trust-account-rules/).
 
 ## What a Rent Roll Should Include
 

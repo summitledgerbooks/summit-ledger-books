@@ -74,6 +74,9 @@ const itemListSchema = {
             {product.description && <p>{product.description}</p>}
             <p class="template-price">{product.priceLabel}</p>
             <a class="btn btn-primary" href={product.url} target="_blank" rel="noopener noreferrer">View on Etsy</a>
+            {product.secondaryHref && product.secondaryLabel && (
+              <p style="margin-top: var(--space-sm);"><a href={product.secondaryHref}>{product.secondaryLabel}</a></p>
+            )}
           </div>
         </article>
       ))}

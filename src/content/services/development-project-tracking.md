@@ -12,6 +12,8 @@ Real estate development is a different animal from rental property investing. Yo
 
 I set up project-level tracking that gives you visibility into where your money is going, how much you've spent, and what's left in the budget at any point during the project.
 
+Running jobs for clients as a contractor? See [construction & contractor bookkeeping](/services/construction-bookkeeping/).
+
 ## Who This Is For
 
 - Real estate developers building or renovating residential and commercial properties
