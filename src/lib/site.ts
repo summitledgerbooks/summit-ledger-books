@@ -8,6 +8,6 @@ export const PROADVISOR_URL =
  * published price are omitted rather than guessed.
  */
 export const SERVICE_STARTING_PRICE: Record<string, string> = {
-  "portfolio-bookkeeping": "$500/mo",
+  "portfolio-bookkeeping": "$150/mo",
   "catch-up-bookkeeping": "$600",
 };

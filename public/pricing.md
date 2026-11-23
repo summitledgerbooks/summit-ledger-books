@@ -2,16 +2,16 @@
 
 All prices USD. Monthly plans are billed month to month; no long-term contract. QuickBooks Online subscription is billed separately.
 
-## Real estate: Starter, from $500/month
-- Best for: 1–3 properties, single entity
+## Real estate: Starter, from $150/month
+- Best for: one property or one flip, single entity
 - Includes: transaction categorization, bank and credit card reconciliation, profit and loss statement, balance sheet, email support
 
-## Real estate: Growth, from $750/month
-- Best for: 4–10 properties or multiple entities
+## Real estate: Growth, from $500/month
+- Best for: 2 to 7 properties, several flips a year, or multiple entities
 - Includes: everything in Starter, multi-property or multi-entity reporting, accounts payable and receivable, rent roll reconciliation, tax prep support (Schedule E ready)
 
 ## Real estate: Premium, from $1,200/month
-- Best for: active portfolios, short-term rental investors, development projects
+- Best for: 8+ properties, active portfolios, short-term rentals, and development projects
 - Includes: everything in Growth, property-level P&L review with variance notes, 15-minute monthly check-in call, same-day priority support, depreciation schedule maintenance, payroll support
 
 ## Construction & contractor bookkeeping: quoted after a free call

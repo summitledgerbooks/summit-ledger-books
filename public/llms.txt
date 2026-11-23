@@ -18,7 +18,7 @@ Verify credential: https://proadvisor.intuit.com/app/accountant/search?searchId=
 - [All services](https://summitledgerbooks.com/services/)
 
 ## Pricing
-- [Pricing](https://summitledgerbooks.com/pricing/): real estate plans Starter from $500/mo, Growth from $750/mo, Premium from $1,200/mo; catch-up from $600 (flat fee); construction quoted after a free call. Month to month, no long-term contract. Machine-readable: https://summitledgerbooks.com/pricing.md
+- [Pricing](https://summitledgerbooks.com/pricing/): real estate plans Starter from $150/mo, Growth from $500/mo, Premium from $1,200/mo; catch-up from $600 (flat fee); construction quoted after a free call. Month to month, no long-term contract. Machine-readable: https://summitledgerbooks.com/pricing.md
 
 ## Templates
 - [Real estate and contractor spreadsheet templates](https://summitledgerbooks.com/templates/): sold on Etsy (SummitLedgerShop), including a Contractor Job Costing Workbook
