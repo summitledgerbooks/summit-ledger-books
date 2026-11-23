@@ -1,5 +1,6 @@
 ---
 import Base from "../layouts/Base.astro";
+import { BOOKING_URL } from "../lib/site";
 ---
 
 <Base seoTitle="Real Estate Bookkeeper in Davis County, Kaysville, Layton" description="Real estate bookkeeper for landlords and investors in Davis County, including Kaysville and Layton. Monthly books, catch-up, and tax prep support.">
@@ -8,7 +9,7 @@ import Base from "../layouts/Base.astro";
       <h1>Real Estate Bookkeeper in Davis County, Kaysville, and Layton</h1>
       <p class="hero-tagline">Based in Kaysville. Built for real estate investors.</p>
       <p>I'm a real estate bookkeeper for landlords, property managers, and investors in Davis County, including Kaysville and Layton, with books that stay clean and ready for tax season.</p>
-      <a href="/contact/" class="btn btn-hero">Book a Free Call</a>
+      <a href={BOOKING_URL} class="btn btn-hero">Book a Free Call</a>
     </div>
   </section>
 
@@ -130,7 +131,7 @@ import Base from "../layouts/Base.astro";
   <section class="container" style="text-align: center; padding-bottom: var(--space-xl);">
     <h2 class="section-heading">Ready to get your books in order?</h2>
     <p style="color: var(--color-text-muted); margin-bottom: var(--space-lg);">Schedule a free consultation and I'll walk through your portfolio, your current bookkeeping setup, and what getting organized looks like.</p>
-    <a href="/contact/" class="btn btn-primary">Book a Free Call</a>
+    <a href={BOOKING_URL} class="btn btn-primary">Book a Free Call</a>
   </section>
 
 </Base>

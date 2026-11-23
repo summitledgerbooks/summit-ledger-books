@@ -41,10 +41,6 @@ const sortedServices = allServices.sort((a, b) => a.data.order - b.data.order);
   <head>
     <SEO title={title} seoTitle={seoTitle} description={description} ogType={ogType} ogImage={ogImage} noindex={noindex} noCanonical={noCanonical} />
     {pathname === "/" && <link rel="preload" as="image" href={heroImage.src} fetchpriority="high" />}
-    <link rel="preconnect" href="https://calendly.com" />
-    <link rel="preconnect" href="https://assets.calendly.com" />
-    <link rel="dns-prefetch" href="https://calendly.com" />
-    <link rel="dns-prefetch" href="https://assets.calendly.com" />
     <script is:inline>
       window.addEventListener("load", function () {
         var ga = document.createElement("script");
@@ -154,7 +150,7 @@ const sortedServices = allServices.sort((a, b) => a.data.order - b.data.order);
             </p>
             <div class="footer-cta">
               <p style="font-size: 0.875rem; margin-bottom: var(--space-sm);">Ready to get organized?</p>
-              <a href="https://calendly.com/summit-ledger-books/consultation" class="btn btn-primary">Book a Free Call</a>
+              <a href={BOOKING_URL} class="btn btn-primary">Book a Free Call</a>
             </div>
           </div>
         </div>

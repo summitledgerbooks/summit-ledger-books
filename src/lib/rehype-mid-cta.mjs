@@ -22,7 +22,7 @@ function ctaNode(text) {
         tagName: "a",
         properties: {
           className: ["btn", "btn-primary"],
-          href: "https://calendly.com/summit-ledger-books/consultation",
+          href: "https://cal.com/summit-ledger-books/consultation",
         },
         children: [{ type: "text", value: "Book a Free Call" }],
       },

@@ -1,6 +1,7 @@
 ---
 import Base from "../../layouts/Base.astro";
 import { getCollection } from "astro:content";
+import { BOOKING_URL } from "../../lib/site";
 import servicesFaq from "../../lib/schema/schema-services-faq.json";
 
 const services = await getCollection("services");
@@ -24,7 +25,7 @@ const itemListSchema = {
     <h1 class="section-heading">Real estate and construction bookkeeping services</h1>
     <p style="color: var(--color-text-muted); margin-bottom: var(--space-lg); max-width: 42rem;">I keep the books in QuickBooks Online for real estate investors, property managers, short-term rental hosts, developers, builders, and trade contractors. Every monthly plan includes reconciliations, profit by property, entity, or job, and a close by the 10th. I'm a Certified QuickBooks Online ProAdvisor (Level 2) based in Kaysville, Utah, working with clients remotely.</p>
     <p style="margin-bottom: var(--space-xl);">
-      <a href="/contact/" class="btn btn-primary">Book a free call</a>
+      <a href={BOOKING_URL} class="btn btn-primary">Book a free call</a>
       <a href="/pricing/" style="margin-left: var(--space-md);">See pricing</a>
     </p>
 
@@ -255,7 +256,7 @@ const itemListSchema = {
     <div style="text-align: center; margin-top: var(--space-xl);">
       <h2 class="section-heading">Not sure which service fits?</h2>
       <p style="color: var(--color-text-muted); margin-bottom: var(--space-md);">Book a free call. Tell me what you own or build and how far behind the books are, and I'll recommend a plan and quote it.</p>
-      <a href="/contact/" class="btn btn-primary">Book a free call</a>
+      <a href={BOOKING_URL} class="btn btn-primary">Book a free call</a>
     </div>
   </div>
 

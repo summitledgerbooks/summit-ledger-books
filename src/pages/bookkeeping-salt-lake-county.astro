@@ -1,5 +1,6 @@
 ---
 import Base from "../layouts/Base.astro";
+import { BOOKING_URL } from "../lib/site";
 ---
 
 <Base seoTitle="Property Management Bookkeeping in Salt Lake City" description="Property management and real estate bookkeeping in Salt Lake City and Salt Lake County. Monthly books, catch-up, tax prep, and reporting.">
@@ -8,7 +9,7 @@ import Base from "../layouts/Base.astro";
       <h1>Property Management and Real Estate Bookkeeping in Salt Lake City</h1>
       <p class="hero-tagline">Serving investors and property managers across the Salt Lake Valley.</p>
       <p>I handle property management bookkeeping and real estate bookkeeping for landlords, managers, and investors in Salt Lake City and throughout Salt Lake County.</p>
-      <a href="/contact/" class="btn btn-hero">Book a Free Call</a>
+      <a href={BOOKING_URL} class="btn btn-hero">Book a Free Call</a>
     </div>
   </section>
 
@@ -132,7 +133,7 @@ import Base from "../layouts/Base.astro";
   <section class="container" style="text-align: center; padding-bottom: var(--space-xl);">
     <h2 class="section-heading">Ready to get your books in order?</h2>
     <p style="color: var(--color-text-muted); margin-bottom: var(--space-lg);">Schedule a free consultation and I'll walk through your portfolio, your current bookkeeping setup, and what getting organized looks like.</p>
-    <a href="/contact/" class="btn btn-primary">Book a Free Call</a>
+    <a href={BOOKING_URL} class="btn btn-primary">Book a Free Call</a>
   </section>
 
 </Base>
