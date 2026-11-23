@@ -3,7 +3,7 @@ import { Image } from "astro:assets";
 import Base from "../layouts/Base.astro";
 import { getCollection } from "astro:content";
 import headshot from "../assets/images/austin-headshot.png";
-import { GOOGLE_PROFILE_URL, PROADVISOR_URL } from "../lib/site";
+import { BOOKING_URL, GOOGLE_PROFILE_URL, PROADVISOR_URL } from "../lib/site";
 import homeFaq from "../lib/schema/schema-home-faq.json";
 
 const allPosts = await getCollection("blog", ({ data }) => !data.draft);
@@ -21,7 +21,7 @@ const faqs = homeFaq.mainEntity;
       <h1>Bookkeeping for Utah real estate and construction businesses</h1>
       <p>I'm Austin Adams, a software engineer and Certified QuickBooks Online ProAdvisor in Kaysville. I keep monthly books for investors, property managers, builders, and trade contractors, with profit by property or by job and reports by the 10th.</p>
       <div class="hero-actions">
-        <a href="/contact/" class="btn-hero">Book a free call</a>
+        <a href={BOOKING_URL} class="btn-hero">Book a free call</a>
         <a href="/pricing/" class="btn-hero-secondary">See which plan fits</a>
       </div>
       <p class="hero-trust">
@@ -146,7 +146,7 @@ const faqs = homeFaq.mainEntity;
         </div>
       </div>
     </div>
-    <p style="text-align: center;"><a href="/contact/" class="btn btn-primary">Book a free call</a></p>
+    <p style="text-align: center;"><a href={BOOKING_URL} class="btn btn-primary">Book a free call</a></p>
   </section>
 
   <section class="container section-block">
@@ -301,7 +301,7 @@ const faqs = homeFaq.mainEntity;
   <section class="container" style="text-align: center; padding-bottom: var(--space-xl);">
     <h2 class="section-heading">Ready to get your books in order?</h2>
     <p style="color: var(--color-text-muted); margin-bottom: var(--space-lg);">Book a free call and tell me what you own or build. I'll tell you which plan fits and what it costs.</p>
-    <p style="margin-bottom: var(--space-md);"><a href="/contact/" class="btn btn-primary">Book a free call</a></p>
+    <p style="margin-bottom: var(--space-md);"><a href={BOOKING_URL} class="btn btn-primary">Book a free call</a></p>
     <p style="color: var(--color-text-muted);">or call <a href="tel:+13854502276">385-450-2276</a></p>
     <p style="margin-top: var(--space-lg); color: var(--color-text-muted);"><em>I handle the books. You focus on the summit.</em></p>
   </section>

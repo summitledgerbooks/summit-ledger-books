@@ -1,5 +1,5 @@
 ---
-import { GOOGLE_PROFILE_URL, PROADVISOR_URL } from "../lib/site";
+import { BOOKING_URL, GOOGLE_PROFILE_URL, PROADVISOR_URL } from "../lib/site";
 import constructionSchema from "../lib/schema/schema-construction-page.json";
 
 const faq = constructionSchema["@graph"].find((node) => node["@type"] === "FAQPage");
@@ -19,7 +19,7 @@ const questions = faq && "mainEntity" in faq ? faq.mainEntity : [];
     <h1 class="article-title">Know which jobs made money before the next bid goes out</h1>
     <p style="color: rgba(255, 255, 255, 0.85); max-width: 42rem; font-size: 1.05rem;">I'm Austin Adams, a Certified QuickBooks Online ProAdvisor in Kaysville. I set up job costing in QuickBooks Online, track progress billing and retainage, and close your books by the 10th, so you see profit on each job every month.</p>
     <div class="hero-actions" style="justify-content: flex-start;">
-      <a class="btn-hero" href="/contact/">Book a free call</a>
+      <a class="btn-hero" href={BOOKING_URL}>Book a free call</a>
       <a class="btn-hero-secondary" href="/templates/">Get the Contractor Job Costing Workbook</a>
     </div>
     <p class="hero-trust">
@@ -101,7 +101,7 @@ const questions = faq && "mainEntity" in faq ? faq.mainEntity : [];
     <div class="article-cta">
       <p>Find out which of your jobs made money</p>
       <p>Book a free call. Tell me how many jobs you have open, and I'll show you what the setup looks like and what it costs.</p>
-      <a href="/contact/" class="btn btn-primary">Book a free call</a>
+      <a href={BOOKING_URL} class="btn btn-primary">Book a free call</a>
       <p style="margin-top: var(--space-md);">or call <a href="tel:+13854502276">385-450-2276</a></p>
     </div>
 
@@ -112,7 +112,7 @@ const questions = faq && "mainEntity" in faq ? faq.mainEntity : [];
 
   <aside class="service-sidecard">
     <p class="service-promise">Books closed by the 10th</p>
-    <a class="btn btn-primary" href="/contact/">Book a free call</a>
+    <a class="btn btn-primary" href={BOOKING_URL}>Book a free call</a>
   </aside>
 </div>
 

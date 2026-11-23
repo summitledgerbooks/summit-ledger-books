@@ -24,4 +24,4 @@ All prices USD. Monthly plans are billed month to month; no long-term contract. 
 - 6–12+ months behind: from $3,000, quoted after review
 - Payment: in full upfront, or 50% at start and 50% on completion
 
-Contact: 385-450-2276 · austin@summitledgerbooks.com · https://summitledgerbooks.com/contact/
+Contact: 385-450-2276 · austin@summitledgerbooks.com · https://summitledgerbooks.com/contact/ · Book a call: https://cal.com/summit-ledger-books/consultation

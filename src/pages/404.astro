@@ -1,5 +1,6 @@
 ---
 import Base from "../layouts/Base.astro";
+import { BOOKING_URL } from "../lib/site";
 ---
 
 <Base title="Page Not Found" description="The page you're looking for doesn't exist." noCanonical>
@@ -11,7 +12,7 @@ import Base from "../layouts/Base.astro";
     </p>
     <div style="display: flex; gap: var(--space-md); justify-content: center; flex-wrap: wrap;">
       <a href="/" class="btn btn-primary">Go Home</a>
-      <a href="https://calendly.com/summit-ledger-books/consultation" class="btn btn-outline">Book a Free Call</a>
+      <a href={BOOKING_URL} class="btn btn-outline">Book a Free Call</a>
     </div>
   </div>
 </Base>

@@ -1,53 +1,97 @@
 ---
 import Base from "../layouts/Base.astro";
 import GoogleRating from "../components/GoogleRating.astro";
+import { BOOKING_URL } from "../lib/site";
 import contactSchema from "../lib/schema/schema-contact-page.json";
 ---
 
 <Base title="Contact" description="Book a free call with Summit Ledger Books in Kaysville, UT. Call 385-450-2276 or email austin@summitledgerbooks.com.">
-  <div class="container">
-    <h1 class="section-heading">Let's Get Your Books Clean.</h1>
-    <p style="color: var(--color-text-muted); margin-bottom: var(--space-md); max-width: 42rem;">On the call, I'll go over your current setup, what's working, and what isn't. You'll walk away with a clear picture of what getting organized actually looks like for your portfolio, whether or not you decide to hire me. Looking for details first? Check out my <a href="/services/">services</a> or <a href="/pricing/">pricing</a>.</p>
+  <div class="container contact-page">
+    <h1 class="section-heading">Let's get your books clean.</h1>
+    <p>I'm Austin Adams. I keep monthly books for Utah real estate investors, landlords, flippers, and contractors. I'm based in Kaysville, and the work is remote, so you can be in Davis County, Salt Lake County, somewhere else in Utah, or outside the state. QuickBooks Online, secure document sharing, and a call are enough. If you want the scope and the prices before we talk, start with the <a href="/services/">services</a> or the <a href="/pricing/">pricing</a>.</p>
     <GoogleRating align="start" />
 
-    <div class="contact-grid">
-      <div class="contact-calendly">
-        <h2 style="font-size: 1.125rem; font-weight: 700; color: var(--color-navy); margin-bottom: var(--space-md);">Book a time</h2>
-        <div class="calendly-inline-widget" data-url="https://calendly.com/summit-ledger-books/consultation"></div>
-        <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+    <h2 class="section-heading" style="font-size: 1.35rem; margin-top: var(--space-xl);">What happens on the call</h2>
+    <p>The call is free. Tell me how many properties, entities, or active jobs you have, and how far behind the books are. I'll go over your current setup, what's working, and what isn't. You'll leave with a clear picture of what getting organized looks like, and what it costs, whether or not you decide to hire me.</p>
+
+    <h2 class="section-heading" style="font-size: 1.35rem; margin-top: var(--space-xl);">What happens after</h2>
+    <p>If we work together, I connect your accounts in QuickBooks Online, set up a chart of accounts for properties, entities, or jobs, and clear any backlog first. Most clients are fully set up within two weeks. After that I categorize transactions weekly, close the books by the 10th, and send your reports. Real estate plans start at $500 a month. Construction and contractor bookkeeping is quoted on the call. Catch-up work is a flat fee, and monthly plans are month to month. I don't file tax returns. I prepare the books your CPA needs and answer their questions directly.</p>
+
+    <h2 class="section-heading" style="font-size: 1.35rem; margin-top: var(--space-xl);">Book a time</h2>
+    <p>Pick a time below. If the scheduler doesn't load, <a href={BOOKING_URL}>book the call here</a>.</p>
+    <div id="my-cal-inline" class="cal-inline-embed"></div>
+    <script is:inline>
+      (function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if(typeof namespace === "string"){cal.ns[namespace] = cal.ns[namespace] || api;p(cal.ns[namespace], ar);p(cal, ["initNamespace", namespace]);} else p(cal, ar); return;} p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
+      Cal("init", {origin:"https://cal.com"});
+      Cal("inline", {
+        elementOrSelector: "#my-cal-inline",
+        calLink: "summit-ledger-books/consultation",
+        config: { layout: "month_view" }
+      });
+      Cal("ui", { hideEventTypeDetails: false, layout: "month_view" });
+    </script>
+
+    <h2 class="section-heading" style="font-size: 1.35rem; margin-top: var(--space-xl);">Email or call</h2>
+    <p>Email <a href="mailto:austin@summitledgerbooks.com">austin@summitledgerbooks.com</a> or call <a href="tel:+13854502276">385-450-2276</a>. If you use the form, I'll get back to you within one business day.</p>
+
+    <h2 id="send-a-message" class="section-heading" style="font-size: 1.35rem; margin-top: var(--space-xl);">Send a message</h2>
+    <form name="contact" method="POST" data-netlify="true" class="contact-form">
+      <input type="hidden" name="form-name" value="contact" />
+      <p class="form-note">Required fields are marked.</p>
+
+      <div class="form-group">
+        <label for="name">Name <span class="form-required">(required)</span></label>
+        <input type="text" id="name" name="name" required aria-required="true" autocomplete="name" />
       </div>
 
-      <div class="contact-form-col">
-        <h2 style="font-size: 1.125rem; font-weight: 700; color: var(--color-navy); margin-bottom: var(--space-sm);">Send a message</h2>
-        <p style="color: var(--color-text-muted); font-size: 0.9375rem; margin-bottom: var(--space-lg);">Prefer to reach out by form? I'll get back to you within one business day.</p>
-
-        <form name="contact" method="POST" data-netlify="true">
-          <input type="hidden" name="form-name" value="contact" />
-
-          <div class="form-group">
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" required />
-          </div>
-
-          <div class="form-group">
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required />
-          </div>
-
-          <div class="form-group">
-            <label for="business">Business Name</label>
-            <input type="text" id="business" name="business" />
-          </div>
-
-          <div class="form-group">
-            <label for="message">Message</label>
-            <textarea id="message" name="message" required></textarea>
-          </div>
-
-          <button type="submit" class="btn btn-primary">Send Message</button>
-        </form>
+      <div class="form-group">
+        <label for="email">Email <span class="form-required">(required)</span></label>
+        <input type="email" id="email" name="email" required aria-required="true" autocomplete="email" />
       </div>
-    </div>
+
+      <div class="form-group">
+        <label for="business">Business name</label>
+        <input type="text" id="business" name="business" autocomplete="organization" />
+      </div>
+
+      <div class="form-group">
+        <label for="message">Message <span class="form-required">(required)</span></label>
+        <textarea id="message" name="message" required aria-required="true"></textarea>
+      </div>
+
+      <p id="contact-status" class="form-status" role="status" aria-live="polite"></p>
+      <button type="submit" class="btn btn-primary">Send message</button>
+    </form>
+    <script is:inline>
+      const contactForm = document.querySelector("form[name='contact']");
+      const contactStatus = document.getElementById("contact-status");
+      if (contactForm && contactStatus) {
+        contactForm.addEventListener("invalid", () => {
+          contactStatus.className = "form-status is-error";
+          contactStatus.textContent = "Please fill in your name, email, and message.";
+        }, true);
+        contactForm.addEventListener("submit", async (event) => {
+          if (!contactForm.checkValidity()) return;
+          event.preventDefault();
+          contactStatus.className = "form-status";
+          contactStatus.textContent = "Sending your message.";
+          try {
+            const response = await fetch("/", {
+              method: "POST",
+              headers: { "Content-Type": "application/x-www-form-urlencoded" },
+              body: new URLSearchParams(new FormData(contactForm)).toString(),
+            });
+            if (!response.ok) throw new Error("Request failed");
+            contactForm.reset();
+            contactStatus.className = "form-status is-success";
+            contactStatus.textContent = "Message sent. I'll get back to you within one business day.";
+          } catch {
+            contactStatus.className = "form-status is-error";
+            contactStatus.textContent = "The message didn't send. Email austin@summitledgerbooks.com or call 385-450-2276.";
+          }
+        });
+      }
+    </script>
   </div>
 
   <script is:inline type="application/ld+json" set:html={JSON.stringify(contactSchema)} />

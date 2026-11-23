@@ -1,4 +1,4 @@
-export const BOOKING_URL = "https://calendly.com/summit-ledger-books/consultation";
+export const BOOKING_URL = "https://cal.com/summit-ledger-books/consultation";
 export const GOOGLE_PROFILE_URL = "https://share.google/stdNUiJ9pPhlHABRA";
 export const PROADVISOR_URL =
   "https://proadvisor.intuit.com/app/accountant/search?searchId=summitledgerbooks";
