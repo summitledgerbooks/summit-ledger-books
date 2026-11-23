@@ -23,6 +23,10 @@
       },
       "areaServed": [
         {
+          "@type": "Country",
+          "name": "United States"
+        },
+        {
           "@type": "State",
           "name": "Utah"
         },
