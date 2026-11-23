@@ -3,6 +3,7 @@ title: "Owner Draws From a Rental Property LLC: How to Pay Yourself Correctly"
 seoTitle: "How to Record Owner Draws From a Rental LLC"
 description: "How to take an owner draw from your rental property LLC the right way: what to record, what to avoid, and why it matters for taxes and refinancing."
 date: 2026-06-11
+updatedDate: 2026-11-23
 tags: ["LLCs", "bookkeeping", "rental properties", "taxes"]
 draft: false
 midCta:
@@ -37,6 +38,8 @@ In QuickBooks Online, draws live on the balance sheet, not the P&L.
 **2. Recording draws as an expense.** Covered above, but it's the most common error I see in self-managed books, usually as a category called something like "Owner Pay."
 
 **3. Drawing from the wrong entity.** If you have multiple LLCs, each draw comes from a specific entity and gets recorded on that entity's books. Pulling cash from whichever account has money, regardless of which LLC earned it, creates undocumented inter-company loans nobody remembers making. I covered this pattern in [bookkeeping for multiple LLCs](/blog/bookkeeping-multiple-llcs/).
+
+If you own rentals in several LLCs, see [how to keep books across multiple LLCs](/blog/bookkeeping-multiple-llcs/) and [how your entity structure affects your books](/blog/entity-structure-bookkeeping/). For done-for-you books, see [rental property bookkeeping](/services/portfolio-bookkeeping/).
 
 **4. Draining the account without a reserve plan.** A draw isn't free cash flow until reserves are funded. Pull everything out in June and the July roof leak goes on a personal credit card, which becomes a contribution, which becomes more bookkeeping noise. Decide on a per-property reserve floor and draw what's above it.
 

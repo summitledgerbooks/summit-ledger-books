@@ -1,13 +1,16 @@
 ---
 title: "AppFolio and QuickBooks Don't Match: Why It Happens and How to Fix It"
-seoTitle: "AppFolio and QuickBooks Not Matching? How to Fix It"
+seoTitle: "AppFolio QuickBooks Integration: Why the Numbers Don't Match"
 description: "Here's why AppFolio, Buildium, or Stessa never matches QuickBooks Online, and how to fix the sync instead of working around it every month."
 date: 2026-06-11
+updatedDate: 2026-11-23
 tags: ["software", "QuickBooks", "property management", "real estate"]
 draft: false
 ---
 
 You run a report in AppFolio and it says one number. You run the same report in QuickBooks Online and it says another. Neither one matches your bank account. If you've been blaming yourself for this, stop. AppFolio QuickBooks integration problems are one of the most common reasons real estate investors and property managers reach out to me, and the root cause is almost never a typo. It's the plumbing between the two systems.
+
+If the sync is already broken, my [Systems & Integration service](/services/systems-integration/) fixes it. For other platforms, see [property management software compared](/blog/property-management-software-compared/).
 
 ## Why the Numbers Never Match
 

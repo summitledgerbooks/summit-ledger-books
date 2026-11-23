@@ -1,0 +1,92 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Service",
+      "@id": "https://summitledgerbooks.com/services/construction-bookkeeping/#service",
+      "name": "Construction & Contractor Bookkeeping",
+      "serviceType": "Construction bookkeeping",
+      "url": "https://summitledgerbooks.com/services/construction-bookkeeping/",
+      "description": "Job costing, WIP schedules, progress billing, retainage, subcontractor 1099s, and payroll by job in QuickBooks Online for builders and trade contractors.",
+      "provider": {
+        "@id": "https://summitledgerbooks.com/#business"
+      },
+      "areaServed": {
+        "@type": "State",
+        "name": "Utah"
+      },
+      "audience": {
+        "@type": "BusinessAudience",
+        "audienceType": "General contractors, home builders, remodelers, and trade contractors"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://summitledgerbooks.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Services",
+          "item": "https://summitledgerbooks.com/services/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Construction & Contractor Bookkeeping",
+          "item": "https://summitledgerbooks.com/services/construction-bookkeeping/"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Do I need QuickBooks Online for job costing?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, for this service. I set up job costing with projects in QuickBooks Online."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is a WIP schedule, and do I need one?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A WIP schedule lists every open job with its contract value, costs to date, percent complete, and whether you've billed ahead of or behind the work. If you run jobs longer than a month, or a lender or bonding agent asks for financials, you need one."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can you handle subcontractor 1099s?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. I collect W-9s up front, track payments through the year, and prepare 1099-NEC forms by the January 31 IRS deadline."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much does construction bookkeeping cost?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Book a free call and I'll quote it based on your jobs and volume. Catch-up work is a flat fee starting at $600."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you work with trades outside construction?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Service and trade businesses use the same setup: jobs or service tickets, materials, labor by job, and 1099s for subs."
+          }
+        }
+      ]
+    }
+  ]
+}

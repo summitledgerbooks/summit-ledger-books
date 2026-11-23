@@ -3,12 +3,15 @@ title: "Security Deposits: How to Record Them Correctly in Your Books"
 seoTitle: "Security Deposit Accounting: Journal Entries for Landlords"
 description: "Security deposits are liabilities, not income, but many landlords record them wrong. How to handle deposits in QuickBooks so the books stay clean."
 date: 2026-01-19
+updatedDate: 2026-11-23
 tags: ["real estate", "bookkeeping", "rental properties", "landlords"]
 draft: false
 ogImage: "/images/og-images/security-deposits-are-not-income.png"
 ---
 
 Security deposits are one of the most commonly mishandled items in rental property bookkeeping. Most landlords either record them as income when received or ignore them entirely until a tenant moves out. Both approaches are wrong, and both create problems at tax time. Proper handling is a core part of [property management accounting](/services/property-management-accounting/).
+
+Utah managers holding deposits for owners should also read [Utah property management trust account rules](/blog/utah-property-management-trust-account-rules/).
 
 Here's the correct way to handle them.
 

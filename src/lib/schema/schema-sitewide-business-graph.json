@@ -1,0 +1,114 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": [
+        "AccountingService",
+        "LocalBusiness"
+      ],
+      "@id": "https://summitledgerbooks.com/#business",
+      "name": "Summit Ledger Books",
+      "url": "https://summitledgerbooks.com/",
+      "description": "Bookkeeping in QuickBooks Online for real estate investors, property managers, developers, builders, and trade contractors in Davis County, Salt Lake County, and across Utah. Based in Kaysville.",
+      "logo": "https://summitledgerbooks.com/images/logos/logo.png",
+      "image": "https://summitledgerbooks.com/images/og-images/og-image.jpg",
+      "telephone": "+13854502276",
+      "email": "austin@summitledgerbooks.com",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Kaysville",
+        "addressRegion": "UT",
+        "postalCode": "84037",
+        "addressCountry": "US"
+      },
+      "areaServed": [
+        {
+          "@type": "State",
+          "name": "Utah"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Davis County, Utah"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Salt Lake County, Utah"
+        }
+      ],
+      "knowsAbout": [
+        "rental property bookkeeping",
+        "property management trust accounting",
+        "short-term rental bookkeeping",
+        "construction job costing",
+        "WIP schedules",
+        "retainage",
+        "subcontractor 1099s",
+        "QuickBooks Online"
+      ],
+      "priceRange": "$$",
+      "founder": {
+        "@id": "https://summitledgerbooks.com/about/#austin"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "customer service",
+        "telephone": "+13854502276",
+        "email": "austin@summitledgerbooks.com",
+        "availableLanguage": "English",
+        "url": "https://summitledgerbooks.com/contact/"
+      },
+      "sameAs": [
+        "https://www.google.com/maps?kgmid=/g/11y__dyjq_",
+        "https://share.google/stdNUiJ9pPhlHABRA",
+        "https://proadvisor.intuit.com/app/accountant/search?searchId=summitledgerbooks",
+        "https://www.linkedin.com/company/summit-ledger-books/",
+        "https://www.etsy.com/shop/SummitLedgerShop"
+      ]
+    },
+    {
+      "@type": "Person",
+      "@id": "https://summitledgerbooks.com/about/#austin",
+      "name": "Austin Adams",
+      "url": "https://summitledgerbooks.com/about/",
+      "jobTitle": "Founder & Bookkeeper, Summit Ledger Books",
+      "worksFor": {
+        "@id": "https://summitledgerbooks.com/#business"
+      },
+      "hasCredential": [
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "Certified QuickBooks Online ProAdvisor, Level 2",
+          "credentialCategory": "certification",
+          "recognizedBy": {
+            "@type": "Organization",
+            "name": "Intuit",
+            "url": "https://www.intuit.com/"
+          }
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "QuickBooks Payroll certification",
+          "credentialCategory": "certification",
+          "recognizedBy": {
+            "@type": "Organization",
+            "name": "Intuit",
+            "url": "https://www.intuit.com/"
+          }
+        }
+      ],
+      "knowsAbout": [
+        "Real estate bookkeeping",
+        "Construction bookkeeping",
+        "Job costing",
+        "QuickBooks Online",
+        "QuickBooks Payroll",
+        "Property management accounting",
+        "Software engineering"
+      ],
+      "sameAs": [
+        "https://www.linkedin.com/company/summit-ledger-books/",
+        "https://proadvisor.intuit.com/app/accountant/search?searchId=summitledgerbooks"
+      ]
+    }
+  ]
+}

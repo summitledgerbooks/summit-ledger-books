@@ -49,3 +49,5 @@ That's where dedicated rental property bookkeeping comes in. I handle the ongoin
 When your books are behind or disorganized, you can't make informed decisions about your portfolio. You don't know which properties are profitable. You can't give your CPA clean numbers at tax time. You can't confidently present financials to a lender when you want to acquire your next property.
 
 Clean, current books give you visibility into your real estate business. That visibility is what separates investors who scale from investors who stay stuck.
+
+Behind already? See [catch-up bookkeeping](/services/catch-up-bookkeeping/) and [what it costs](/blog/catch-up-bookkeeping-cost-landlords/).

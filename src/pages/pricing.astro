@@ -2,44 +2,7 @@
 import Base from "../layouts/Base.astro";
 import GoogleRating from "../components/GoogleRating.astro";
 import { BOOKING_URL } from "../lib/site";
-
-const pricingSchema = {
-  "@context": "https://schema.org",
-  "@type": "Service",
-  "name": "Real Estate Bookkeeping",
-  "provider": {
-    "@type": "ProfessionalService",
-    "name": "Summit Ledger Books",
-    "url": "https://summitledgerbooks.com/"
-  },
-  "hasOfferCatalog": {
-    "@type": "OfferCatalog",
-    "name": "Monthly Bookkeeping Plans",
-    "itemListElement": [
-      {
-        "@type": "Offer",
-        "name": "Starter",
-        "price": "500",
-        "priceCurrency": "USD",
-        "description": "Best for 1-3 properties, single entity. Monthly transaction categorization, reconciliation, P&L, and balance sheet."
-      },
-      {
-        "@type": "Offer",
-        "name": "Growth",
-        "price": "750",
-        "priceCurrency": "USD",
-        "description": "Best for 4-10 properties or multiple entities. Includes multi-property reporting, AP/AR, rent roll reconciliation, and tax prep support."
-      },
-      {
-        "@type": "Offer",
-        "name": "Premium",
-        "price": "1200",
-        "priceCurrency": "USD",
-        "description": "Best for active portfolios, STR investors, and development projects. Includes monthly check-in calls, priority support, depreciation schedules, and payroll support."
-      }
-    ]
-  }
-};
+import pricingSchema from "../lib/schema/schema-pricing-offers.json";
 ---
 
 <Base title="Pricing" description="Transparent real estate bookkeeping pricing. Monthly plans starting at $500/month. Catch-up bookkeeping quoted by scope. No hidden fees, no long-term contracts.">
@@ -127,6 +90,10 @@ const pricingSchema = {
     </div>
 
     <!-- QuickBooks note -->
+    <h2 class="section-heading" style="text-align: center; font-size: 1.25rem; margin-top: var(--space-xl); margin-bottom: var(--space-lg);">Construction &amp; Contractor Bookkeeping</h2>
+    <p style="text-align: center; color: var(--color-text-muted); margin-bottom: var(--space-lg); max-width: 36rem; margin-left: auto; margin-right: auto;">Monthly bookkeeping for builders, remodelers, and trade contractors, with job costing, WIP schedules, progress billing, retainage, and subcontractor 1099s. Pricing depends on your active jobs and volume, so I quote it after a free call.</p>
+    <p style="text-align: center; margin-bottom: var(--space-lg);"><a href={BOOKING_URL} class="btn btn-primary">Book a free call</a></p>
+
     <div class="cpa-collab" style="margin-top: var(--space-md); max-width: 100%;">
       <p style="font-weight: 600; color: var(--color-navy); margin-bottom: var(--space-sm);">A note on QuickBooks</p>
       <p style="color: var(--color-text-muted); font-size: 0.9375rem; line-height: 1.7;">QuickBooks subscription fees are billed separately and not included in the pricing above. If you need a QuickBooks subscription, I can help you enroll through my ProAdvisor access, which may qualify you for preferred pricing options.</p>
@@ -136,6 +103,7 @@ const pricingSchema = {
       <p style="color: var(--color-text-muted); margin-bottom: var(--space-md);">Not sure which plan fits your portfolio? Let's talk through it.</p>
       <GoogleRating />
       <a href={BOOKING_URL} class="btn btn-primary" style="margin-top: var(--space-md);">Book a free call</a>
+      <p style="margin-top: var(--space-lg); font-size: 0.875rem; color: var(--color-text-muted);">Machine-readable pricing: <a href="/pricing.md">/pricing.md</a></p>
     </div>
   </div>
 

@@ -21,6 +21,8 @@ export interface TemplateProduct {
   image?: ImageMetadata;
   imageAlt?: string;
   badge?: string;
+  secondaryHref?: string;
+  secondaryLabel?: string;
 }
 
 export const templateProducts: TemplateProduct[] = [
@@ -99,6 +101,8 @@ export const templateProducts: TemplateProduct[] = [
     url: "https://www.etsy.com/listing/4621180917",
     image: contractor,
     imageAlt: "Contractor job costing workbook spreadsheet",
+    secondaryHref: "/services/construction-bookkeeping/",
+    secondaryLabel: "Want it done for you? → Construction bookkeeping",
   },
 ];
 

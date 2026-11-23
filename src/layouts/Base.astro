@@ -1,5 +1,5 @@
 ---
-import { Image } from "astro:assets";
+import { Image, getImage } from "astro:assets";
 import { getCollection } from "astro:content";
 import SEO from "../components/SEO.astro";
 import "../styles/global.css";
@@ -7,9 +7,9 @@ import mtnLogo from "../assets/images/mtn-logo.png";
 import footerLogo from "../assets/images/logo.png";
 import badgeQboLevel2 from "../assets/images/badge-qbo-level-2.png";
 import badgeQboPayroll from "../assets/images/badge-qbo-payroll.png";
-import bookCert from "../assets/images/book-cert.png";
-import clientCert from "../assets/images/client-cert.png";
-import { BOOKING_URL } from "../lib/site";
+import heroBanner from "../assets/images/background-banner.jpg";
+import { BOOKING_URL, GOOGLE_PROFILE_URL, PROADVISOR_URL } from "../lib/site";
+import { businessSchema } from "../lib/business";
 
 interface Props {
   title?: string;
@@ -19,11 +19,18 @@ interface Props {
   ogImage?: string;
   bookingBar?: boolean;
   noindex?: boolean;
+  noCanonical?: boolean;
 }
 
-const { title, seoTitle, description, ogType, ogImage, bookingBar = false, noindex = false } = Astro.props;
+const { title, seoTitle, description, ogType, ogImage, bookingBar = false, noindex = false, noCanonical = false } = Astro.props;
 const pathname = Astro.url.pathname;
 const path = pathname === "/" ? "/" : pathname.replace(/\/$/, "");
+const heroImage = await getImage({
+  src: heroBanner,
+  format: "webp",
+  width: 1536,
+  quality: 68,
+});
 
 const allServices = await getCollection("services");
 const sortedServices = allServices.sort((a, b) => a.data.order - b.data.order);
@@ -32,26 +39,29 @@ const sortedServices = allServices.sort((a, b) => a.data.order - b.data.order);
 <!doctype html>
 <html lang="en">
   <head>
-    <SEO title={title} seoTitle={seoTitle} description={description} ogType={ogType} ogImage={ogImage} noindex={noindex} />
+    <SEO title={title} seoTitle={seoTitle} description={description} ogType={ogType} ogImage={ogImage} noindex={noindex} noCanonical={noCanonical} />
+    {pathname === "/" && <link rel="preload" as="image" href={heroImage.src} fetchpriority="high" />}
     <link rel="preconnect" href="https://calendly.com" />
     <link rel="preconnect" href="https://assets.calendly.com" />
     <link rel="dns-prefetch" href="https://calendly.com" />
     <link rel="dns-prefetch" href="https://assets.calendly.com" />
-    <!-- Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ERKMFNNSXR" is:inline></script>
     <script is:inline>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-ERKMFNNSXR');
-    </script>
-    <!-- Metricool -->
-    <script is:inline>
-      function loadScript(a){var b=document.getElementsByTagName("head")[0],c=document.createElement("script");c.type="text/javascript",c.src="https://tracker.metricool.com/resources/be.js",c.onreadystatechange=a,c.onload=a,b.appendChild(c)}
-      loadScript(function(){beTracker.t({hash:"2a4c402b57cbd4be98358aacd61e78b2"})});
+      window.addEventListener("load", function () {
+        var ga = document.createElement("script");
+        ga.src = "https://www.googletagmanager.com/gtag/js?id=G-ERKMFNNSXR";
+        ga.async = true;
+        document.head.appendChild(ga);
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){window.dataLayer.push(arguments);}
+        gtag("js", new Date());
+        gtag("config", "G-ERKMFNNSXR");
+
+        function loadScript(a){var b=document.getElementsByTagName("head")[0],c=document.createElement("script");c.type="text/javascript",c.src="https://tracker.metricool.com/resources/be.js",c.onreadystatechange=a,c.onload=a,b.appendChild(c)}
+        loadScript(function(){beTracker.t({hash:"2a4c402b57cbd4be98358aacd61e78b2"})});
+      });
     </script>
   </head>
-  <body class={bookingBar ? "has-booking-bar" : undefined}>
+  <body class={bookingBar ? "has-booking-bar" : undefined} style={`--hero-image: url('${heroImage.src}')`}>
     <header class="site-header">
       <div class="container">
         <a href="/" class="logo">
@@ -95,10 +105,10 @@ const sortedServices = allServices.sort((a, b) => a.data.order - b.data.order);
             </a>
             <p class="footer-tagline">Let me focus on the books. You focus on the summit.</p>
             <div class="badge-row badge-row--footer">
-              <Image src={badgeQboLevel2} alt="QuickBooks Online Certified" class="badge-img" width={80} height={80} densities={[1, 2]} />
-              <Image src={badgeQboPayroll} alt="QuickBooks Payroll Certified" class="badge-img" width={80} height={80} densities={[1, 2]} />
-              <Image src={bookCert} alt="Bookkeeping Certified" class="badge-img" width={80} height={80} densities={[1, 2]} />
-              <Image src={clientCert} alt="QuickBooks Client Certified" class="badge-img" width={80} height={80} densities={[1, 2]} />
+              <a href={PROADVISOR_URL} rel="noopener">
+                <Image src={badgeQboLevel2} alt="Certified QuickBooks Online ProAdvisor, Level 2" class="badge-img" width={80} height={80} densities={[1, 2]} />
+              </a>
+              <Image src={badgeQboPayroll} alt="QuickBooks Payroll certification" class="badge-img" width={80} height={80} densities={[1, 2]} />
             </div>
           </div>
 
@@ -135,7 +145,7 @@ const sortedServices = allServices.sort((a, b) => a.data.order - b.data.order);
               </a>
             </p>
             <p class="footer-contact-item">
-              <a href="https://share.google/JSmmHjjUHcmw6QuOu" target="_blank" rel="noopener noreferrer" style="display: inline-flex; align-items: center; gap: 0.4rem;">
+              <a href={GOOGLE_PROFILE_URL} target="_blank" rel="noopener noreferrer" style="display: inline-flex; align-items: center; gap: 0.4rem;">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
                   <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5z"/>
                 </svg>
@@ -160,6 +170,8 @@ const sortedServices = allServices.sort((a, b) => a.data.order - b.data.order);
         <a class="btn btn-primary" href={BOOKING_URL}>Book a Free Call</a>
       </div>
     )}
+
+    <script is:inline type="application/ld+json" set:html={JSON.stringify(businessSchema)} />
 
     <script>
       const toggle = document.querySelector(".nav-toggle");

@@ -42,4 +42,4 @@ Summit Ledger Books is run by a career software engineer. That means when your d
 
 ## Why an Engineer Makes the Difference
 
-Austin Adams, the founder of Summit Ledger Books, spent his career writing software and working with data systems before becoming a QuickBooks-certified bookkeeper. Very few bookkeepers can read an integration log, untangle a broken sync, or build an automated report from scratch. That combination is the whole point of this service: your books are only as good as the systems feeding them.
+Austin Adams, the founder of Summit Ledger Books, spent his career writing software and working with data systems before becoming a Certified QuickBooks Online ProAdvisor. Very few bookkeepers can read an integration log, untangle a broken sync, or build an automated report from scratch. That combination is the whole point of this service: your books are only as good as the systems feeding them.

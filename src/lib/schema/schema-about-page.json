@@ -1,0 +1,8 @@
+{
+  "@context": "https://schema.org",
+  "@type": "AboutPage",
+  "url": "https://summitledgerbooks.com/about/",
+  "mainEntity": {
+    "@id": "https://summitledgerbooks.com/about/#austin"
+  }
+}

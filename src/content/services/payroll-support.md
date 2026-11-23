@@ -12,6 +12,8 @@ Once your real estate business has employees, payroll adds a layer of complexity
 
 I help you manage payroll processing, track employee hours, and make sure payroll taxes are calculated and recorded correctly in your books.
 
+Contractors: I can tie payroll hours to jobs. See [construction bookkeeping](/services/construction-bookkeeping/).
+
 ## Who This Is For
 
 - Property management companies with W-2 employees

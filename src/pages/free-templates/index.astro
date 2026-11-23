@@ -22,7 +22,7 @@ const emailError = Astro.url.searchParams.get("error") === "email";
     </form>
 
     <form class="free-templates-form" method="POST" action="/.netlify/functions/subscribe">
-      <p class="form-honeypot">
+      <p class="form-honeypot" aria-hidden="true" tabindex="-1">
         <label>Don't fill this out if you're human: <input name="bot-field" tabindex="-1" autocomplete="off" /></label>
       </p>
       {emailError && <p class="form-error" role="alert">Please enter a valid email address.</p>}
