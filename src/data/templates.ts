@@ -28,10 +28,10 @@ export interface TemplateProduct {
 export const templateProducts: TemplateProduct[] = [
   {
     name: "Investor Bundle",
-    price: "54.99",
-    priceLabel: "$54.99",
+    price: "27.99",
+    priceLabel: "$27.99",
     description:
-      "Five tools, one bundle: the landlord tracker, deal analyzer, flip tracker, partner split tracker, and year-end checklist, with quick-start guides.",
+      "Five tools, one bundle: the landlord tracker, deal analyzer, flip tracker, partner split tracker, and year-end checklist, with quick-start guides. $52.95 if bought separately.",
     url: "https://www.etsy.com/listing/4621188747",
     image: investorBundle,
     imageAlt: "Investor bundle of real estate spreadsheet templates",
@@ -39,8 +39,8 @@ export const templateProducts: TemplateProduct[] = [
   },
   {
     name: "Year-End Bookkeeping & Tax Prep Checklist",
-    price: "9.99",
-    priceLabel: "$9.99",
+    price: "5.99",
+    priceLabel: "$5.99",
     description:
       "A printable PDF checklist plus an Excel tracker with a 1099 vendor tracker, for small businesses, landlords, and contractors.",
     url: YEAR_END_LISTING_URL,
@@ -49,8 +49,8 @@ export const templateProducts: TemplateProduct[] = [
   },
   {
     name: "Landlord Rental Bookkeeping Tracker",
-    price: "24.99",
-    priceLabel: "$24.99",
+    price: "12.99",
+    priceLabel: "$12.99",
     description: "Rent, expenses, and Schedule E totals.",
     url: "https://www.etsy.com/listing/4621189882",
     image: landlord,
@@ -58,8 +58,8 @@ export const templateProducts: TemplateProduct[] = [
   },
   {
     name: "Rental & BRRRR Deal Analyzer",
-    price: "19.99",
-    priceLabel: "$19.99",
+    price: "11.99",
+    priceLabel: "$11.99",
     description: "Cash flow, CoC return, and refi math.",
     url: "https://www.etsy.com/listing/4621191878",
     image: brrrr,
@@ -67,8 +67,8 @@ export const templateProducts: TemplateProduct[] = [
   },
   {
     name: "House Flip Budget & Profit Tracker",
-    price: "19.99",
-    priceLabel: "$19.99",
+    price: "11.99",
+    priceLabel: "$11.99",
     description: "Rehab budget to final profit.",
     url: "https://www.etsy.com/listing/4621192438",
     image: flip,
@@ -76,8 +76,8 @@ export const templateProducts: TemplateProduct[] = [
   },
   {
     name: "Partner Profit Split Tracker",
-    price: "14.99",
-    priceLabel: "$14.99",
+    price: "9.99",
+    priceLabel: "$9.99",
     description: "Fair, clear splits for every deal.",
     url: "https://www.etsy.com/listing/4621193018",
     image: partner,
@@ -85,8 +85,8 @@ export const templateProducts: TemplateProduct[] = [
   },
   {
     name: "Agent Commission & Expense Tracker",
-    price: "14.99",
-    priceLabel: "$14.99",
+    price: "9.99",
+    priceLabel: "$9.99",
     description:
       "Track commissions, business expenses, and quarterly tax set-asides in one simple spreadsheet.",
     url: "https://www.etsy.com/listing/4621193656",
@@ -95,8 +95,8 @@ export const templateProducts: TemplateProduct[] = [
   },
   {
     name: "Contractor Job Costing Workbook",
-    price: "29",
-    priceLabel: "$29",
+    price: "14.99",
+    priceLabel: "$14.99",
     description: "Know your profit on every job.",
     url: "https://www.etsy.com/listing/4621180917",
     image: contractor,

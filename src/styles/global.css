@@ -1852,14 +1852,13 @@ a.card-link:hover h3 {
 .template-card-img,
 .template-card-text {
   width: 100%;
-  aspect-ratio: 16 / 9;
-  max-height: 11.25rem;
-  background: var(--color-accent-bg);
+  aspect-ratio: 4 / 3;
+  background: var(--color-surface);
 }
 .template-card-img {
   height: auto;
-  object-fit: cover;
-  object-position: top center;
+  object-fit: contain;
+  object-position: center;
   display: block;
 }
 .template-card-text {

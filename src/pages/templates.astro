@@ -62,13 +62,17 @@ const itemListSchema = {
     <p style="color: var(--color-text-muted); max-width: 42rem; margin-bottom: var(--space-lg);">
       I built these spreadsheets as a QuickBooks ProAdvisor and a real estate investor. I sell them on Etsy.
     </p>
+    <p class="template-coupon" style="max-width: 42rem; margin-bottom: var(--space-lg);">
+      Use code <strong>SLB15</strong> for 15% off everything except the Starter Pack through January 1, 2027.
+      <a href="https://summitledgershop.etsy.com?coupon=SLB15" target="_blank" rel="noopener noreferrer">Shop with the code on Etsy</a>
+    </p>
     <div class="template-grid">
       <article class="card template-card template-card-free">
         <Image
           src={freeTemplatesImg}
           alt="Free real estate spreadsheet templates"
           width={400}
-          height={225}
+          height={300}
           densities={[1, 2]}
           class="template-card-img"
         />
@@ -87,7 +91,7 @@ const itemListSchema = {
               src={product.image}
               alt={product.imageAlt || product.name}
               width={400}
-              height={225}
+              height={300}
               densities={[1, 2]}
               class="template-card-img"
             />
