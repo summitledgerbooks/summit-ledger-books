@@ -1,27 +1,55 @@
 ---
-import { Image } from "astro:assets";
+import { Image, getImage } from "astro:assets";
 import Base from "../layouts/Base.astro";
 import { templateProducts } from "../data/templates";
 import freeTemplatesImg from "../assets/templates/free-real-estate-templates.webp";
+
+const siteOrigin = Astro.site?.origin ?? "https://summitledgerbooks.com";
+
+const productImages = await Promise.all(
+  templateProducts.map(async (product) => {
+    if (!product.image) return undefined;
+    const optimized = await getImage({ src: product.image, width: 1200, format: "webp" });
+    const src = optimized.src;
+    return src.startsWith("http://") || src.startsWith("https://")
+      ? src
+      : new URL(src, siteOrigin).href;
+  }),
+);
 
 const itemListSchema = {
   "@context": "https://schema.org",
   "@type": "ItemList",
   name: "Real Estate and Bookkeeping Spreadsheet Templates",
-  itemListElement: templateProducts.map((product, index) => ({
-    "@type": "ListItem",
-    position: index + 1,
-    item: {
-      "@type": "Product",
-      name: product.name,
-      url: product.url,
-      offers: {
-        "@type": "Offer",
-        price: product.price,
-        priceCurrency: "USD",
+  itemListElement: templateProducts.map((product, index) => {
+    const image = productImages[index];
+    return {
+      "@type": "ListItem",
+      position: index + 1,
+      item: {
+        "@type": "Product",
+        name: product.name,
+        description: product.description ?? product.name,
+        ...(image ? { image } : {}),
+        url: product.url,
+        brand: {
+          "@type": "Brand",
+          name: "Summit Ledger Books",
+        },
+        offers: {
+          "@type": "Offer",
+          price: product.price,
+          priceCurrency: "USD",
+          availability: "https://schema.org/InStock",
+          url: product.url,
+          seller: {
+            "@type": "Organization",
+            name: "Summit Ledger Books",
+          },
+        },
       },
-    },
-  })),
+    };
+  }),
 };
 ---
 
