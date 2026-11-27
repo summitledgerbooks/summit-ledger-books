@@ -107,6 +107,7 @@ export const templateProducts: TemplateProduct[] = [
 ];
 
 export const freeTemplatePosts = new Set([
+  "job-cost-house-flip-quickbooks",
   "1099-contractors-rental-property-2026-threshold",
   "utah-property-management-trust-account-rules",
   "utah-short-term-rental-taxes-bookkeeping",
